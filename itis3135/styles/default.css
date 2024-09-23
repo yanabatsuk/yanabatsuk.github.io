@@ -80,6 +80,12 @@ a:hover{
     color: #779ABB;
 }
 
+img{
+    border:0;
+    width:88px;
+    height:31px;
+}
+
 footer{
     margin-top: 40px;
     padding-top: 20px;
