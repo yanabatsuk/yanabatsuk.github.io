@@ -9,7 +9,6 @@ html{
 
 body{
     margin: 20px;
-;
 }
 
 header{
@@ -37,6 +36,9 @@ header nav{
     margin-bottom: 10px;
 }
 
+p{
+    color: #2A3C33;
+}
 span{
     font-style: italic;
 }
