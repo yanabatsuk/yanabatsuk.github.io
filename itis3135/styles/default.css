@@ -39,9 +39,7 @@ header nav{
     font-weight: bold;
 }
 
-p{
-    color: #365359;
-}
+
 span{
     font-style: italic;
 }
@@ -92,9 +90,9 @@ a:hover{
 }
 
 a img{
-    border:0;
-    width:88px;
-    height:31px;
+    border: 0;
+    width: 88px;
+    height: 31px;
 }
 
 footer{
@@ -102,5 +100,9 @@ footer{
     padding-top: 20px;
     border-top: 1px solid #E0E5DC;
     color: #310D1C;
+    font-size: 18px;
 }
 
+footer p{
+    color: #1F2F33;
+}
