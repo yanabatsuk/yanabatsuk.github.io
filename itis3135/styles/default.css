@@ -4,7 +4,7 @@ html{
     box-sizing: border-box;
     font-family: 'Quicksand', 'Poppins';
     background-color: #F9F6F0;
-    color: #3B5447;
+    color: #2F474C;
 }
 
 body{
@@ -23,21 +23,24 @@ header section{
 h1{
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 55px;
+    font-size: 65px;
+    font-weight: bold;
 }
 
 header p{
     margin-top: 0;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 header nav{
-    font-size: 20px;
+    font-size: 40px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 p{
-    color: #2A3C33;
+    color: #365359;
 }
 span{
     font-style: italic;
@@ -55,18 +58,28 @@ main section{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 45px;
     margin-top: 18px;
     margin-bottom: 5px;
 }
 
 img{
-    width: 25%;
+    width: 35%;
+}
+
+figcaption{
+    font-size: 20px;
+    font-family: 'Quicksand', 'Poppins', serif;
+    font-weight: boldlight;
 }
 
 main p{
-    font-size: 20px;
+    font-size: 35px;
     margin-top: 0;
+}
+
+ul{
+    font-size: 23px;
 }
 
 a{
