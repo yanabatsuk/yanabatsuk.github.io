@@ -75,6 +75,7 @@ ol {
     border: 2px solid #9EB4BD;
     border-radius: 3px;
     list-style-type: none;
+    border-collapse: collapse;
 }
 
 ol li {
