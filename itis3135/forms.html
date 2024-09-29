@@ -44,10 +44,10 @@
 
                 <fieldset>
                     <legend>How experienced are you with houseplant care?</legend>
-                    <label><input type="checkbox" name="plants" onclick="onlyOne(this)" > Newbie (0 plants)</label>
-                    <label><input type="checkbox" name="plants" onclick="onlyOne(this)" > Beginner</label>
-                    <label><input type="checkbox" name="plants" onclick="onlyOne(this)" > Intermediate</label>
-                    <label><input type="checkbox" name="plants" onclick="onlyOne(this)" > Advanced</label>
+                    <label><input type="checkbox" name="plants" > Newbie (0 plants)</label>
+                    <label><input type="checkbox" name="plants" > Beginner</label>
+                    <label><input type="checkbox" name="plants" > Intermediate</label>
+                    <label><input type="checkbox" name="plants" > Advanced</label>
                 </fieldset><br>
 
 
@@ -102,12 +102,16 @@
             "https://jisgaw.w3.org/css-validator/validator?uri=" + location.href);
 
             
-            function onlyOne(checkbox) {
-                let checkboxes = document.getElementsByName('plants');
-                checkboxes.forEach((item) => {
-                    if (item !== checkbox) item.checked = false;
-                });     
-            }
+            document.addEventListener('DOMContentLoaded', function () {
+                const checkboxes = document.querySelectorAll('input[name="plants"]');
+                    checkboxes.forEach((checkbox) => {
+                        checkbox.addEventListener('change', function() {
+                            checkboxes.forEach((item) => {
+                                if (item !== checkbox) item.checked = false;
+                            });
+                        });
+                 });
+            });
 
         </script>
     </body>
