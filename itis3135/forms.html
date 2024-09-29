@@ -42,14 +42,24 @@
                 <label for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="jan.doe@example.com"></label><br>
 
 
-                <fieldset>
-                    <legend>How experienced are you with houseplant care?</legend>
-                    <label><input type="checkbox" name="plants" > Newbie (0 plants)</label>
-                    <label><input type="checkbox" name="plants" > Beginner</label>
-                    <label><input type="checkbox" name="plants" > Intermediate</label>
-                    <label><input type="checkbox" name="plants" > Advanced</label>
-                </fieldset><br>
+ 
+                <label for="experience-care">How experienced are you with houseplant care?</label>
+                <select id="experience-care" name="experience-care" required>
+                    <option value="">(select one)</option>
+                    <option value="newbie">Newbie (0 plants)</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select><br>
 
+
+                <fieldset>
+                    <legend>What size of plants do you prefer?</legend>
+                    <label><input type="checkbox" name="plant-sizes" value="small"> Small (Desk-sized)</label><br>
+                    <label><input type="checkbox" name="plant-sizes" value="medium"> Medium (Shelf-sized)</label><br>
+                    <label><input type="checkbox" name="plant-sizes" value="large"> Large (Floor-standing)</label><br>
+                    <label><input type="checkbox" name="plant-sizes" value="extra-large"> Extra Large (Filling a room)</label><br>
+                </fieldset><br>
 
 
                 <label for="level-care">What level of care are you comfortable with for your plants?</label>
@@ -100,18 +110,6 @@
             "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation-button-css").setAttribute("href", 
             "https://jisgaw.w3.org/css-validator/validator?uri=" + location.href);
-
-            
-            document.addEventListener('DOMContentLoaded', function () {
-                const checkboxes = document.querySelectorAll('input[name="plants"]');
-                    checkboxes.forEach((checkbox) => {
-                        checkbox.addEventListener('change', function() {
-                            checkboxes.forEach((item) => {
-                                if (item !== checkbox) item.checked = false;
-                            });
-                        });
-                 });
-            });
 
         </script>
     </body>
