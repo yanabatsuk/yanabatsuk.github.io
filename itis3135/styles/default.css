@@ -68,7 +68,7 @@ h3{
     margin-top: 25px;
 }
 
-ol {
+ol{
     margin: 0 auto;
     padding: 10px;
     background-color: #F4F6F3;
@@ -76,22 +76,23 @@ ol {
     border-radius: 3px;
     list-style-type: none;
     border-collapse: collapse;
+    max-width: 300px;
 }
 
-ol li {
+ol li{
     padding: 8px 15px;
     border-bottom: 1px solid #CEDADE;
 }
 
-ol li:last-child {
+ol li:last-child{
     border-bottom: none;
 }
 
-li {
+li{
     color: #273A3F;
 }
 
-table {
+table{
     margin: 20px auto;
     background-color: #F4F6F3;
     border-radius: 3px;
@@ -107,13 +108,13 @@ table {
             border-radius: 10px;
             overflow: hidden; */
 
-th, td {
+th, td{
     border: 1px solid #9EB4BD;
     padding: 12px;
     text-align: left;
 }
 
-th {
+th{
     font-size: large;
     background-color: #415A62;
     color: #F3F6F7;
