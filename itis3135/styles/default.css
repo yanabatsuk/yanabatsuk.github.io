@@ -71,7 +71,6 @@ h3{
 ol {
     margin: 0 auto;
     padding: 10px;
-    width: 75%;
     background-color: #F4F6F3;
     border: 2px solid #9EB4BD;
     border-radius: 3px;
@@ -93,7 +92,6 @@ li {
 
 table {
     margin: 20px auto;
-    width: 75%;
     background-color: #F4F6F3;
     border-radius: 3px;
 }
