@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Yana Batsuk's Yappy Bandicoot ||  ITIS3135 HTML Forms</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>  
+        <header>
+            <section id="intro">
+                <h1>Yana Batsuk's Yappy Bandicoot || ITIS 3135</h1>
+            </section>
+                <nav>
+                    <a href="./">Home</a>
+                    ||
+                    <a href="introduction.html">Introduction</a>
+                    ||
+                    <a href="contract.html">Contract</a>
+                    ||
+                    <a href="about.html">Nursery</a>
+                    ||
+                    <a href="tables.html">HTML Tables</a>
+                    ||
+                    <a href="forms.html">HTML Form</a>
+                </nav>
+                <p><span id="slogan">Transform your space into tropical escapes!</span></p>
+        </header>
+
+        <main>
+            <section>
+                <h2>ITIS 3135 HTML Form</h2>
+            </section>
+            <form method="post"action="#"> 
+                <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required placeholder="First Name"></label><br>
+
+                <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required placeholder="Last Name"></label><br>
+
+                <label for="phone">Enter Your Phone Number: <input id="phone" name="phone" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="12"></label><br>
+
+                <label for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="jan.doe@example.com"></label><br>
+
+
+                <fieldset>
+                    <legend>How experienced are you with houseplant care?</legend>
+                    <label><input type="checkbox" name="plants" onclick="onlyOne(this)" > Newbie (0 plants)</input></label>
+                    <label><input type="checkbox" name="plants" onclick="onlyOne(this)" > Beginner</input></label>
+                    <label><input type="checkbox" name="plants" onclick="onlyOne(this)" > Intermediate</input></label>
+                    <label><input type="checkbox" name="plants" onclick="onlyOne(this)" > Advanced</input></label>
+                </fieldset><br>
+
+
+
+                <label for="level-care">What level of care are you comfortable with for your plants?</label>
+                <select id="level-care" name="level-care" required>
+                    <option value="">(select one)</option>
+                    <option value="low">Low-Maintenace</option>
+                    <option value="moderate">Moderate Care</option>
+                    <option value="high">High-maintenance</option>
+                </select><br>
+
+
+                <fieldset>
+                    <legend>Would you like to subscribe to our newsletter?</legend>
+                    <label><input type="radio" name="subscribe" value="yes" required> Yes</label><br>
+                    <label><input type="radio" name="subscribe" value="no" required> No</label>
+                </fieldset><br>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+
+        </main>
+
+        <footer>
+            <nav>
+                <a href="https://webpages.charlotte.edu/ybatsuk/" target="_blank">Charlotte Webpages</a>
+                ||
+                <a href="https://github.com/yanabatsuk" target="_blank">Github</a>
+                ||
+                <a href="https://yanabatsuk.github.io/" target="_blank">Github.io</a>
+                ||
+                <a href="https://www.freecodecamp.org/ybatsuk" target="_blank">freeCodeCamp</a>
+                ||
+                <a href="https://www.codecademy.com/profiles/ybatsuk" target="_blank">Codeacademy</a>
+                ||
+                <a href="https://www.linkedin.com/in/yanabatsuk/" target="_blank">LinkedIn</a>
+            </nav>
+            <p>Page Designed by <a href="batsukdesigns.com/" target="_blank">Batsuk Designs </a>&copy; 2024, Certified in <a href="https://www.freecodecamp.org/certification/ybatsuk/responsive-web-design" target="_blank">Responsive Web Design</a></p>
+                <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
+                    <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+                </a>
+        </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href", 
+            "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href", 
+            "https://jisgaw.w3.org/css-validator/validator?uri=" + location.href);
+
+            
+            function onlyOne(checkbox) {
+                let checkboxes = document.getElementsByName('plants');
+                checkboxes.forEach((item) => {
+                    if (item !== checkbox) item.checked = false;
+                });     
+            }
+
+        </script>
+    </body>
+
+</html>
