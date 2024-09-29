@@ -33,14 +33,14 @@
 
             <h3>My Tabular Data</h3>
             <ol>
-                <li>Yana Batsuk - ybatsuk@bandicootsnursery.com - 11</li>
+                <li>Yappy Bandicoot - ybandicoot@bandicootsnursery.com - 11</li>
                 <li>Fern Brooks - fbrooks@bandicootsnursery.com - 10</li>
                 <li>Taylor Oak - toaks@bandicootsnursery.com - 4</li>
                 <li>Ivy Branch - ibranch@bandicootsnursery.com - 5</li>
-                <li>Amanda Grove - agrove@bandicootsnursery.com - 1</li>
-                <li>Sara Dune - sdune@@bandicootsnursery.com - 3</li>
+                <li>Sara Dune - sdune@@bandicootsnursery.com - 4.5</li>
                 <li>Steve Thorn - sthorn@bandicootsnursery.com - 3</li>
                 <li>Briar Marsh - bmarsh@bandicootsnursery.com - 7</li>
+                <li>Amanda Grove - agrove@bandicootsnursery.com - 1</li>
             </ol>
 
             <h3>Employee Data in Simple Table</h3>
@@ -51,8 +51,8 @@
                     <th>Years of Service</th>
                 </tr>
                 <tr>
-                    <td>Yana Batsuk</td>
-                    <td>ybatsuk@bandicootsnursery.com</td>
+                    <td>Yappy Bandicoot</td>
+                    <td>ybandicoot@bandicootsnursery.com</td>
                     <td>11</td>
                 </tr>
                 <tr>
@@ -71,14 +71,9 @@
                     <td>5</td>
                 </tr>
                 <tr>
-                    <td>Amanda Grove</td>
-                    <td>agrove@bandicootsnursery.com</td>
-                    <td>1</td>
-                </tr>
-                <tr>
                     <td>Sara Dune</td>
                     <td>sdune@@bandicootsnursery.com</td>
-                    <td>3</td>
+                    <td>4.5</td>
                 </tr>
                 <tr>
                     <td>Steve Thorn</td>
@@ -89,21 +84,31 @@
                     <td>Briar Marsh</td>
                     <td>bmarsh@bandicootsnursery.com</td>
                     <td>7</td>
+                </tr>
+                <tr>
+                    <td>Amanda Grove</td>
+                    <td>agrove@bandicootsnursery.com</td>
+                    <td>1</td>
                 </tr>
             </table>
 
+            <h3>Employee Data in Complex Table</h3>
             <table>
                 <tr>
+                    <th>Category</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Years of Service</th>
+                    <th>Total Years of Service</th>
                 </tr>
                 <tr>
-                    <td>Yana Batsuk</td>
-                    <td>ybatsuk@bandicootsnursery.com</td>
+                    <td rowspan="1">Owner</td>
+                    <td>Yappy Bandicoot</td>
+                    <td>ybandicoot@bandicootsnursery.com</td>
                     <td>11</td>
                 </tr>
                 <tr>
+                    <td rowspan="2">Sales</td>
                     <td>Fern Brooks</td>
                     <td>fbrooks@bandicootsnursery.com</td>
                     <td>10</td> 
@@ -114,19 +119,16 @@
                     <td>4</td>
                 </tr>
                 <tr>
+                    <td rowspan="1">Marketing</td>
                     <td>Ivy Branch</td>
                     <td>ibranch@bandicootsnursery.com</td>
                     <td>5</td>
                 </tr>
                 <tr>
-                    <td>Amanda Grove</td>
-                    <td>agrove@bandicootsnursery.com</td>
-                    <td>1</td>
-                </tr>
-                <tr>
+                    <td rowspan="3">Plant Care Specialists</td>
                     <td>Sara Dune</td>
                     <td>sdune@@bandicootsnursery.com</td>
-                    <td>3</td>
+                    <td>4.5</td>
                 </tr>
                 <tr>
                     <td>Steve Thorn</td>
@@ -137,6 +139,12 @@
                     <td>Briar Marsh</td>
                     <td>bmarsh@bandicootsnursery.com</td>
                     <td>7</td>
+                </tr>
+                <tr></tr>
+                    <td rowspan="1">Delivery</td>
+                    <td>Amanda Grove</td>
+                    <td>agrove@bandicootsnursery.com</td>
+                    <td>1</td>
                 </tr>
             </table>
         </main>
