@@ -94,19 +94,14 @@ li{
 
 table{
     margin: 20px auto;
+    border-collapse: collapse;
     background-color: #F4F6F3;
+    border: 2px solid #9EB4BD;
     border-radius: 3px;
+    max-width: 425px;
+    overflow: hidden;
 }
 
-/*       
-table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 80%;
-            background-color: #ffffff;
-            border: 2px solid #4a8c2f; 
-            border-radius: 10px;
-            overflow: hidden; */
 
 th, td{
     border: 1px solid #9EB4BD;
