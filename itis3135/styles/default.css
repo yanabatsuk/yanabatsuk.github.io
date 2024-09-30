@@ -162,7 +162,7 @@ table{
 }
 
 .table1{
-    max-width: 475px;
+    max-width: 485px;
 }
 
 .table2{
@@ -181,26 +181,6 @@ th{
     background-color: #415A62;
     color: #F3F6F7;
 }
-
-/* Centers the caption horizontally
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the caption horizontally 
-    width: 50%; /* Width of the figure, you can adjust it 
-}
-
-img {
-    width: 100%; /* The image will take up the full width of the figure 
-    align-self: flex-start; /* Align the image to the left 
-}
-
-figcaption {
-    font-size: 20px;
-    font-family: 'Quicksand', 'Poppins', serif;
-    font-weight: 500;
-    text-align: center; /* Ensures the caption is centered 
-    width: 100%; /* Ensures the caption spans the width of the image  
-}*/
 
 
 
