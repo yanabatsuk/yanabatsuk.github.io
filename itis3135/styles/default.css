@@ -66,7 +66,7 @@ main section{
 }
 
 h2{
-    font-size: 45px;
+    font-size: 50px;
     margin-top: 18px;
     margin-bottom: 5px;
 }
@@ -208,7 +208,7 @@ img{
 
 
 figcaption{
-    font-size: 25px;
+    font-size: 29px;
     font-family: 'Quicksand', 'Poppins', serif;
     font-weight: 500;
     text-align: center;
