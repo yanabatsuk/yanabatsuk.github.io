@@ -133,7 +133,7 @@ ol{
     padding: 10px;
     background-color: #F4F6F3;
     border: 2px solid #9EB4BD;
-    border-radius: 3px;
+    border-radius: 3.5px;
     list-style-type: none;
     border-collapse: collapse;
     max-width: 425px;
@@ -157,7 +157,7 @@ table{
     border-collapse: collapse;
     background-color: #F4F6F3;
     border: 2px solid #9EB4BD;
-    border-radius: 3px;
+    border-radius: 3.5px;
     overflow: hidden;
 }
 
