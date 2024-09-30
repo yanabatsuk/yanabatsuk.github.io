@@ -143,6 +143,7 @@ ol{
     list-style-type: none;
     border-collapse: collapse;
     max-width: 475px;
+    box-shadow: 0 2px 3px #9EB4BD; 
 }
 
 ol li{
@@ -165,6 +166,7 @@ table{
     border-collapse: collapse;
     background-color: #F4F6F3;
     border: 2px solid #9EB4BD;
+    box-shadow: 0 2px 3px #9EB4BD; 
     border-radius: 3.5px;
     overflow: hidden;
 }
