@@ -144,7 +144,6 @@ ol{
     list-style-type: none;
     border-collapse: collapse;
     max-width: 425px;
-    font-size: 45px;
 }
 
 ol li{
@@ -158,6 +157,7 @@ ol li:last-child{
 
 li{
     color: #273A3F;
+    font-size: 25px;
 }
 
 table{
