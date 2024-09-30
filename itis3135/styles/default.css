@@ -64,6 +64,15 @@ h2{
     margin-bottom: 5px;
 }
 
+#contract a{
+    text-decoration: underline;
+    color: #2F474C;
+}
+
+#contract a:hover{
+    color: #0F171A;
+}
+
 form{
     background-color: #F3F7F3;
     border-radius: 8px;
