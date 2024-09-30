@@ -142,7 +142,7 @@ ol{
     border-radius: 3.5px;
     list-style-type: none;
     border-collapse: collapse;
-    max-width: 425px;
+    max-width: 475px;
 }
 
 ol li{
@@ -156,7 +156,7 @@ ol li:last-child{
 
 li{
     color: #273A3F;
-    font-size: 31px;
+    font-size: 18px;
     padding-top: 5px;
 }
 
@@ -170,11 +170,13 @@ table{
 }
 
 .table1{
-    max-width: 475px;
+    max-width: 485px;
+    font-size: 18px;
 }
 
 .table2{
     max-width: 525px;
+    font-size: 18px;
 }
 
 
@@ -189,8 +191,6 @@ th{
     background-color: #415A62;
     color: #F3F6F7;
 }
-
-
 
 figure{
     display: flex;
@@ -221,9 +221,10 @@ main p{
     margin-top: 0;
 }
 
-ul{
-    font-size: 23px;
+ul li{
+    font-size: 31px;
 }
+
 
 a{
     text-decoration: none;
