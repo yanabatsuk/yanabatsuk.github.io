@@ -60,7 +60,7 @@ main section{
 
 #content{
     max-width: 1500px; /* Adjust this to your preferred width */
-    padding: 10px;
+    padding: 5px;
     margin: auto;
     text-align: left;
 }

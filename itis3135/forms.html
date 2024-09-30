@@ -13,58 +13,59 @@
         </header>
 
         <main>
-            <section>
+            <section id="content">
                 <h2>ITIS 3135 HTML Form</h2>
+                <section>
+                    <form method="post" action="#"> 
+                        <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required placeholder="First Name"></label><br>
+        
+                        <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required placeholder="Last Name"></label><br>
+        
+                        <label for="phone">Enter Your Phone Number: <input id="phone" name="phone" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="12"></label><br>
+        
+                        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="jan.doe@example.com"></label><br>
+        
+        
+         
+                        <label for="experience-care">How experienced are you with houseplant care?</label>
+                        <select id="experience-care" name="experience-care" required>
+                            <option value="">(select one)</option>
+                            <option value="newbie">Newbie (0 plants)</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select><br>
+        
+        
+                        <fieldset>
+                            <legend>What size of plants do you prefer?</legend>
+                            <label><input type="checkbox" name="plant-sizes" value="small" class="inline"> Small (Desk-sized)</label><br>
+                            <label><input type="checkbox" name="plant-sizes" value="medium" class="inline"> Medium (Shelf-sized)</label><br>
+                            <label><input type="checkbox" name="plant-sizes" value="large" class="inline"> Large (Floor-standing)</label><br>
+                            <label><input type="checkbox" name="plant-sizes" value="extra-large" class="inline"> Extra Large (Filling a room)</label>
+                        </fieldset><br>
+        
+        
+                        <label for="level-care">What level of care are you comfortable with for your plants?</label>
+                        <select id="level-care" name="level-care" required>
+                            <option value="">(select one)</option>
+                            <option value="low">Low-Maintenace</option>
+                            <option value="moderate">Moderate Care</option>
+                            <option value="high">High-maintenance</option>
+                        </select><br>
+        
+        
+                        <fieldset>
+                            <legend>Would you like to subscribe to our newsletter?</legend>
+                            <label><input type="radio" name="subscribe" value="yes" class="inline" required> Yes</label><br>
+                            <label><input type="radio" name="subscribe" value="no" class="inline" required> No</label>
+                        </fieldset><br>
+        
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
             </section>
-            <form method="post" action="#"> 
-                <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required placeholder="First Name"></label><br>
-
-                <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required placeholder="Last Name"></label><br>
-
-                <label for="phone">Enter Your Phone Number: <input id="phone" name="phone" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="12"></label><br>
-
-                <label for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="jan.doe@example.com"></label><br>
-
-
- 
-                <label for="experience-care">How experienced are you with houseplant care?</label>
-                <select id="experience-care" name="experience-care" required>
-                    <option value="">(select one)</option>
-                    <option value="newbie">Newbie (0 plants)</option>
-                    <option value="beginner">Beginner</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
-                </select><br>
-
-
-                <fieldset>
-                    <legend>What size of plants do you prefer?</legend>
-                    <label><input type="checkbox" name="plant-sizes" value="small" class="inline"> Small (Desk-sized)</label><br>
-                    <label><input type="checkbox" name="plant-sizes" value="medium" class="inline"> Medium (Shelf-sized)</label><br>
-                    <label><input type="checkbox" name="plant-sizes" value="large" class="inline"> Large (Floor-standing)</label><br>
-                    <label><input type="checkbox" name="plant-sizes" value="extra-large" class="inline"> Extra Large (Filling a room)</label>
-                </fieldset><br>
-
-
-                <label for="level-care">What level of care are you comfortable with for your plants?</label>
-                <select id="level-care" name="level-care" required>
-                    <option value="">(select one)</option>
-                    <option value="low">Low-Maintenace</option>
-                    <option value="moderate">Moderate Care</option>
-                    <option value="high">High-maintenance</option>
-                </select><br>
-
-
-                <fieldset>
-                    <legend>Would you like to subscribe to our newsletter?</legend>
-                    <label><input type="radio" name="subscribe" value="yes" class="inline" required> Yes</label><br>
-                    <label><input type="radio" name="subscribe" value="no" class="inline" required> No</label>
-                </fieldset><br>
-
-                <button type="reset">Reset</button>
-                <button type="submit">Submit</button>
-            </form>
-
         </main>
 
         <footer>
