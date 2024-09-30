@@ -39,7 +39,11 @@ header nav{
     font-weight: bold;
 }
 
-.slogan{
+#slogan{
+    font-style: italic;
+}
+
+#italic{
     font-style: italic;
 }
 
