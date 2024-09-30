@@ -136,7 +136,7 @@ ol{
     border-radius: 3px;
     list-style-type: none;
     border-collapse: collapse;
-    max-width: 425px;
+    max-width: 415px;
 }
 
 ol li{
@@ -162,7 +162,7 @@ table{
 }
 
 .table1{
-    max-width: 450px;
+    max-width: 475px;
 }
 
 .table2{
