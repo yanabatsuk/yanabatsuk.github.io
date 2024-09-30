@@ -72,14 +72,6 @@ label{
     font-size: 18px;
     color: #2F474C;
     font-weight: 500;
-    display: inline-block;
-    margin-left: 5px;
-}
-
-input[type="checkbox"], input[type="radio"] {
-    display: inline-block; 
-    margin-right: 10px; 
-    vertical-align: middle; 
 }
 
 input, select, textarea{
@@ -215,4 +207,8 @@ footer{
 
 footer p{
     color: #1F2F33;
+}
+
+.inline{
+    display: inline;
 }
