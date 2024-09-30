@@ -59,7 +59,7 @@ main section{
 }
 
 #content{
-    max-width: 1500px; /* Adjust this to your preferred width */
+    max-width: 1500px; 
     padding: 5px;
     margin: auto;
     text-align: left;
@@ -144,6 +144,7 @@ ol{
     list-style-type: none;
     border-collapse: collapse;
     max-width: 425px;
+    font-size: 25px;
 }
 
 ol li{
