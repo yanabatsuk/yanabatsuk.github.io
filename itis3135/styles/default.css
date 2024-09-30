@@ -93,8 +93,8 @@ input, select, textarea{
 }
 
 button{
-    background-color: #E4DDDD;
-    color: #100409;
+    background-color: #0F171A;
+    color: #F3F6F7;
     font-size: 15px;
     padding: 5px 8px 5px 5px;
     border: none;
@@ -104,7 +104,7 @@ button{
 }
 
 button:hover{
-    background-color: #F3E9E3;
+    background-color: #1D2D34;
 }
 
 h3{
