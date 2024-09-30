@@ -60,6 +60,44 @@ h2{
     margin-bottom: 5px;
 }
 
+form{
+    background-color: #F4F6F3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+label{
+    font-size: 18px;
+    color: #2F474C;
+    font-weight: 500;
+}
+
+input, select, textarea{
+    border: 1.2px solid #9EB4BD;
+    border-radius: 6px;
+    padding: 4px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box; 
+    background-color: #F3F6F7; 
+}
+
+button{
+    background-color: #E4DDDD;
+    color: #100409;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #F3E9E3;
+}
+
 h3{
     color: #0E5258;
     font-size: 37px;
