@@ -59,8 +59,10 @@ main section{
 }
 
 #content{
-    max-width: 1200px; /* Adjust this to your preferred width */
+    max-width: 1500px; /* Adjust this to your preferred width */
     padding: 10px;
+    margin: auto;
+    text-align: left;
 }
 
 h2{
