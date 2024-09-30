@@ -58,6 +58,12 @@ main section{
     margin: 0;
 }
 
+#content{
+    max-width: 1200px; /* Adjust this to your preferred width */
+    margin: 0 auto; /* This centers the container */
+    padding: 20px;
+}
+
 h2{
     font-size: 45px;
     margin-top: 18px;
