@@ -60,8 +60,7 @@ main section{
 
 #content{
     max-width: 1200px; /* Adjust this to your preferred width */
-    margin: 0 auto; /* This centers the container */
-    padding: 20px;
+    padding: 10px;
 }
 
 h2{
