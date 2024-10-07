@@ -21,14 +21,13 @@ header section{
 
 h1{
     margin: 0;
-    font-size: 65px;
+    font-size: 70px;
     font-weight: bold;
 }
 
 header p{
     margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 45px;
 }
 
 header nav{
