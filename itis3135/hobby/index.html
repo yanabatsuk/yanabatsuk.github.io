@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Plant Sport Hunting</title>
         <link rel="icon" href="images/icons8-plant-64.png" type="image/png">
+        
         <style>
             html{
                 background-color: #D7E3CA;
@@ -13,40 +14,88 @@
                 font-family: 'Merriweather', 'Playfair Display', serif;
             }
 
+            header, footer{
+                background-color: #4A4E69;
+                color: #F2E9E4;
+                padding: 15px;
+                text-align: center;
+            }
+
+            header h1{
+                margin: 0;
+            }
+
+            nav{
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 10px;
+            }
+
+            nav a{
+                color: #F2E9E4;
+                cursor: pointer;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            nav a:hover{
+                color: #C9ADA7;
+            }
+
+            main{
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+            }
+
             .section{
-            display: none;
-            max-width: 700px;
-            padding: 15px;
-            border: 2px solid #9A8C98;
-            border-radius: 8px;
-            background-color: #F2E9E4;
-            box-shadow: 0px 4px 10px rgba(44, 19, 32, 0.1);
+                display: none;
+                max-width: 700px;
+                padding: 15px;
+                border: 2px solid #9A8C98;
+                border-radius: 8px;
+                background-color: #F2E9E4;
+                box-shadow: 0px 4px 10px rgba(44, 19, 32, 0.1);
             }
 
             .section.active{
-            display: block;
+                display: block;
+            }
+
+            figure{
+                text-align: center;
+                margin: 15px 0;
+            }
+
+            figcaption{
+                font-style: italic;
+                color: #555;
             }
 
             footer{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            padding: 15px;
-        }
-        footer a{
-            display: inline-block;
-            padding: 8px 12px;
-            background-color: #9A8C98;
-            color: #F2E9E4;
-            text-decoration: none;
-            border-radius: 4px;
-            margin: 5px;
-        }
-        footer a:hover {
-            background-color: #4A4E69;
-        }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+                padding: 15px;
+            }
+
+            footer a{
+                display: inline-block;
+                padding: 8px 12px;
+                background-color: #9A8C98;
+                color: #F2E9E4;
+                text-decoration: none;
+                border-radius: 4px;
+                margin: 5px;
+            }
+
+            footer a:hover{
+                background-color: #4A4E69;
+            }
         </style>
+
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
 
