@@ -1,36 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <title>ADD TITLE</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Plant Sport Hunting</title>
+        <link rel="icon" href="images/icons8-plant-64.png" type="image/png">
         <style>
             html{
-                background-color: #D7E3CA;  
+                background-color: #D7E3CA;
                 color: #2C1320;
                 font-family: 'Merriweather', 'Playfair Display', serif;
+            }
+
+            .section{
+            display: none;
+            max-width: 700px;
+            padding: 15px;
+            border: 2px solid #9A8C98;
+            border-radius: 8px;
+            background-color: #F2E9E4;
+            box-shadow: 0px 4px 10px rgba(44, 19, 32, 0.1);
+            }
+
+            .section.active{
+            display: block;
             }
         </style>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
+
     <body>  
+        
         <header>
-            <div data-include="components/header.html"></div>
+            <h1>Plant Sport Hunting</h1>
+            <nav>
+                <a onlick ="showSection('why')">Why</a> |
+                <a onlick ="showSection('what')">What</a> |
+                <a onlick ="showSection('who')">Who</a> |
+                <a onlick ="showSection('where')">Where</a>
+                <a onlick ="showSection('when')">When</a>
+                <a onlick ="showSection('how')">How</a>
+                <a onlick ="showSection('ai-prompts')">AI Prompts</a>
+            </nav>
         </header>
 
+
         <main>
-            <h2>What is Plant Sport Hunting?</h2>
+            <section id="why" class="section active">
+                <h2>Why do People Go Plant Sport Hunting?</h2>
+                <p></p>
+            </section>
+
+            <section id="what" class="section">
+                <h2>What</h2>
+                <p></p>
+            </section>  
+
+            <section id="who" class="section">
+                <h2>Who</h2>
+                <p></p>
+            </section>
+
+            <section id="where" class="section">
+                <h2>Where</h2>
+                <p>Where is this place?</p>
+            </section>
+
+            <section id="when" class="section">
+                <h2>When</h2>
+                <p>When is this time?</p>
+            </section>
+
+            <section id="how" class="section">
+                <h2>How</h2>
+                <p>How do I do this?</p>
+            </section>
+
+            <section id="ai-prompts" class="section">
+                <h2>AI Prompts</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>  
+
         </main>
 
+
+
+
         <footer>
-            <div data-include="components/footer.html"></div>
+            <p>Page Designed by <a href="batsukdesigns.com/" target="_blank">Batsuk Designs </a>&copy; 2024,</p>
+
+            <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
+            <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
         </footer>
+
         <script>
-            document.getElementById("validation-button-html").setAttribute("href", 
-            "https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation-button-css").setAttribute("href", 
-            "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            // JavaScript to show only one section at a time
+            function showSection(sectionId) {
+                const sections = document.querySelectorAll('.section');
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(sectionId).classList.add('active');
+            }
         </script>
+    
     </body>
-</html>
+
 </html>
