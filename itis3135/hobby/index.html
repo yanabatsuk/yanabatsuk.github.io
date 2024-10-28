@@ -311,53 +311,53 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                const sections = document.querySelectorAll('.section');
-                const navLinks = {
-                    'about-me-link': 'about-me',
-                    'home-link': 'home',
-                    'why-link': 'why',
-                    'where-link': 'where',
-                    'when-link': 'when',
-                    'how-link': 'how',
-                    'ai-prompts-link': 'ai-prompts'
-                };
-            
-                function showSection(sectionId) {
-                    sections.forEach((section) => {
-                        section.classList.remove('section-active');
-                    });
-                    document.getElementById(sectionId).classList.add('section-active');
-                }
-            
-                Object.keys(navLinks).forEach((linkId) => {
-                    const sectionId = navLinks[linkId];
-                    document.getElementById(linkId).addEventListener('click', () => {
-                        showSection(sectionId);
-                    });
+            const sections = document.querySelectorAll('.section');
+            const navLinks = {
+                'about-me-link': 'about-me',
+                'home-link': 'home',
+                'why-link': 'why',
+                'where-link': 'where',
+                'when-link': 'when',
+                'how-link': 'how',
+                'ai-prompts-link': 'ai-prompts'
+            };
+
+            function showSection(sectionId) {
+                sections.forEach((section) => {
+                    section.classList.remove('section-active');
                 });
-            
-                // Slideshow functionality
-                let slideIndex = 0;
-            
-                function showSlides(n) {
-                    const slides = document.getElementsByClassName('myslides');
-                    if (n >= slides.length) slideIndex = 0;
-                    if (n < 0) slideIndex = slides.length - 1;
-            
-                    Array.from(slides).forEach(slide => (slide.style.display = 'none'));
-                    slides[slideIndex].style.display = 'block';
-                }
-            
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-            
-                document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
-                document.querySelector('.next').addEventListener('click', () => plusSlides(1));
-            
-                // Initialize by showing the first slide
-                showSlides(slideIndex);
+                document.getElementById(sectionId).classList.add('section-active');
+            }
+
+            Object.keys(navLinks).forEach((linkId) => {
+                const sectionId = navLinks[linkId];
+                document.getElementById(linkId).addEventListener('click', () => {
+                    showSection(sectionId);
+                });
             });
+
+            // Slideshow functionality
+            let slideIndex = 0;
+
+            function showSlides(n) {
+                const slides = document.getElementsByClassName('myslides');
+                if (n >= slides.length) slideIndex = 0;
+                if (n < 0) slideIndex = slides.length - 1;
+
+                Array.from(slides).forEach(slide => (slide.style.display = 'none'));
+                slides[slideIndex].style.display = 'block';
+            }
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
+            document.querySelector('.next').addEventListener('click', () => plusSlides(1));
+
+            // Initialize by showing the first slide
+            showSlides(slideIndex);
+        });
         </script>
         
     </body>
