@@ -111,26 +111,30 @@
 
             .prev, .next {
                 cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                padding: 16px;
-                color: white;
-                font-weight: bold;
-                font-size: 18px;
-                transition: 0.6s ease;
-                border-radius: 0 3px 3px 0;
-                user-select: none;
-            }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    padding: 16px;
+    user-select: none;
+}
 
-            .next {
-                right: 0;
-                border-radius: 3px 0 0 3px;
-            }
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
 
-            .prev:hover, .next:hover {
-                background-color: rgba(0, 0, 0, 0.8);
-            }
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 
             footer{
@@ -226,15 +230,15 @@
                 <p>Learn techniques for spotting and identifying plant sports, including recognizing leaf patterns, colors, and structural anomalies that signal a unique sport.</p>
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <img src="images/plant-how1.jpeg" alt="">
+                        <img src="images/plant-how1.png" alt="">
                         <figcaption>Observing subtle differences in plant features.</figcaption>
                     </div>
                     <div class="mySlides fade">
-                        <img src="images/plant-how2.jpeg" alt="Identification guide 2">
+                        <img src="images/plant-how2.png" alt="Identification guide 2">
                         <figcaption>Recognizing unique leaf patterns.</figcaption>
                     </div>
                     <div class="mySlides fade">
-                        <img src="images/plant-how3.jpeg" alt="Identification guide 3">
+                        <img src="images/plant-how3.png" alt="Identification guide 3">
                         <figcaption>Identifying color variations.</figcaption>
                     </div>
             
