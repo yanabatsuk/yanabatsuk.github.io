@@ -309,39 +309,43 @@
 
         <script>
             // JavaScript for showing/hiding selected/unselected page sections with section-active section staying highlighted
-            function showSection(sectionId) {
-                const sections = document.querySelectorAll('.section');
-                sections.forEach(section => {
-                    section.classList.remove('section-active');
-                });
-                document.getElementById(sectionId).classList.add('section-active');
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section) => {
+                section.classList.remove('section-active');
+            });
+            document.getElementById(sectionId).classList.add('section-active');
+        }
+        
+        // JavaScript for slideshow images
+        let slideIndex = 0;
+        
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName('myslides');
+            
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
             }
         
-            // JavaScript for slideshow images
-            let slideIndex = 0;
-        
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
             }
         
-            function showSlides(n) {
-                let i;
-                const slides = document.getElementsByClassName("myslides");
-                if (n >= slides.length) { slideIndex = 0 }
-                if (n < 0) { slideIndex = slides.length - 1 }
+            slides[slideIndex].style.display = 'block';
+        }
         
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
         
-                slides[slideIndex].style.display = "block";
-            }
-        
-            // Initialize by showing the first slide
-            showSlides(slideIndex);
+        // Initialize by showing the first slide
+        showSlides(slideIndex);
         </script>
         
-    
     </body>
 
 </html>
