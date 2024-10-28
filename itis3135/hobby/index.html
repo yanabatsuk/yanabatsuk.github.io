@@ -87,7 +87,7 @@
                 font-size: 2em;
             }
 
-            .section.active{
+            .section-active{
                 display: block;
             }
 
@@ -205,7 +205,7 @@
                 </figure>
             </section>
 
-            <section id="home" class="section active">
+            <section id="home" class="section section-active">
                 <h2>What is Plant Sport Hunting?</h2>
                 <p>Plant sport hunting is the search for rare, naturally occuring mutations in plants, called 'sports', which can alter traits like leaf color, shape, variegation patterns, or growth habits. These unique variations emerge unpredictably, making them highly prized by plant collectors, like me, who value their uniqueness. Once indentified, depending on the plant species, sports can be propagated to preserve and share their one of a kind charactersitics with others.</p>
                 <!-- AI Generated Image section -->
@@ -308,13 +308,13 @@
         </footer>
 
         <script>
-            // JavaScript for showing/hiding selected/unselected page sections with active section staying highlighted
+            // JavaScript for showing/hiding selected/unselected page sections with section-active section staying highlighted
             function showSection(sectionId) {
                 const sections = document.querySelectorAll('.section');
                 sections.forEach(section => {
-                    section.classList.remove('active');
+                    section.classList.remove('section-active');
                 });
-                document.getElementById(sectionId).classList.add('active');
+                document.getElementById(sectionId).classList.add('section-active');
             }
         
             // JavaScript for slideshow images
