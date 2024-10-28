@@ -141,14 +141,14 @@
             }
 
             li{
-                font-size: 1.5em;
+                font-size: 2em;
                 text-align: left;
             }
 
             footer{
                 margin-top: 20px;
                 padding-top: 10px;
-                font-size: 2em;
+                font-size: 2.5em;
                 text-align: center;
             }
 
@@ -183,13 +183,13 @@
         <header>
             <h1>Plant Sport Hunting</h1>
             <nav>
-               * <a onclick="showSection('about-me')">About Me</a> *
-                <a onclick="showSection('home')">Home</a> *
-                <a onclick="showSection('why')">Why</a> *
-                <a onclick="showSection('where')">Where</a> *
-                <a onclick="showSection('when')">When</a> *
-                <a onclick="showSection('how')">How</a> *
-                <a onclick="showSection('ai-prompts')">AI Prompts</a> *
+                * <a id="about-me-link">About Me</a> *
+                <a id="home-link">Home</a> *
+                <a id="why-link">Why</a> *
+                <a id="where-link">Where</a> *
+                <a id="when-link">When</a> *
+                <a id="how-link">How</a> *
+                <a id="ai-prompts-link">AI Prompts</a> *
             </nav>
         </header>
 
@@ -232,6 +232,7 @@
             <section id="where" class="section">
                 <h2>Where Can You Find Plant Sports?</h2>
                 <p>Plant sports are unique and can be found in places like greenhouses, nurseries, and even in the wild. In my experience, big-box stores like Lowe’s, Home Depot, and Walmart tend to have more hidden gems due to their larger stock, where sports often go unnoticed by shoppers who mistake them for damaged or diseased plants. Although nurseries are smaller and more selective, their staff may spot these plant sports before they reach the shelves.</p>
+                <!-- The pictures in this section is my own -->
                 <figure>
                     <img src="images/speckled-alocasia.png" alt="Image of a Speckled 'sport' Variegated Silver Dragon Alocasia">
                     <figcaption>An Alocasia 'sport' Speckled Variegated Silver Dragon I found at Home Depot</figcaption>
@@ -241,6 +242,7 @@
             <section id="when" class="section">
                 <h2>When is the Best Time for Plant Sport Hunting?</h2>
                 <p>Plant sport hunting can be enjoyed year-round, as different plants are released for sale by sellers, nurseries, and big-box stores when they are ready. Each season brings a fresh selection, allowing enthusiasts to discover unique varieties and exciting hybrids. By staying attuned to local markets, you can uncover hidden gems and rare finds throughout the year.</p>
+                <!-- AI Generated Image section -->
                 <figure>
                     <img src="images/ai-when.jpeg" alt="A picture of a lively atmosphere of plant sport hunting at a nursery or big-box store, with a range of unique and colorful plants on display.">
                     <figcaption>Plant sport hunting at a nursery or big-box store, year-round</figcaption>
@@ -308,42 +310,54 @@
         </footer>
 
         <script>
-            // JavaScript for showing/hiding selected/unselected page sections with section-active section staying highlighted
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach((section) => {
-                section.classList.remove('section-active');
-            });
-            document.getElementById(sectionId).classList.add('section-active');
-        }
-        
-        // JavaScript for slideshow images
-        let slideIndex = 0;
-        
-        function showSlides(n) {
-            let i;
-            const slides = document.getElementsByClassName('myslides');
+            document.addEventListener("DOMContentLoaded", function () {
+                const sections = document.querySelectorAll('.section');
+                const navLinks = {
+                    'about-me-link': 'about-me',
+                    'home-link': 'home',
+                    'why-link': 'why',
+                    'where-link': 'where',
+                    'when-link': 'when',
+                    'how-link': 'how',
+                    'ai-prompts-link': 'ai-prompts'
+                };
             
-            if (n >= slides.length) {
-                slideIndex = 0;
-            }
-            if (n < 0) {
-                slideIndex = slides.length - 1;
-            }
-        
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-        
-            slides[slideIndex].style.display = 'block';
-        }
-        
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        
-        // Initialize by showing the first slide
-        showSlides(slideIndex);
+                function showSection(sectionId) {
+                    sections.forEach((section) => {
+                        section.classList.remove('section-active');
+                    });
+                    document.getElementById(sectionId).classList.add('section-active');
+                }
+            
+                Object.keys(navLinks).forEach((linkId) => {
+                    const sectionId = navLinks[linkId];
+                    document.getElementById(linkId).addEventListener('click', () => {
+                        showSection(sectionId);
+                    });
+                });
+            
+                // Slideshow functionality
+                let slideIndex = 0;
+            
+                function showSlides(n) {
+                    const slides = document.getElementsByClassName('myslides');
+                    if (n >= slides.length) slideIndex = 0;
+                    if (n < 0) slideIndex = slides.length - 1;
+            
+                    Array.from(slides).forEach(slide => (slide.style.display = 'none'));
+                    slides[slideIndex].style.display = 'block';
+                }
+            
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+            
+                document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
+                document.querySelector('.next').addEventListener('click', () => plusSlides(1));
+            
+                // Initialize by showing the first slide
+                showSlides(slideIndex);
+            });
         </script>
         
     </body>
