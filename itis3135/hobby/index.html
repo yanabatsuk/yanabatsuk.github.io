@@ -65,6 +65,10 @@
                 box-shadow: 0px 4px 10px rgba(44, 19, 32, 0.1);
             }
 
+            .section img{
+                width: 100%;
+            }
+
             .section p{
                 text-align: left;
             }
@@ -122,7 +126,16 @@
 
 
         <main>
-            <section id="why" class="section active">
+            <section id="what" class="section active">
+                <h2>What is Plant Sport Hunting?</h2>
+                <p>Plant sport hunting involves searching for spontaneous mutations or variations in plants. These unique traits make each plant a one-of-a-kind specimen.</p>
+                <figure>
+                    <img src="images/speckled_alocasia.png" alt="Image of a Speckled 'sport' Variegated Silver Dragon Alocasia">
+                    <figcaption>An example of a plant with a unique genetic sport variegation.</figcaption>
+                </figure>
+            </section>
+
+            <section id="why" class="section">
                 <h2>Why is Plant Sport Hunting So Popular?</h2>
                 <p>Explore why this hobby has captured the attention of plant enthusiasts, from the thrill of discovery to the potential for rare finds.</p>
                 <figure>
@@ -132,18 +145,6 @@
                 <p><em>AI Prompt: “Photograph of rare plant discoveries.”</em></p>
             </section>
     
-            <!-- "What" section -->
-            <section id="what" class="section">
-                <h2>What is Plant Sport Hunting?</h2>
-                <p>Plant sport hunting involves searching for spontaneous mutations or variations in plants. These unique traits make each plant a one-of-a-kind specimen.</p>
-                <figure>
-                    <img src="images/plant-what.jpg" alt="Image of unique plant sport">
-                    <figcaption>An example of a plant with a unique genetic sport.</figcaption>
-                </figure>
-                <p><em>AI Prompt: “Close-up of a plant with a unique mutation.”</em></p>
-            </section>
-    
-            <!-- "Who" section -->
             <section id="who" class="section">
                 <h2>Who Are Plant Sport Hunters?</h2>
                 <p>Plant sport hunters are passionate collectors, gardeners, and botanists who search for unusual plant variations. They often value the thrill of the hunt and the beauty of nature’s diversity.</p>
@@ -203,7 +204,7 @@
 
 
         <footer>
-            <p>Page Designed by <a href="../batsukdesigns.com/index.html" target="_blank">Batsuk Designs </a>&copy; 2024</p>
+            <p>Designed by <a href="../batsukdesigns.com/index.html" target="_blank">Batsuk Designs </a>&copy; 2024</p>
 
             <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
             <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
@@ -220,7 +221,6 @@
         </footer>
 
         <script>
-            // JavaScript to show only one section at a time
             function showSection(sectionId) {
                 const sections = document.querySelectorAll('.section');
                 sections.forEach(section => {
