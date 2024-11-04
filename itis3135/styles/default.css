@@ -283,7 +283,7 @@ footer p{
         max-width: 90%;
     }
 
-    h1{
+    .responsive-heading1{
         font-size: 50px;
     }
     header p{
@@ -292,7 +292,7 @@ footer p{
     header nav{
         font-size: 35px;
     }
-    h2{
+    .responsive-heading{
         font-size: 40px;
     }
 }
@@ -303,7 +303,7 @@ footer p{
         width: 100%;
         max-width: 100%;
     }
-    h1{
+    .responsive-heading1{
         font-size: 40px;
     }
     header p{
@@ -312,7 +312,7 @@ footer p{
     header nav{
         font-size: 25px;
     }
-    h2{
+    .responsive-heading{
         font-size: 30px;
     }
     button{
