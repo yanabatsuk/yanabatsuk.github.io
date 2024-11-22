@@ -9,7 +9,7 @@ function displayDateTime() {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const timeString = date.toLocaleTimeString();
     const dateString = date.toLocaleDateString(undefined, options);
-    document.getElementById("currentDateTime").textContent = `Today is ${timeString} on ${dateString}`;
+    document.getElementById("currentDateTime").textContent = `Today is ${dateString} and the time is ${timeString}`;
 }
 
 window.onload = displayDateTime;
