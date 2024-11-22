@@ -32,11 +32,21 @@ function showPolygonName() {
         10: 'decagon'
     };
 
-    if (polygons[numSides]) {
-        alert(polygons[numSides]);
+    const outputElement = document.createElement("p");
+    outputElement.id = "polygonMessage";
+
+    let message = polygons[numSides]
+        ? `The polygon with ${numSides} sides is called a ${polygons[numSides]}.`
+        : "Invalid number of sides! Please enter a number from 2 to 10.";
+
+    const existingMessage = document.getElementById("polygonMessage");
+    if (existingMessage) {
+        existingMessage.textContent = message;
     } else {
-        alert('Invalid number of sides! Please try a number from 2 to 10.');
+        outputElement.textContent = message;
+        document.querySelector("section").appendChild(outputElement);
     }
+
 }
 
 function generatePlantName() {
