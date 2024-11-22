@@ -6,6 +6,7 @@ function displayDateTime() {
     document.getElementById("current-date-time").textContent = `Today is ${dateString}, the time is ${timeString}`;
 }
 
+
 function displayGreeting() {
     const userName = document.getElementById("user-name").value;
     const userMood = document.getElementById("user-mood").value;
@@ -14,6 +15,8 @@ function displayGreeting() {
     const message = `The ${companyName} welcomes you, ${userName}! We're glad you're feeling ${userMood}!`;
     document.getElementById("greeting-message").textContent = message;
 }
+
+document.getElementById("greeting-button").addEventListener("click", displayGreeting);
 
 function showPolygonName() {
     const numSides = Math.abs(Math.round(parseFloat(document.getElementById("favorite-number").value)));
@@ -54,6 +57,8 @@ function showPolygonName() {
     */
 }
 
+document.getElementById("polygon-button").addEventListener("click", showPolygonName);
+
 function generatePlantName() {
     const prefixes = [
         "Fern", "Sun", "Bloom", "Moon", "Glow", "Dew", "Star", "Shadow", "Ember", "Mist", "Thorn", "Sage", "Frost", "Cinder", "Wild", "Cloud", "Petal", "Ghost", "Fire"
@@ -70,3 +75,4 @@ function generatePlantName() {
     document.getElementById("plant-name").textContent = `Your plant name is: ${plantName}`;
 }
 
+document.getElementById("generate-plant-button").addEventListener("click", generatePlantName);
