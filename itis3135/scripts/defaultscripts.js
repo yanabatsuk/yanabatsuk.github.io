@@ -3,22 +3,20 @@ function displayDateTime() {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const timeString = date.toLocaleTimeString();
     const dateString = date.toLocaleDateString(undefined, options);
-    document.getElementById("currentDateTime").textContent = `Today is ${dateString}, the time is ${timeString}`;
+    document.getElementById("current-date-time").textContent = `Today is ${dateString}, the time is ${timeString}`;
 }
 
-window.onload = displayDateTime;
-
 function displayGreeting() {
-    const userName = document.getElementById("userName").value;
-    const userMood = document.getElementById("userMood").value;
+    const userName = document.getElementById("user-name").value;
+    const userMood = document.getElementById("user-mood").value;
     const companyName = "Yappy Bandicoot Nursery";
 
     const message = `The ${companyName} welcomes you, ${userName}! We're glad you're feeling ${userMood}!`;
-    document.getElementById("greetingMessage").textContent = message;
+    document.getElementById("greeting-message").textContent = message;
 }
 
 function showPolygonName() {
-    const numSides = Math.abs(Math.round(parseFloat(document.getElementById("favoriteNumber").value)));
+    const numSides = Math.abs(Math.round(parseFloat(document.getElementById("favorite-number").value)));
 
     const polygons = {
         2: 'digon',
@@ -32,7 +30,14 @@ function showPolygonName() {
         10: 'decagon'
     };
 
-    const outputElement = document.createElement("p");
+
+    const message = polygons[numSides]
+        ? `The polygon with ${numSides} sides is called a ${polygons[numSides]}.`
+        : "Invalid number of sides! Please enter a number from 2 to 10.";
+
+    document.getElementById("polygon-message").textContent = message;
+
+    /*const outputElement = document.createElement("p");
     outputElement.id = "polygonMessage";
 
     let message = polygons[numSides]
@@ -46,7 +51,7 @@ function showPolygonName() {
         outputElement.textContent = message;
         document.querySelector("section").appendChild(outputElement);
     }
-
+    */
 }
 
 function generatePlantName() {
@@ -62,6 +67,6 @@ function generatePlantName() {
     const ranfomSuffix = suffixes[Math.floor(Math.random() * suffixes.length)];
 
     const plantName = `${randomPrefix} ${randomSuffix}`;
-    document.getElementById("plantName").textContent = `Your plant name is: ${plantName}`;
+    document.getElementById("plant-name").textContent = `Your plant name is: ${plantName}`;
 }
 
