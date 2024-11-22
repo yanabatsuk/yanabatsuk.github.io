@@ -21,29 +21,32 @@
                 <h2 class="responsive-heading">First Scripts</h2>
 
                 <section>
-                    <!--- PROMPTS -->
-
+                    <button onclick="scriptTest();">Test Script</button>
                 </section> 
 
-                <h3 id="currentDataTime"></h3>
+                <h3 id="currentDateTime"></h3>
 
                 <section>
                     <label for="userName">Name:</label>
                     <input type="text" id="userName">
                     <label for="userMood">How are you feeling today?</label>
                     <input type="text" id="userMood">
-                    <button onlick="displayGreeting()";>Submit</button>
+                    <button onlick="displayGreeting();">Submit</button>
                 </section>
 
                 <h4 id="greetingMessage"></h4>
 
                 <section>
-                    <label for="favoriteNumber">Enter your favorite number (0-10):</label>
+                    <label for="favoriteNumber">Enter your favorite number (2-10):</label>
                     <input type="number" id="favoriteNumber" step="1">
                     <button onclick="showPolygonName();">Show Polygon Name</button>
                 </section>
 
-                <button onclick="generatePlantName();">Generate Plant Name</button>
+                <section>
+                    <button onclick="generatePlantName();">Generate Plant Name</button>
+                    <p id="plantName"></p>
+                </section>
+                
                 <button onclick="">Suggest Exotic Plant</button>
                 <button onclick="">Calculate Plant Sale Price</button>
                 <button onclick="">Plant Care Tip</button>

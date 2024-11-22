@@ -3,14 +3,13 @@ function scriptTest() {
     alert("Hey my script is running");
 }
 
-<button onclick="scriptTest();">Test Script</button>
 
 function displayDateTime() {
     const date = new Date();
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const timeString = date.toLocaleDateString();
+    const timeString = date.toLocaleTimeString();
     const dateString = date.toLocaleDateString(undefined, options);
-    document.getElementById("currentDateTime").textContent = `Today is ${timeString} on {dateString}`;
+    document.getElementById("currentDateTime").textContent = `Today is ${timeString} on ${dateString}`;
 }
 
 window.onload = displayDateTime;
@@ -52,6 +51,13 @@ function generatePlantName() {
     ];
 
     const suffixes = [
-
+        "bloom", "root", "leaf", "shine", "spire", "whisper", "song", "thorn", "dream", "shade", "light", "branch", "blossom", "crest", "veil", "flare", "spirit", "bud", "wave", "flame", "feather"
     ];
+
+    const randomPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+    const ranfomSuffix = suffixes[Math.floor(Math.random() * suffixes.length)];
+
+    const plantName = `${randomPrefix} ${randomSuffix}`;
+    document.getElementById("plantName").textContent = `Your plant name is: ${plantName}`;
 }
+
