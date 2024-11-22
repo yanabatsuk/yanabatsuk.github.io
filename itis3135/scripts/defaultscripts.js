@@ -1,9 +1,3 @@
-// temporary script for default scripts
-function scriptTest() {
-    alert("Hey my script is running");
-}
-
-
 function displayDateTime() {
     const date = new Date();
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
