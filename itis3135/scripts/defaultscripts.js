@@ -16,8 +16,6 @@ function displayGreeting() {
     document.getElementById("greeting-message").textContent = message;
 }
 
-document.getElementById("greeting-button").addEventListener("click", displayGreeting);
-
 function showPolygonName() {
     const numSides = Math.abs(Math.round(parseFloat(document.getElementById("favorite-number").value)));
 
@@ -39,25 +37,7 @@ function showPolygonName() {
         : "Invalid number of sides! Please enter a number from 2 to 10.";
 
     document.getElementById("polygon-message").textContent = message;
-
-    /*const outputElement = document.createElement("p");
-    outputElement.id = "polygonMessage";
-
-    let message = polygons[numSides]
-        ? `The polygon with ${numSides} sides is called a ${polygons[numSides]}.`
-        : "Invalid number of sides! Please enter a number from 2 to 10.";
-
-    const existingMessage = document.getElementById("polygonMessage");
-    if (existingMessage) {
-        existingMessage.textContent = message;
-    } else {
-        outputElement.textContent = message;
-        document.querySelector("section").appendChild(outputElement);
-    }
-    */
 }
-
-document.getElementById("polygon-button").addEventListener("click", showPolygonName);
 
 function generatePlantName() {
     const prefixes = [
@@ -75,4 +55,85 @@ function generatePlantName() {
     document.getElementById("plant-name").textContent = `Your plant name is: ${plantName}`;
 }
 
+function suggestExoticPlant() {
+    const exoticPlants = [
+        "Monstera Deliciosa 'Thai Constellation'",
+        "Alocasia Frydrek Variegata",
+        "Philodendron Tortum",
+        "Hoya 'Mathilde Splash'",
+        "Philodendron Florida Beauty",
+        "Syngonium Podophyllum Albo",
+        "Hoya Carnosa Compacta",
+        "Monstera Adansonii Mint",
+        "Alocasia 'Silver Dragon",
+        "Philodendron Gloriosum",
+        "Hoya Linearis",
+        "Philodendron 'Rio",
+        "Scindapsus Pictus 'Silvery Ann",
+        "Alocasia 'Silver Dragon'",
+        "Monstera Standleyana",
+        "Raven ZZ Plant"
+    ]
+
+    const randomPlant = exoticPlants[Math.floor(Math.random() * exoticPlants.length)];
+    document.getElementById("suggested-plant").textContent = `If you're looking for an exotic plant, get a ${randomPlant}`;
+}
+
+function calculateSalePrice() {
+    const basePrice = parseFloat(document.getElementById("plant-price").value);
+
+    if (isNaN(basePrice) || basePrice <= 0) {
+        document.getElementById("sale-price-message").textContent = "Please enter a valid base price.";
+    }
+
+    const markupPercentage = 25;
+    const salePrice = (basePrice * (1 + markupPerentage / 100)).toFixed(2);
+
+    document.getElementById("sale-price-message").textContent = `Sale price is $${salePrice}`;
+}
+
+function plantCareTip() {
+    const careTips = [
+        "Place your plants in indirect sunlight for optimal growth.",
+        "Avoid overwatering, let the soil dry out almost completely between waterings.",
+        "Clean the leaves of your plants to maximize photosynthesis.",
+        "Repot your plants every 1-2 years to refresh the soil.",
+        "Use fertilizer during the growing season for better growth.",
+        "Water deeply but infrequently to encourage strong root growth.",
+        "Group plants together to naturally increase humidity.",
+        "Inspect your plants regularly for pests like spider mites, aphids, and mealybugs.",
+        "Keep tropical plants away from cold drafts or heat vents during winter.",
+        "Trim yellow or dead leaves to redirect energy to healthy growth."
+    ]
+
+    const randomTip = careTips[Math.floor(Math.random() * careTips.length)];
+    document.getElementById("plant-care-tip").textContent = `Plant Care Tip: ${randomTip}`;
+}
+
+function plantFact() {
+    const plantFacts = [
+        "While most houseplants are harmless, carnivorous sundews have sticky tentacles that trap insects like flies and gnats, making them a natural pest control option for your home.",
+        "Plants can communicate with each other using chemical signals.",
+        "Studies show that being around plants can reduce stress and boost productivity and creativity.",
+        "Many plants appear dead in winter but are simply in a dormant phase, ready to regrow in spring.",
+        "Bamboo is the fastest-growing plant in the world, capable of growing up to 35 inches in a day.",
+        "The Venus flytrap is one of the few plants capable of rapid movement.",
+        "The snake plant (Sansevieria) is one of the few houseplants that release oxygen at night, making it a great choice for bedrooms.",
+        "Houseplants like philodendrons and ficus originate from tropical rainforests around the world.",
+        "The money tree (Pachira aquatica) is believed to bring good luck and prosperity in feng shui.'There are over 390,000 different species of plants on Earth.'",
+        "The camouflage plant (Calathea) folds its leaves upward at night, resembling praying hands.",
+        "The Monstera deliciosa produces edible fruit in its native habitat, tasting like a mix of banana and pineapple.",
+        "Many houseplants, like peace lilies and snake plants, help improve indoor air quality by removing toxins such as benzene and formaldehyde.",
+        "Some houseplants, like pothos, grow toward light sources in a phenomenon called phototropism.",
+        "Spider plants produce “babies” or offshoots, which you can easily propagate into new plants.",
+        "ZZ plants (Zamioculcas zamiifolia) can thrive in low light and survive neglect, making them ideal for beginners."
+    ]
+}
+
+document.getElementById("greeting-button").addEventListener("click", displayGreeting);
+document.getElementById("polygon-button").addEventListener("click", showPolygonName);
 document.getElementById("generate-plant-button").addEventListener("click", generatePlantName);
+document.getElementById("suggest-plant-button").addEventListener("click", suggestExoticPlant);
+document.getElementById("calculate-price-button").addEventListener("click", calculateSalePrice);
+document.getElementById("plant-care-tip-button").addEventListener("click", plantCareTip);
+document.getElementById("plant-fact-button").addEventListener("click", plantFact);
