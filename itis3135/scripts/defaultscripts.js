@@ -71,7 +71,7 @@ function generatePlantName() {
     const randomPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];
     const randomSuffix = suffixes[Math.floor(Math.random() * suffixes.length)];
 
-    const plantName = `${randomPrefix} ${randomSuffix}`;
+    const plantName = `${randomPrefix}${randomSuffix}`;
     document.getElementById("plant-name").textContent = `Your plant name is: ${plantName}`;
 }
 
