@@ -73,7 +73,7 @@ function suggestExoticPlant() {
         "Alocasia 'Silver Dragon'",
         "Monstera Standleyana",
         "Raven ZZ Plant"
-    ]
+    ];
 
     const randomPlant = exoticPlants[Math.floor(Math.random() * exoticPlants.length)];
     document.getElementById("suggested-plant").textContent = `If you're looking for an exotic plant, get a ${randomPlant}`;
@@ -104,7 +104,7 @@ function plantCareTip() {
         "Inspect your plants regularly for pests like spider mites, aphids, and mealybugs.",
         "Keep tropical plants away from cold drafts or heat vents during winter.",
         "Trim yellow or dead leaves to redirect energy to healthy growth."
-    ]
+    ];
 
     const randomTip = careTips[Math.floor(Math.random() * careTips.length)];
     document.getElementById("plant-care-tip").textContent = `Plant Care Tip: ${randomTip}`;
