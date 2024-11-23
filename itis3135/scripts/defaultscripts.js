@@ -76,7 +76,7 @@ function suggestExoticPlant() {
     ];
 
     const randomPlant = exoticPlants[Math.floor(Math.random() * exoticPlants.length)];
-    document.getElementById("suggested-plant").textContent = `If you're looking for an exotic plant, get a ${randomPlant}`;
+    document.getElementById("suggested-plant").textContent = `If you're looking to add a new unique plant, get a ${randomPlant}`;
 }
 
 function calculateSalePrice() {
