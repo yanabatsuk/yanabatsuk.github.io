@@ -127,7 +127,10 @@ function plantFact() {
         "Some houseplants, like pothos, grow toward light sources in a phenomenon called phototropism.",
         "Spider plants produce “babies” or offshoots, which you can easily propagate into new plants.",
         "ZZ plants (Zamioculcas zamiifolia) can thrive in low light and survive neglect, making them ideal for beginners."
-    ]
+    ];
+
+    const randomFact = plantFacts[Math.floor(Math.random() * plantFacts.length)];
+    document.getElementById("plant-fact").textContent = `Fun Fact: ${randomFact}`;
 }
 
 document.getElementById("greeting-button").addEventListener("click", displayGreeting);
