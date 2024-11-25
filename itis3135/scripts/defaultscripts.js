@@ -6,6 +6,7 @@ function displayDateTime() {
     document.getElementById("current-date-time").textContent = `Today is ${dateString}, the time is ${timeString}`;
 }
 
+displayDateTime();
 
 function displayGreeting() {
     const userName = document.getElementById("user-name").value;
