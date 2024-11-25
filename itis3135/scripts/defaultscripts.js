@@ -81,13 +81,18 @@ function suggestExoticPlant() {
 
 function calculateSalePrice() {
     const basePrice = parseFloat(document.getElementById("plant-price").value);
+    const salePercentage = parseFloat(document.getElementById("sale-percentage").value);
 
     if (isNaN(basePrice) || basePrice <= 0) {
         document.getElementById("sale-price-message").textContent = "Please enter a valid base price.";
+        return;
     }
-
-    const markupPercentage = 25;
-    const salePrice = (basePrice * (1 + markupPerentage / 100)).toFixed(2);
+    if (isNaN(salePercentage) || salePercentage < 0) {
+        document.getElementById("sale-price-message").textContent = "Please enter a valid sale percentage.";
+        return;
+    }
+    
+    const salePrice = (basePrice * (1 - salePercentage / 100)).toFixed(2);
 
     document.getElementById("sale-price-message").textContent = `Sale price is $${salePrice}`;
 }
