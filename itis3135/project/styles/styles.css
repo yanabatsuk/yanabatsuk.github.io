@@ -467,3 +467,80 @@ li span {
 .gallery-p {
     padding-bottom: 55px;
 }
+
+
+
+/* General mobile-first design adjustments */
+body {
+    font-size: 16px; /* Base font size for scaling */
+}
+
+/* Adjustments for smaller devices */
+@media screen and (max-width: 768px) {
+    
+    nav a {
+        font-size: 1.1em; /* Adjust navigation text size */
+        margin: 0 10px; /* Reduce spacing */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        padding: 10px;
+    }
+
+    .about-image, .about-text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        width: 90%; /* Cards take full width with some margin */
+        margin: 10px auto;
+    }
+
+    #slideshow {
+        height: 250px; /* Reduce slideshow height */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button size */
+        padding: 8px 15px;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        max-width: 90%; /* Slightly reduced width */
+    }
+
+    .card {
+        width: 40%; /* Two cards fit in a row */
+    }
+
+    .carousel-prev, .carousel-next {
+        font-size: 1.5rem; /* Adjust button size */
+        padding: 8px;
+    }
+}
+
+/* Desktop adjustments */
+@media screen and (min-width: 1025px) {
+
+    .carousel {
+        max-width: 90%;
+    }
+
+    .card {
+        width: 30%; /* Allow multiple cards to fit */
+    }
+
+    nav a {
+        margin: 0 20px; /* Widen space between links */
+    }
+}
