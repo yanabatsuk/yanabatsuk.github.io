@@ -112,6 +112,11 @@ p a:hover {
     text-align: left;
 }
 
+.about-links {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .btn-container {
     display: flex;
     justify-content: center; 
