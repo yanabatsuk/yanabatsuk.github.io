@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'images/all-in-package.jpeg',
         'images/base-package.jpeg',
         'images/say-yes-package.jpeg',
-        'images/single-portrait.jpeg',
+        'images/single-portrait.jpeg'
     ];
 
     const cards = document.querySelectorAll('.card');
