@@ -390,6 +390,8 @@ textarea {
 
 span {
     font-weight: bold;
+    padding-top: 2.5px;
+    padding-bottom: 1.5px;
 }
 
 #slideshow {
