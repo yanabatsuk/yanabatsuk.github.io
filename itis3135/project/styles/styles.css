@@ -3,6 +3,49 @@ html {
     color: #463D35;
 }
 
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2 rem;
+}
+
+nav {
+    background: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+.main {
+    padding: 20px;
+    background: #f4f4f4;
+    min-height: calc(100vh - 140px);
+}
 
 #contact-info {
     background: #f9f9f9;
