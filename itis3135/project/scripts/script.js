@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const clientPhone = "1+ (***) ***-****";
 
     // Insert into footer or contact section
+    /** 
     const footerElement = document.querySelector("footer");
+    */
     const contactSection = document.querySelector("#contact-info");
 
     if (footerElement) {
