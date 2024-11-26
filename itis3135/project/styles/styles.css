@@ -121,28 +121,28 @@ p a:hover {
     font-weight: 200;
 }
 
-/* Push the about-fix-bottom section to the bottom */
+
 .about-fix-bottom {
-    margin-top: auto;            /* This will push the section to the bottom of the container */
-    padding: 20px 0;             /* Add some padding */
-    background-color: F7F5F3;    /* Optional: Background color */
+    margin-top: auto;       
+    padding: 20px 0;        
+    background-color: #F7F5F3;    
 }
 
-/* Flex container for the buttons inside about-fix-bottom */
+
 .about-fix-bottom .btn-container {
     display: flex;
-    justify-content: center;  /* Center the buttons horizontally */
-    gap: 15px;                /* Space between buttons */
+    justify-content: center; 
+    gap: 15px;               
 }
 
-/* Styling for the buttons */
+
 .about-fix-bottom .btn-contact {
-    margin: 0;                 /* Remove extra margins from the buttons */
+    margin: 0;       
 }
 
-/* Optional: Adjust the bottom margin of the .main section to give space for the fixed bottom section */
+
 .main {
-    padding-bottom: 35px; /* This ensures that the bottom section doesn't overlap the content */
+    padding-bottom: 35px; 
 }
 
 .btn-container {
@@ -170,7 +170,7 @@ p a:hover {
 .btn-contact:hover {
     border-color: #5F4549
 }
-
+/*end of about and browsing buttons*/
 
 
 footer {
@@ -214,17 +214,67 @@ h2 {
     font-size: 2.5rem;
 }
 
+
+/* Packages.html styling */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* Hide anything that goes outside the container */
+}
+
+/* Inner container holding all the cards */
+.carousel-inner {
+    display: flex; /* Flexbox to arrange the cards horizontally */
+    transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+}
+
+
 .card {
+    flex: 0 0 auto; /* Prevent the cards from shrinking */
+    width: 300px; /* Set the width of each card */
+    margin: 0 15px;
     border: 1px solid #ccc;
     padding: 15px;
-    margin: 10px;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.8); 
+    background: rgba(255, 255, 255, 0.8);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     height: 250px;
     box-sizing: border-box;
 }
+
+/* Carousel Navigation Buttons */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* END OF PACKAGES.HTML Styling */
+
 
 h3 {
     text-align: center;
