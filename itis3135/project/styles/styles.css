@@ -125,7 +125,7 @@ p a:hover {
 .about-fix-bottom {
     margin-top: auto;            /* This will push the section to the bottom of the container */
     padding: 20px 0;             /* Add some padding */
-    background-color: rgba(255, 255, 255, 0.8);   /* Optional: Background color */
+    background-color: F7F5F3;   /* Optional: Background color */
 }
 
 /* Flex container for the buttons inside about-fix-bottom */
