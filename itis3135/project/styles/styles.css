@@ -54,14 +54,14 @@ footer {
 footer a {
     color: #F8F4F2;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 px;
     padding: 0;
     display: inline-block;
 }
 
 footer a:hover {
     background: rgba(59, 43, 47, 0.8);
-    border-radius: 5px;
+    border-radius: 3px;
     color: #FDDCC3;
 }
 
