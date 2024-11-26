@@ -387,6 +387,10 @@ textarea {
     font-size: 1.13em;
 }
 
+span {
+    font-weight: bold;
+}
+
 #slideshow {
     position: relative;
     width: 100%;
