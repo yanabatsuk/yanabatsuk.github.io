@@ -271,7 +271,7 @@ h2 {
 .card p {
     font-weight: 300;
     text-indent: 3px;
-    word-spacing: 3.1px;
+    word-spacing: 3px;
     font-size: 1.1rem;        /* Adjust text size for better readability */
     color: #181611;            /* Light dark color for the description */
     margin: 10px 0;         /* Space between the description and other elements */
