@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         footerElement.innerHTML += `<p>Contact: ${clientName} | ${clientEmail} | ${clientPhone}</p>`;
     }
 
+    // contact info grabber
     if (contactSection) {
         contactSection.innerHTML += `
         <p><strong>${clientName}</strong><br>${clientCompany}<br>
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Phone: ${clientPhone}</p>`;
     }
 
+    // background images for cards, on packages page
     const backgroundImages = [
         'images/background1.jpg',
         'images/background2.jpg',
@@ -38,10 +40,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // contact button
     const contactBtn = document.querySelector('#contact-button');
     if (contactBtn) {
         contactBtn.addEventListener('click', () => {
             window.location.href = 'contact.html';
         });
     }
+
+
+    // slideshow
+    const slides = document.querySelectorAll('#slideshow.slide');
+    let currentIndex = 0;
+
+    function showNextSlide () {
+        slides[currentIndex].style.opacity = 0;
+
+        currentIndex = (currentIndex + 1) % slides.length;
+
+        slides[currentIndex].style.opacity = 1;
+    }
+
+    setInterval(showNextSlide, 3000);
 });
