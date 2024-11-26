@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardData = [
         {
             title: "Wedding Gallery",
-            image: "images/wedding.jpg", // Replace with your image path
+            image: "images/wedding-button.jpg", // Replace with your image path
             link: "https://example.com/wedding"
         },
         {
