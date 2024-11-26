@@ -448,8 +448,10 @@ li span {
     justify-content: center;
     width: 250px;
     height: 100px;
-    background: rgba(255, 255, 255, 0.9);
-    color: #231F1A;
+    background-size: cover; /* Ensures the image covers the button */
+    background-position: center; /* Centers the image */
+    color: white; /* Makes the text stand out */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds a shadow for better text readability */
     text-decoration: none;
     font-family: 'Cinzel', serif;
     font-size: 1.5rem;
@@ -457,30 +459,21 @@ li span {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, background-color 0.3s;
     position: relative;
+    overflow: hidden; /* Ensures the background image stays within the button bounds */
 }
 
 .gallery-card:hover {
-    background: #FDDCC3;
     transform: scale(1.05);
 }
 
-.gallery-card .wedding-card {
-    background-image: url('images/wedding-button.jpeg'); /* Add your thumbnail images */
-    background-size: cover;
-    background-position: center;
-    color: white;
+.gallery-card.wedding-card {
+    background-image: url('images/wedding-button.jpeg'); /* Replace with actual image path */
 }
 
-.gallery-card .engagement-card {
-    background-image: url('images/engagement-thumbnail.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+.gallery-card.engagement-card {
+    background-image: url('images/engagement-button.jpeg'); /* Replace with actual image path */
 }
 
-.gallery-card .portrait-card {
-    background-image: url('images/portrait-thumbnail.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+.gallery-card.portrait-card {
+    background-image: url('images/portrait-button.jpeg'); /* Replace with actual image path */
 }
