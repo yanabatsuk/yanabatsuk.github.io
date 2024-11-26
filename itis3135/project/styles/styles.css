@@ -44,7 +44,7 @@ nav a:hover {
 
 
 p a {
-    color: #917F50;
+    color: #766741;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -52,7 +52,7 @@ p a {
 }
 
 p a:hover {
-    background: #E7E0DA;
+    background: #29514A;
     border-radius: 3px;
     color: #3B362B;
 }
