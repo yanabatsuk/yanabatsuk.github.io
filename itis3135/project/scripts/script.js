@@ -5,18 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const clientEmail = "ethanorange@gmail";
     const clientPhone = "1+ (***) ***-****";
 
-    // Insert into footer or contact section
-    /** 
-    const footerElement = document.querySelector("footer");
-    
-    const contactSection = document.querySelector("#contact-info");
-
-    if (footerElement) {
-        footerElement.innerHTML += `<p>Contact: ${clientName} | ${clientEmail} | ${clientPhone}</p>`;
-    }
-
-    **/
-
     // contact info grabber
     if (contactSection) {
         contactSection.innerHTML += `
