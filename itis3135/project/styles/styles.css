@@ -418,11 +418,48 @@ li span {
     opacity: 1;
 }
 
-
+/* General styling for gallery buttons */
 .gallery-cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    padding: 20px;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.gallery-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    font-family: 'Prata', 'Times New Roman', serif;
+    color: #F8F4F2;
+    text-decoration: none;
+    background: #5F4549;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+}
+
+.gallery-btn:hover {
+    background: #322428;
+    border-color: #FDDCC3;
+    color: #FDDCC3;
+}
+
+/* Optional: Add unique styles per gallery button */
+.wedding-btn {
+    background: #8A6D65;
+}
+
+.engagement-btn {
+    background: #74544B;
+}
+
+.portrait-btn {
+    background: #5F4549;
+}
+
+.wedding-btn:hover, .engagement-btn:hover, .portrait-btn:hover {
+    background: #322428;
+    color: #FDDCC3;
 }
