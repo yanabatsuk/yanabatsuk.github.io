@@ -19,4 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
         Email: <a href="mailto:${clientEmail}">${clientEmail}</a><br>
         Phone: ${clientPhone}</p>`;
     }
+
+    const backgroundImages = [
+        'images/background1.jpg',
+        'images/background2.jpg',
+        'images/background3.jpg',
+        'images/background4.jpg',
+        'images/background5.jpg',
+    ];
+
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach((card, index) => {
+        if (backgroundImages[index]) {
+            card.style.backgroundImage = `url(${backgroundImages[index]})`;
+            card.style.backgroundSize = 'cover';
+            card.style.backgroundPosition = 'center';
+        }
+    })
 })
