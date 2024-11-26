@@ -146,30 +146,6 @@ p a:hover {
 }
 
 
-.about-fix-bottom {
-    position: fixed;
-    bottom: 0;   
-    width: 100%;  
-    background-color: #E7E0DA; 
-    padding: 20px 0;  
-    z-index: 10;  
-}
-
-
-.about-fix-bottom .btn-container {
-    display: flex;
-    justify-content: center; 
-    gap: 15px;
-}
-
-.about-fix-bottom .btn-contact {
-    margin: 0; 
-}
-
-.main {
-    padding-bottom: 80px; /* Make sure the content above leaves space for the fixed section */
-}
-
 footer {
     background: #3B2B2F;
     color: #F8F4F2;
