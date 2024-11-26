@@ -465,7 +465,7 @@ li span {
 }
 
 .gallery-card.wedding-card {
-    background-image: url('images/wedding-thumbnail.jpg'); /* Add your thumbnail images */
+    background-image: url('images/wedding-button.jpeg'); /* Add your thumbnail images */
     background-size: cover;
     background-position: center;
     color: white;
