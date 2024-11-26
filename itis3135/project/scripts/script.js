@@ -62,18 +62,32 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(showNextSlide, 3750);
 
 
-    // **Carousel Navigation**
+    // **Carousel Navigation with Infinite Loop**
     const carousel = document.querySelector('.carousel-inner');
     const prevButton = document.querySelector('.carousel-prev');
     const nextButton = document.querySelector('.carousel-next');
-    const totalCards = document.querySelectorAll('.card').length; // total number of cards
+    let totalCards = document.querySelectorAll('.card').length; // total number of cards
+    let currentIndex = 0; // start at the first card
+
+    // Clone the first and last cards to create infinite loop
+    const firstCard = document.querySelector('.carousel-inner .card:first-child');
+    const lastCard = document.querySelector('.carousel-inner .card:last-child');
     
-    currentIndex = 0; // start at the first card
+    const cloneFirstCard = firstCard.cloneNode(true);
+    const cloneLastCard = lastCard.cloneNode(true);
+
+    // Append cloned cards to make the carousel infinite
+    carousel.appendChild(cloneFirstCard);  // Clone the first card and append it to the end
+    carousel.insertBefore(cloneLastCard, firstCard);  // Clone the last card and prepend it to the start
+
+    // Update totalCards because we now have extra cloned cards
+    totalCards = totalCards + 2; // Plus two because of the clones
 
     // Function to update carousel position
     function updateCarousel() {
         const cardWidth = document.querySelector('.card').offsetWidth + 30; // 30px is the margin between cards
-        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`; // move carousel to current index
+        carousel.style.transition = "transform 0.3s ease"; // smooth transition
+        carousel.style.transform = `translateX(-${(currentIndex + 1) * cardWidth}px)`; // move carousel to current index
     }
 
     // Show next card (go right)
@@ -81,7 +95,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (currentIndex < totalCards - 1) {
             currentIndex++;
         } else {
-            currentIndex = 0; // Loop back to the first card
+            currentIndex = 1; // Jump to the first "real" card after the last one
+            setTimeout(() => {
+                carousel.style.transition = "none"; // Disable transition for instant jump
+                updateCarousel();
+            }, 300);  // Allow time for the last transition to complete
         }
         updateCarousel();
     });
@@ -91,7 +109,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (currentIndex > 0) {
             currentIndex--;
         } else {
-            currentIndex = totalCards - 1; // Loop back to the last card
+            currentIndex = totalCards - 2; // Jump to the last "real" card before the cloned last card
+            setTimeout(() => {
+                carousel.style.transition = "none"; // Disable transition for instant jump
+                updateCarousel();
+            }, 300);  // Allow time for the last transition to complete
         }
         updateCarousel();
     });
