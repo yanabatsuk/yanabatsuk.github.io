@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // contact info grabber
     const contactSection = document.querySelector("#contact-info");
-    
+
     if (contactSection) {
         contactSection.innerHTML += `
         <p><strong>${clientName}</strong><br>${clientCompany}<br>
@@ -59,6 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     
-    setInterval(showNextSlide, 3000);
+    setInterval(showNextSlide, 4500);
 
 });
