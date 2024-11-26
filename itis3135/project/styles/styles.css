@@ -142,7 +142,7 @@ p a:hover {
 
 /* Optional: Adjust the bottom margin of the .main section to give space for the fixed bottom section */
 .main {
-    padding-bottom: 55px; /* This ensures that the bottom section doesn't overlap the content */
+    padding-bottom: 35px; /* This ensures that the bottom section doesn't overlap the content */
 }
 
 .btn-container {
