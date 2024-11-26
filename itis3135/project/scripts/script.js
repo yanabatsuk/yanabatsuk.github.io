@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // background images for cards, on packages page
     const backgroundImages = [
         'images/all-in-package.jpeg',
-        'images/base-package1.jpeg',
+        'images/base-package.jpeg',
         'images/half-day-package.jpeg',
         'images/background4.jpg',
         'images/background5.jpg'
