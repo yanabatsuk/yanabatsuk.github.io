@@ -120,7 +120,7 @@ p a:hover {
 
 .about-links {
     font-family: 'Cinzel';
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     padding-top: 75px;
     font-weight: 200;
 }
@@ -165,7 +165,7 @@ p a:hover {
     text-decoration: none;
     border: 2px solid transparent; 
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.35rem;
     font-family: 'Prata', 'Times New Roman', serif;
     transition: background 0.3s ease, border-color 0.3s ease;
 }
