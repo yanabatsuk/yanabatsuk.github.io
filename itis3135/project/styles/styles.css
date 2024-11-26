@@ -257,7 +257,7 @@ h2 {
     margin-bottom: 15px;    /* Space between the image and text */
 }
 
-.card h3 {
+.card-h3 {
     font-size: 1.5rem;      /* Larger title size */
     color: #231F1A;         /* Dark color for the title */
     margin: 10px 0;         /* Margin above and below the title */
