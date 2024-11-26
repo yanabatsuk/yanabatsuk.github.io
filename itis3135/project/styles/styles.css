@@ -292,6 +292,7 @@ textarea {
 }
 
 #slideshow {
+    padding-top: 25px;
     position: relative;
     width: 100%;
     max-width: 800px;
