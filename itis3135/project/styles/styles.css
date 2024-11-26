@@ -2,3 +2,12 @@ html {
     background-color: #E7E0DA;
     color: #463D35;
 }
+
+
+#contact-info {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+}
