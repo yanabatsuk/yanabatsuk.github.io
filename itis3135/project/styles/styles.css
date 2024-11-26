@@ -118,7 +118,7 @@ p a:hover {
     margin-top: 20px;
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.8);
-    color: #5F4549;
+    color: #322428;
     text-decoration: none;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -128,7 +128,7 @@ p a:hover {
 }
 
 .btn-contact:hover {
-    border-color: #322428;
+    border-color: #5F4549
 }
 
 
