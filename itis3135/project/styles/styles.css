@@ -68,13 +68,15 @@ p a:hover {
 }
 
 .about-container {
-    display: block;
+    display: flex;               
+    flex-direction: column;    
     max-width: 1200px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    height: 100%;  
 }
 
 .about-image {
@@ -117,6 +119,30 @@ p a:hover {
     font-size: 1.5rem;
     padding-top: 75px;
     font-weight: 200;
+}
+
+/* Push the about-fix-bottom section to the bottom */
+.about-fix-bottom {
+    margin-top: auto;            /* This will push the section to the bottom of the container */
+    padding: 20px 0;             /* Add some padding */
+    background-color: #E7E0DA;   /* Optional: Background color */
+}
+
+/* Flex container for the buttons inside about-fix-bottom */
+.about-fix-bottom .btn-container {
+    display: flex;
+    justify-content: center;  /* Center the buttons horizontally */
+    gap: 15px;                /* Space between buttons */
+}
+
+/* Styling for the buttons */
+.about-fix-bottom .btn-contact {
+    margin: 0;                 /* Remove extra margins from the buttons */
+}
+
+/* Optional: Adjust the bottom margin of the .main section to give space for the fixed bottom section */
+.main {
+    padding-bottom: 80px; /* This ensures that the bottom section doesn't overlap the content */
 }
 
 .btn-container {
