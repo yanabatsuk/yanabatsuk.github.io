@@ -22,6 +22,9 @@ h1 {
     font-size: 3rem;
 }
 
+p {
+    font-size: 1.35em;
+}
 nav {
     background: #3B2B2F;
     text-align: center;
@@ -112,6 +115,7 @@ p a:hover {
     margin-bottom: 15px;
     line-height: 1.8;
     text-align: left;
+    font-size: 1.35em;
 }
 
 .about-links {
@@ -257,7 +261,7 @@ h2 {
 
 .card-h3 {
     text-align: center;
-    font-size: 1.5rem;      /* Larger title size */
+    font-size: 1.7rem;      /* Larger title size */
     color: #231F1A;         /* Dark color for the title */
     margin: 10px 0;         /* Margin above and below the title */
     font-family: 'Cinzel', serif; /* Give it a bit more elegance */
@@ -267,7 +271,7 @@ h2 {
     font-weight: 300;
     text-indent: 3px;
     word-spacing: 3.1px;
-    font-size: 1rem;        /* Adjust text size for better readability */
+    font-size: 1.3rem;        /* Adjust text size for better readability */
     color: #181611;            /* Light dark color for the description */
     margin: 10px 0;         /* Space between the description and other elements */
     text-align: left;       /* Align text to the left */
