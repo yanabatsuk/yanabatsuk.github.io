@@ -80,10 +80,9 @@ p a:hover {
 }
 
 .about-image {
-    float: left;
-    width: 40%; 
-    padding: 20px;
-    margin-right: 20px;
+    float: left;           /* Floats the image to the left */
+    width: 40%;            /* Adjust the width of the image */
+    margin-right: 20px;    /* Adds space between the image and the text */
     box-sizing: border-box;
 }
 
@@ -95,9 +94,10 @@ p a:hover {
 }
 
 .about-text {
-    overflow: hidden;
     padding: 20px;
     color: #231F1A;
+    overflow: hidden;      /* Ensures the container doesn't collapse around the floated image */
+    clear: both;           /* Clears the float from the image, making sure text doesn't wrap beneath it */
 }
 
 .about-h3 {
@@ -125,7 +125,7 @@ p a:hover {
 .about-fix-bottom {
     margin-top: auto;            /* This will push the section to the bottom of the container */
     padding: 20px 0;             /* Add some padding */
-    background-color: F7F5F3;   /* Optional: Background color */
+    background-color: F7F5F3;    /* Optional: Background color */
 }
 
 /* Flex container for the buttons inside about-fix-bottom */
