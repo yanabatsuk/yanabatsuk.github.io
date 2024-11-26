@@ -63,6 +63,10 @@ p a:hover {
     background: #E7E0DA;
 }
 
+.about-main .about-container .about-p {
+    text-align: left;
+}
+
 .about-container {
     display: block;
     max-width: 1200px;
@@ -105,7 +109,7 @@ p a:hover {
     font-family: 'Prata', 'Times New Roman', serif;
     margin-bottom: 15px;
     line-height: 1.8;
-    text-align: left !important;
+    text-align: left;
 }
 
 
