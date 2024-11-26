@@ -23,9 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const backgroundImages = [
         'images/all-in-package.jpeg',
         'images/base-package.jpeg',
-        'images/half-day-package.jpeg',
-        'images/background4.jpg',
-        'images/background5.jpg'
+        'images/say-yes-package.jpeg',
+        'images/single-portrait.jpeg',
     ];
 
     const cards = document.querySelectorAll('.card');
