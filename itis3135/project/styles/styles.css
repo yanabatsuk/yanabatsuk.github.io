@@ -418,63 +418,46 @@ li span {
     opacity: 1;
 }
 
-/* Step ladder layout for gallery buttons */
 .gallery-cards {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to start for the offset effect */
-    gap: 20px; /* Space between buttons */
-    margin: 20px auto; /* Center the section vertically and horizontally */
-    max-width: 600px; /* Limit the section width */
-    position: relative;
+    justify-content: space-between;  /* Distribute buttons evenly across the page */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .gallery-btn {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 10px 20px;
+    background: #FDDCC3;
+    color: #231F1A;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
     font-size: 1.25rem;
     font-family: 'Prata', 'Times New Roman', serif;
-    color: #F8F4F2;
-    text-decoration: none;
-    background: #5F4549;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease;
     text-align: center;
-    position: relative;
+    flex: 0 1 auto; /* Allow buttons to grow or shrink, but not grow indefinitely */
+    text-align: center;
+    width: 200px; /* Set a fixed width for each button */
 }
-
-.gallery-btn:nth-child(1) {
-    margin-left: 0; /* First button starts at the base position */
-}
-.gallery-btn:nth-child(2) {
-    margin-left: 60px; /* Wider offset for the second button */
-}
-.gallery-btn:nth-child(3) {
-    margin-left: 120px; /* Even wider offset for the third button */
-}
-
 
 .gallery-btn:hover {
     background: #322428;
-    border-color: #FDDCC3;
-    color: #FDDCC3;
+    border-color: #5F4549;
+    color: #F8F4F2;
 }
 
-/* Optional: Add unique styles per gallery button */
-.wedding-btn {
-    background: #8A6D65;
+.gallery-btn:nth-child(1) {
+    margin-left: 0;  /* Align the first button to the left */
 }
 
-.engagement-btn {
-    background: #74544B;
+.gallery-btn:nth-child(2) {
+    margin-left: auto;  /* Push the second button to the center */
+    margin-right: auto; /* Make sure it stays centered */
 }
 
-.portrait-btn {
-    background: #5F4549;
-}
-
-.wedding-btn:hover, .engagement-btn:hover, .portrait-btn:hover {
-    background: #322428;
-    color: #FDDCC3;
+.gallery-btn:nth-child(3) {
+    margin-left: auto;  /* Push the third button to the far right */
 }
