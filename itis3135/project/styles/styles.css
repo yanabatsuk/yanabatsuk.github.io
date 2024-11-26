@@ -293,7 +293,7 @@ textarea {
 
 .home-p {
     padding-bottom: 25px;
-    gap: 7px;
+    line-height: 1.1;
 }
 
 #slideshow {
