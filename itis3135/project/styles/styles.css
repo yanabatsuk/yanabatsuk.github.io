@@ -233,18 +233,44 @@ h2 {
 
 
 .card {
-    flex: 0 0 auto; /* Prevent the cards from shrinking */
-    width: 350px; /* Increase the width of each card */
-    height: 350px; /* Increase the height of each card */
-    margin: 0 15px;
-    border: 1px solid #ccc;
-    padding: 20px; /* Add more padding for better content spacing */
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;         /* Prevent shrinking of the card */
+    width: 450px;           /* Increase the width for a more rectangular shape */
+    height: 600px;          /* Increase the height to make it longer */
+    margin: 0 20px;         /* Increase the margin between cards */
+    padding: 30px;          /* More padding for spacing around content */
+    border: 1px solid #ccc; /* Light border for definition */
+    border-radius: 10px;    /* Slightly rounded corners for a soft effect */
+    background: rgba(255, 255, 255, 0.8); /* Subtle background color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: relative;
     box-sizing: border-box;
+    overflow: hidden;       /* Make sure content stays within the bounds */
+    text-align: center;     /* Center-align content */
 }
+
+.card img {
+    width: 80%;             /* Make the image a bit smaller than the card width */
+    height: auto;
+    max-height: 300px;      /* Limit the image height for better spacing */
+    object-fit: cover;      /* Ensure the image covers the area without distortion */
+    border-radius: 8px;     /* Optional: round the corners of the image */
+    margin-bottom: 15px;    /* Space between the image and text */
+}
+
+.card h3 {
+    font-size: 1.5rem;      /* Larger title size */
+    color: #231F1A;         /* Dark color for the title */
+    margin: 10px 0;         /* Margin above and below the title */
+    font-family: 'Cinzel', serif; /* Give it a bit more elegance */
+}
+
+.card p {
+    font-size: 1rem;        /* Adjust text size for better readability */
+    color: #555;            /* Light dark color for the description */
+    margin: 10px 0;         /* Space between the description and other elements */
+    text-align: left;       /* Align text to the left */
+}
+
 
 /* Carousel Navigation Buttons */
 .carousel-prev, .carousel-next {
