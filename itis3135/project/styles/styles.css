@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #3B2B2F;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -23,7 +23,7 @@ header h1 {
 }
 
 nav {
-    background: #444;
+    background: #3B2B2F;
     text-align: center;
     padding: 10px 0;
 }
