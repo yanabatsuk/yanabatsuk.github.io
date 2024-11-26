@@ -42,6 +42,22 @@ nav a:hover {
     color: #FDDCC3;
 }
 
+
+p a {
+    color: #F8F4F2;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+p a:hover {
+    background: rgba(59, 43, 47, 0.8);
+    border-radius: 3px;
+    color: #FDDCC3;
+}
+
+
 footer {
     background: #3B2B2F;
     color: #F8F4F2;
