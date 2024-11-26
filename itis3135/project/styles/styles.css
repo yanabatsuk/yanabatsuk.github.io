@@ -446,7 +446,7 @@ li span {
     color: #FDDCC3;
 }
 
-/* Optional: Add unique styles per gallery button */
+
 .wedding-btn {
     background: #8A6D65;
 }
@@ -462,4 +462,8 @@ li span {
 .wedding-btn:hover, .engagement-btn:hover, .portrait-btn:hover {
     background: #322428;
     color: #FDDCC3;
+}
+
+.gallery-p {
+    padding-bottom: 25px;
 }
