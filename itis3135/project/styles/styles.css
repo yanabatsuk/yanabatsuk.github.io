@@ -79,7 +79,7 @@ h2 {
     color: #231F1A;
     text-align: center;
     margin-top: 0;
-    font-family: 'Cinzel', 'Times New Roman', 'serif';
+    font-family: 'Cinzel', 'Times New Roman', serif;
 }
 
 .card {
@@ -130,4 +130,8 @@ h3 {
 
 #slideshow .slide:first-child {
     opacity: 1;
+}
+
+label{
+    font-family: 'Cinzel', 'Times New Roman', serif;
 }
