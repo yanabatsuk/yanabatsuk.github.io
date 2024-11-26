@@ -93,22 +93,20 @@ p a:hover {
     color: #231F1A;
 }
 
-.about-text h2, .about-text h3 {
+#about-h3 {
     font-family: 'Cinzel', 'Times New Roman', serif;
     color: #322428;
+    margin-top: 20px;
+    font-size: 1.5rem;
 }
 
-.about-text p {
+#about-p {
     font-family: 'Prata', 'Times New Roman', serif;
     margin-bottom: 15px;
     line-height: 1.8;
     text-align: left;
 }
 
-.about-text h3 {
-    margin-top: 20px;
-    font-size: 1.5rem;
-}
 
 .btn-contact {
     display: inline-block;
