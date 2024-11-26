@@ -39,6 +39,7 @@ nav a {
 nav a:hover {
     background: rgba(59, 43, 47, 0.8);;
     border-radius: 5px;
+    color: #FCB55F;
 }
 
 footer {
