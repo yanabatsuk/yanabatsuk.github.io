@@ -467,7 +467,7 @@ li span {
 }
 
 .gallery-card, .wedding-card {
-    background-image: url('images/wedding-button.jpeg'); /* Replace with actual image path */
+    background-image: url('./images/wedding-button.jpeg'); /* Replace with actual image path */
 }
 
 .gallery-card, .engagement-card {
