@@ -57,6 +57,76 @@ p a:hover {
     color: #473337;
 }
 
+/* About Page */
+.about-main {
+    padding: 20px;
+    background: #E7E0DA;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.about-image {
+    flex: 1 1 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1 1 60%;
+    padding: 20px;
+    color: #231F1A;
+}
+
+.about-text h2, .about-text h3 {
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    color: #322428;
+}
+
+.about-text p {
+    font-family: 'Prata', 'Times New Roman', serif;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.about-text h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.btn-contact {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5F4549;
+    color: #F8F4F2;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Prata', 'Times New Roman', serif;
+    transition: background 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #322428;
+}
+
 
 footer {
     background: #3B2B2F;

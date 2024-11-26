@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // test to check it works
+    console.log("Website Loaded");
+
     // Client info. to dynamically load
     const clientName = "Ethan Orange";
     const clientCompany = "Ethanphotojuice";
