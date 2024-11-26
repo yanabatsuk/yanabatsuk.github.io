@@ -122,7 +122,7 @@ p a:hover {
 .btn-container {
     display: flex;
     justify-content: center; 
-    gap: 10px;
+    gap: 15px;
     padding-bottom: 25px;
 }
 
