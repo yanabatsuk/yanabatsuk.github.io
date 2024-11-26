@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = (currentIndex + 1) % slides.length;
     }
 
-    
-    setInterval(showNextSlide, 3000);
+    setTimeout(() => {
+        setInterval(showNextSlide, 4500);
+    }, 1500);
 
 });
