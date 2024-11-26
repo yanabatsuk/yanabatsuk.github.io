@@ -417,7 +417,6 @@ li span {
 #slideshow .slide:first-child {
     opacity: 1;
 }
-
 .gallery-cards {
     display: flex;
     justify-content: space-between;  /* Distribute buttons evenly across the page */
