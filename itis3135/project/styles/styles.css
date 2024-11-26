@@ -1,5 +1,5 @@
 html {
-    color: #463D34;
+    color: #2F2923;
     background: #E7E0DA;
 }
 
@@ -41,10 +41,40 @@ nav a:hover {
     border-radius: 5px;
 }
 
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 .main {
     padding: 20px;
     background: #E7E0DA;
     min-height: calc(100vh - 140px);
+}
+
+h2 {
+    color: #444;
+    text-align: center;
+    margin-top: 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
 }
 
 #contact-info {
