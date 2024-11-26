@@ -24,10 +24,80 @@
         </nav>
     
         <main class="main">
-            <h2>Contact Us</h2>
+        <h2>GET READY FOR YOUR NEXT ADVENTURE.</h2>
+        <p>Let's do this! Fill out the contact form below and I'll get back to you within two to three business days.</p>
+        <p>If you don't hear back, you can email me directly at <a href="mailto:ethanorange@gmail.com">ethanorange@gmail.com</a>.</p>
+
+        <h3>NOW BOOKING FOR 2025 weddings, elopements, and lifestyle sessions in Charlotte and beyond.</h3>
+        
+        <form action="#" method="POST">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" placeholder="First & last. Nice to meet you!" required>
+   
+            <label for="partner-name">Your Partner's Name (for weddings, elopements, & couples)</label>
+            <input type="text" id="partner-name" name="partner-name" placeholder="First & last" >
             
-            <section id="contact-info"></section>
-    
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="ethanorange99@example.com" required>
+            
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="(434) 509 7380" required>
+        
+            <label for="social-media">Social Media Handles *</label>
+            <input type="text" id="social-media" name="social-media" placeholder="@ethanphotojuice @byclairehadler">
+            
+            <label for="session-type">Choose Your Session Type *</label>
+            <select id="session-type" name="session-type" required>
+              <option value="wedding">Wedding</option>
+              <option value="elopement">Elopement</option>
+              <option value="engagement">Engagement</option>
+              <option value="couple">Couple</option>
+              <option value="portrait">Portrait</option>
+            </select>
+        
+            <label for="date">Desired Date *</label>
+            <input type="text" id="date" name="date" placeholder="mm/dd/yy or range of time" required>
+            
+            <label for="flexible-date">Is the Date Flexible? *</label>
+            <select id="flexible-date" name="flexible-date" required>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+        
+            <label for="location">Desired Location *</label>
+            <input type="text" id="location" name="location" placeholder="Venue, city, state, etc." required>
+            
+            <label for="about">TELL ME ABOUT YOURSELF/YOUR RELATIONSHIP AND WHAT YOU ARE HOPING TO GET FROM THIS EXPERIENCE! *</label>
+            <textarea id="about" name="about" placeholder="What are you looking for in this experience?" required></textarea>
+            
+            <label for="how-found">How Did You Find Me? *</label>
+            <select id="how-found" name="how-found" required>
+              <option value="instagram">Instagram</option>
+              <option value="website">Website</option>
+              <option value="client-referral">Client Referral</option>
+              <option value="Photographer-referral">Photographer Referral</option>
+              <option value="word-of-mouth">Word of Mouth</option>
+              <option value="other">Other</option>
+            </select>
+        
+            <label for="photographer-process">Where Are You at in the Process of Choosing a Photographer? *</label>
+            <select id="photographer-process" name="photographer-process" required>
+              <option value="exploring">Just looking around</option>
+              <option value="interested">Definitely leaning towards you!</option>
+              <option value="chosen">Ready to Book!</option>
+            </select>
+        
+            <label for="budget">What is Your Estimated Budget? *</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter amount" required>
+        
+            <label for="inspiration">Have Any Inspiration? Have a Pinterest Board? Link it Here!</label>
+            <input type="url" id="inspiration" name="inspiration" placeholder="Pinterest link or inspiration URL">
+            
+            <label for="questions">Have Any Questions? Ask Them Here!</label>
+            <textarea id="questions" name="questions" placeholder="Feel free to ask anything"></textarea>
+            
+            <button type="submit">Let's Do This!!</button>
+        </form>
         </main>
     
         <footer>

@@ -44,26 +44,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // slideshow with interactivity aspect
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-    
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.display = i === index ? 'block' : 'none';
+    // slideshow
+    const slides = document.querySelectorAll('#slideshow .slide');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        slides.forEach((slide, index) => {
+            
+            slide.style.opacity = index === currentIndex ? '1' : '0';
         });
-    }
-    
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-    
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
+
+        
+        currentIndex = (currentIndex + 1) % slides.length;
     }
 
-    setInterval(nextSlide, 3750); 
-    showSlide(currentSlide);
+    setInterval(showNextSlide, 3750);
 });
