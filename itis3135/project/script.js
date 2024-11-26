@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const backgroundImages = [
         'images/all-in-package.jpeg',
         'images/base-package1.jpeg',
-        'images/half-day-package.jpeg',
+        'images/background3.jpg',
         'images/background4.jpg',
         'images/background5.jpg'
     ];
