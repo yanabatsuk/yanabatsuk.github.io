@@ -61,4 +61,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     setInterval(showNextSlide, 3750);
+
+
+    // Grab carousel and buttons
+    const carousel = document.querySelector('.carousel-inner');
+    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-next');
+
+    let currentIndex = 0;
+    const totalCards = document.querySelectorAll('.card').length;
+    
+    // Show next card
+    function showNextCard() {
+        if (currentIndex < totalCards - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Loop back to first card
+        }
+        updateCarousel();
+    }
+
+    // Show previous card
+    function showPrevCard() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalCards - 1; // Loop back to last card
+        }
+        updateCarousel();
+    }
+
+    // Update carousel position based on current index
+    function updateCarousel() {
+        const cardWidth = document.querySelector('.card').offsetWidth + 30; // 30px is the margin
+        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    // Event listeners for buttons
+    prevButton.addEventListener('click', showPrevCard);
+    nextButton.addEventListener('click', showNextCard);    
 });
