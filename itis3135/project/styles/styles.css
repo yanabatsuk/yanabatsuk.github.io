@@ -165,7 +165,7 @@ p a:hover {
     text-decoration: none;
     border: 2px solid transparent; 
     border-radius: 5px;
-    font-size: 1.35rem;
+    font-size: 1.23rem;
     font-family: 'Prata', 'Times New Roman', serif;
     transition: background 0.3s ease, border-color 0.3s ease;
 }
@@ -383,7 +383,7 @@ textarea {
 .home-p {
     padding-bottom: 21px;
     line-height: 2.7;
-    font-size: 1.35em;
+    font-size: 1.19em;
 }
 
 #slideshow {
