@@ -112,6 +112,11 @@ p a:hover {
     text-align: left;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
 
 .btn-contact {
     display: inline-block;
