@@ -274,7 +274,7 @@ h2 {
     word-spacing: 3.1px;
     font-size: 1.1rem;        /* Adjust text size for better readability */
     color: #181611;            /* Light dark color for the description */
-    margin: 10px 0;         /* Space between the description and other elements */
+    margin: 5px 0;         /* Space between the description and other elements */
     text-align: left;       /* Align text to the left */
     margin-bottom: 2.5px;
 }
