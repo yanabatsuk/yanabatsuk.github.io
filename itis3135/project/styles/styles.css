@@ -78,6 +78,7 @@ p a:hover {
     width: 40%; 
     padding: 20px;
     margin-right: 20px;
+    box-sizing: border-box;
 }
 
 .about-image img {
