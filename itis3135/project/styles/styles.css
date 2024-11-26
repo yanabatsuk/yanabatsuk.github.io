@@ -117,9 +117,10 @@ p a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #5F4549;
-    color: #F8F4F2;
+    background: rgba(255, 255, 255, 0.8);
+    color: #5F4549;
     text-decoration: none;
+    border-color: ;
     border-radius: 5px;
     font-size: 1rem;
     font-family: 'Prata', 'Times New Roman', serif;
@@ -127,7 +128,7 @@ p a:hover {
 }
 
 .btn-contact:hover {
-    background-color: #322428;
+    border-color: #322428;
 }
 
 
