@@ -265,13 +265,14 @@ h2 {
 
 .card p {
     font-size: 1rem;        /* Adjust text size for better readability */
-    color: #555;            /* Light dark color for the description */
+    color: #181611;            /* Light dark color for the description */
     margin: 10px 0;         /* Space between the description and other elements */
     text-align: left;       /* Align text to the left */
 }
 
 .card ul{
     list-style-type: none;
+    color: #181611;
 }
 
 
