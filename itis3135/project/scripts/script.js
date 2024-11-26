@@ -56,6 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     
-    setInterval(showNextSlide, 6000);
+    setInterval(showNextSlide, 3000);
 
 });
