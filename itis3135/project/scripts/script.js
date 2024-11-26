@@ -61,5 +61,5 @@ document.addEventListener("DOMContentLoaded", () => {
         slides[currentIndex].style.opacity = 1;
     }
 
-    setInterval(showNextSlide, 3000);
+    setInterval(showNextSlide, 5000);
 });
