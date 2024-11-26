@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-
     // slideshow
     const slides = document.querySelectorAll('#slideshow .slide');
     let currentIndex = 0;
@@ -63,41 +62,41 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(showNextSlide, 3750);
 
 
-    // Grab carousel and buttons
+    // **Carousel Navigation**
     const carousel = document.querySelector('.carousel-inner');
     const prevButton = document.querySelector('.carousel-prev');
     const nextButton = document.querySelector('.carousel-next');
-
-    let currentIndex = 0;
-    const totalCards = document.querySelectorAll('.card').length;
+    const totalCards = document.querySelectorAll('.card').length; // total number of cards
     
-    // Show next card
-    function showNextCard() {
+    currentIndex = 0; // start at the first card
+
+    // Function to update carousel position
+    function updateCarousel() {
+        const cardWidth = document.querySelector('.card').offsetWidth + 30; // 30px is the margin between cards
+        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`; // move carousel to current index
+    }
+
+    // Show next card (go right)
+    nextButton.addEventListener('click', () => {
         if (currentIndex < totalCards - 1) {
             currentIndex++;
         } else {
-            currentIndex = 0; // Loop back to first card
+            currentIndex = 0; // Loop back to the first card
         }
         updateCarousel();
-    }
+    });
 
-    // Show previous card
-    function showPrevCard() {
+    // Show previous card (go left)
+    prevButton.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
         } else {
-            currentIndex = totalCards - 1; // Loop back to last card
+            currentIndex = totalCards - 1; // Loop back to the last card
         }
         updateCarousel();
-    }
+    });
 
-    // Update carousel position based on current index
-    function updateCarousel() {
-        const cardWidth = document.querySelector('.card').offsetWidth + 30; // 30px is the margin
-        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-    }
-
-    // Event listeners for buttons
-    prevButton.addEventListener('click', showPrevCard);
-    nextButton.addEventListener('click', showNextCard);    
+    // Initial carousel position
+    updateCarousel();
+    
 });
