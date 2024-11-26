@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'images/background2.jpg',
         'images/background3.jpg',
         'images/background4.jpg',
-        'images/background5.jpg',
+        'images/background5.jpg'
     ];
 
     const cards = document.querySelectorAll('.card');
@@ -36,5 +36,5 @@ document.addEventListener("DOMContentLoaded", () => {
             card.style.backgroundSize = 'cover';
             card.style.backgroundPosition = 'center';
         }
-    })
-})
+    });
+});
