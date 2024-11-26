@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contactBtn = document.querySelector('#contact-button');
     if (contactBtn) {
         contactBtn.addEventListener('click', () => {
-            window.location.href = 'contact.html';  // Navigates to the contact page
+            window.location.href = 'contact.html';
         });
     }
 });
