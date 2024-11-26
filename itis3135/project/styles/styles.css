@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #555;
+    background: rgba(59, 43, 47, 0.8);;
     border-radius: 5px;
 }
 
