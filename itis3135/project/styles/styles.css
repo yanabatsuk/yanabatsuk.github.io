@@ -120,10 +120,11 @@ p a:hover {
     background: rgba(255, 255, 255, 0.8);
     color: #5F4549;
     text-decoration: none;
+    border: 2px solid transparent;
     border-radius: 5px;
     font-size: 1rem;
     font-family: 'Prata', 'Times New Roman', serif;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-contact:hover {
