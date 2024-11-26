@@ -244,7 +244,6 @@ h2 {
     position: relative;
     box-sizing: border-box;
     overflow: hidden;       /* Make sure content stays within the bounds */
-    text-align: center;     /* Center-align content */
 }
 
 .card img {
@@ -257,6 +256,7 @@ h2 {
 }
 
 .card-h3 {
+    text-align: center;
     font-size: 1.5rem;      /* Larger title size */
     color: #231F1A;         /* Dark color for the title */
     margin: 10px 0;         /* Margin above and below the title */
@@ -268,6 +268,10 @@ h2 {
     color: #555;            /* Light dark color for the description */
     margin: 10px 0;         /* Space between the description and other elements */
     text-align: left;       /* Align text to the left */
+}
+
+.card li{
+    
 }
 
 
