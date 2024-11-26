@@ -464,21 +464,21 @@ li span {
     transform: scale(1.05);
 }
 
-.gallery-card.wedding-card {
+.gallery-card .wedding-card {
     background-image: url('images/wedding-button.jpeg'); /* Add your thumbnail images */
     background-size: cover;
     background-position: center;
     color: white;
 }
 
-.gallery-card.engagement-card {
+.gallery-card .engagement-card {
     background-image: url('images/engagement-thumbnail.jpg');
     background-size: cover;
     background-position: center;
     color: white;
 }
 
-.gallery-card.portrait-card {
+.gallery-card .portrait-card {
     background-image: url('images/portrait-thumbnail.jpg');
     background-size: cover;
     background-position: center;
