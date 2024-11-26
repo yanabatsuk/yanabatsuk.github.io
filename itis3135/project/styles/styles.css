@@ -69,7 +69,7 @@ p a:hover {
 
 .about-container {
     display: flex;               
-    flex-direction: column;    
+    flex-direction: row;    /* Use row layout so image and text are side by side */
     max-width: 1200px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
@@ -80,10 +80,10 @@ p a:hover {
 }
 
 .about-image {
-    float: left;           /* Floats the image to the left */
     width: 40%;            /* Adjust the width of the image */
-    margin-right: 20px;    /* Adds space between the image and the text */
+    padding: 20px;
     box-sizing: border-box;
+    margin-right: 20px;    /* Adds space between the image and the text */
 }
 
 .about-image img {
@@ -96,8 +96,8 @@ p a:hover {
 .about-text {
     padding: 20px;
     color: #231F1A;
+    flex: 1;               /* Makes the text container take the remaining space */
     overflow: hidden;      /* Ensures the container doesn't collapse around the floated image */
-    clear: both;           /* Clears the float from the image, making sure text doesn't wrap beneath it */
 }
 
 .about-h3 {
@@ -170,6 +170,7 @@ p a:hover {
 .btn-contact:hover {
     border-color: #5F4549
 }
+
 
 
 footer {
