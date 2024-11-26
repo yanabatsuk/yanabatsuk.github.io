@@ -291,8 +291,11 @@ textarea {
     height: 150px;
 }
 
+.home-p {
+    padding-bottom: 25px;
+}
+
 #slideshow {
-    padding-top: 25px;
     position: relative;
     width: 100%;
     max-width: 800px;
