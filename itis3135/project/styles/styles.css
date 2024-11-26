@@ -1,5 +1,5 @@
 html {
-    color: #2F2923;
+    color: #231F1A;
     background: #E7E0DA;
 }
 
@@ -62,7 +62,7 @@ footer {
 }
 
 h2 {
-    color: #444;
+    color: #231F1A;
     text-align: center;
     margin-top: 0;
 }
@@ -81,7 +81,7 @@ h2 {
 
 h3 {
     margin-top: 0;
-    color: #333;
+    color: #231F1A;
 }
 
 #contact-info {
