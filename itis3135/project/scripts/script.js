@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const clientEmail = "ethanorange@gmail";
     const clientPhone = "1+ (***) ***-****";
 
+
     // contact info grabber
+    const contactSection = document.querySelector("#contact-info");
+    
     if (contactSection) {
         contactSection.innerHTML += `
         <p><strong>${clientName}</strong><br>${clientCompany}<br>
