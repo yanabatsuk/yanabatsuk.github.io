@@ -107,18 +107,18 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Wedding Gallery",
             image: "images/wedding.jpg", // Replace with your image path
-            link: "https://example.com/wedding",
+            link: "https://example.com/wedding"
         },
         {
             title: "Engagement Gallery",
             image: "images/engagement.jpg", // Replace with your image path
-            link: "https://example.com/engagement",
+            link: "https://example.com/engagement"
         },
         {
             title: "Portraits Gallery",
             image: "images/portraits.jpg", // Replace with your image path
-            link: "https://example.com/portraits",
-        },
+            link: "https://example.com/portraits"
+        }
     ];
 
     // Select gallery-cards container
