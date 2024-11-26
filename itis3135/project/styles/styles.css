@@ -57,6 +57,10 @@ footer {
     min-height: calc(100vh - 140px);
 }
 
+.main p {
+    text-align: center;
+}
+
 h2 {
     color: #444;
     text-align: center;
@@ -95,7 +99,7 @@ h3 {
     height: 400px;
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
