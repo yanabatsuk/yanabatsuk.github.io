@@ -151,3 +151,7 @@ h3 {
 label{
     font-family: 'Cinzel', 'Times New Roman', serif;
 }
+
+input {
+    font-family: 'Prata';
+}
