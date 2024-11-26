@@ -256,7 +256,8 @@ h2 {
 }
 
 .card-h3 {
-    word-spacing: 1px;
+    text-indent: 3px;
+    word-spacing: 2.5px;
     text-align: center;
     font-size: 1.5rem;      /* Larger title size */
     color: #231F1A;         /* Dark color for the title */
