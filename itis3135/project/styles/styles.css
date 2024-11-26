@@ -64,9 +64,7 @@ p a:hover {
 }
 
 .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: block;
     max-width: 1200px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
@@ -76,9 +74,10 @@ p a:hover {
 }
 
 .about-image {
-    flex: 1 1 40%;
+    float: left;
+    width: 40%; 
     padding: 20px;
-    text-align: center;
+    margin-right: 20px;
 }
 
 .about-image img {
@@ -89,7 +88,7 @@ p a:hover {
 }
 
 .about-text {
-    flex: 1 1 60%;
+    overflow: hidden;
     padding: 20px;
     color: #231F1A;
 }
