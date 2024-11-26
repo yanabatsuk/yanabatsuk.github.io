@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevButton = document.querySelector('.carousel-prev');
     const nextButton = document.querySelector('.carousel-next');
     let totalCards = document.querySelectorAll('.card').length; // total number of cards
-    let currentIndex = 0; // start at the first card
+    currentIndex = 0; // start at the first card
 
     // Clone the first and last cards to create infinite loop
     const firstCard = document.querySelector('.carousel-inner .card:first-child');
