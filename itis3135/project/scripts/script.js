@@ -45,13 +45,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll('#slideshow .slide');
     let currentIndex = 0;
 
-    function showNextSlide () {
-        slides[currentIndex].style.opacity = 0;
+    function showNextSlide() {
+        slides.forEach((slide, index) => {
+            
+            slide.style.opacity = index === currentIndex ? '1' : '0';
+        });
 
+        
         currentIndex = (currentIndex + 1) % slides.length;
-
-        slides[currentIndex].style.opacity = 1;
     }
 
-    setInterval(showNextSlide, 6500);
+    
+    setInterval(showNextSlide, 6000);
+
 });
