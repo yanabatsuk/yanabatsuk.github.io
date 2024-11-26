@@ -50,6 +50,15 @@ footer {
     margin-top: auto;
     width: 100%;
 }
+
+footer a {
+    color: #F8F4F2;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
 footer a:hover {
     background: rgba(59, 43, 47, 0.8);
     border-radius: 5px;
