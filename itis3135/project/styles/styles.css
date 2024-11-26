@@ -417,3 +417,70 @@ li span {
 #slideshow .slide:first-child {
     opacity: 1;
 }
+
+
+/*GALLERY PAGE*/
+.gallery-main {
+    background-image: url('images/gallery-background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: #F8F4F2;
+}
+
+.gallery-main h2 {
+    color: #F8F4F2; /* Matches the text with the background theme */
+    margin-bottom: 10px;
+}
+
+.gallery-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.gallery-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #231F1A;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    border-radius: 50px; /* Oval shape */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+    position: relative;
+}
+
+.gallery-card:hover {
+    background: #FDDCC3;
+    transform: scale(1.05);
+}
+
+.gallery-card.wedding-card {
+    background-image: url('images/wedding-thumbnail.jpg'); /* Add your thumbnail images */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.gallery-card.engagement-card {
+    background-image: url('images/engagement-thumbnail.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.gallery-card.portrait-card {
+    background-image: url('images/portrait-thumbnail.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
