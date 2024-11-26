@@ -466,14 +466,14 @@ li span {
     transform: scale(1.05);
 }
 
-.gallery-card.wedding-card {
+.gallery-card, .wedding-card {
     background-image: url('images/wedding-button.jpeg'); /* Replace with actual image path */
 }
 
-.gallery-card.engagement-card {
+.gallery-card, .engagement-card {
     background-image: url('images/engagement-button.jpeg'); /* Replace with actual image path */
 }
 
-.gallery-card.portrait-card {
+.gallery-card, .portrait-card {
     background-image: url('images/portrait-button.jpeg'); /* Replace with actual image path */
 }
