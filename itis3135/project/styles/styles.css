@@ -52,9 +52,9 @@ p a {
 }
 
 p a:hover {
-    background: #2F2B22;
+    background: #FDDCC3;
     border-radius: 3px;
-    color: #FDDCC3;
+    color: #2F2B22;
 }
 
 
