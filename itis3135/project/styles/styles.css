@@ -448,11 +448,12 @@ li span {
     margin-left: 0; /* First button starts at the base position */
 }
 .gallery-btn:nth-child(2) {
-    margin-left: 40px; /* Slightly offset to the right */
+    margin-left: 60px; /* Wider offset for the second button */
 }
 .gallery-btn:nth-child(3) {
-    margin-left: 80px; /* Further offset for the step effect */
+    margin-left: 120px; /* Even wider offset for the third button */
 }
+
 
 .gallery-btn:hover {
     background: #322428;
