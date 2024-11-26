@@ -264,6 +264,7 @@ h2 {
 }
 
 .card p {
+    font-weight: 200;
     text-indent: 3px;
     word-spacing: 2.5px;
     font-size: 1rem;        /* Adjust text size for better readability */
