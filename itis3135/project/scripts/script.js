@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // slideshow
-    const slides = document.querySelectorAll('#slideshow.slide');
+    const slides = document.querySelectorAll('#slideshow .slide');
     let currentIndex = 0;
 
     function showNextSlide () {
