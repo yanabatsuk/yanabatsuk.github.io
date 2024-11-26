@@ -94,14 +94,14 @@ p a:hover {
     color: #231F1A;
 }
 
-#about-h3 {
+.about-h3 {
     font-family: 'Cinzel', 'Times New Roman', serif;
     color: #322428;
     margin-top: 20px;
     font-size: 1.5rem;
 }
 
-#about-p {
+.about-p {
     font-family: 'Prata', 'Times New Roman', serif;
     margin-bottom: 15px;
     line-height: 1.8;
