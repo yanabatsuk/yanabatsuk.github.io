@@ -418,12 +418,15 @@ li span {
     opacity: 1;
 }
 
-/* General styling for gallery buttons */
+/* Step ladder layout for gallery buttons */
 .gallery-cards {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to start for the offset effect */
+    gap: 20px; /* Space between buttons */
+    margin: 20px auto; /* Center the section vertically and horizontally */
+    max-width: 600px; /* Limit the section width */
+    position: relative;
 }
 
 .gallery-btn {
@@ -438,6 +441,17 @@ li span {
     border-radius: 8px;
     transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     text-align: center;
+    position: relative;
+}
+
+.gallery-btn:nth-child(1) {
+    margin-left: 0; /* First button starts at the base position */
+}
+.gallery-btn:nth-child(2) {
+    margin-left: 40px; /* Slightly offset to the right */
+}
+.gallery-btn:nth-child(3) {
+    margin-left: 80px; /* Further offset for the step effect */
 }
 
 .gallery-btn:hover {
