@@ -276,7 +276,7 @@ h2 {
     color: #181611;            /* Light dark color for the description */
     margin: 5px 0;         /* Space between the description and other elements */
     text-align: left;       /* Align text to the left */
-    margin-bottom: 2.5px;
+    margin-bottom: 2px;
 }
 
 .card ul{
