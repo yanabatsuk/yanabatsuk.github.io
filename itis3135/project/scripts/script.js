@@ -37,4 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
             card.style.backgroundPosition = 'center';
         }
     });
+
+    const contactBtn = document.querySelector('#contactBtn');
+    if (contactBtn) {
+        contactBtn.addEventListener('click', () => {
+            window.location.href = 'contact.html';  // Navigates to the contact page
+        });
+    }
 });
