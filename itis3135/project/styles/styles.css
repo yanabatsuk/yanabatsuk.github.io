@@ -116,11 +116,12 @@ p a:hover {
 .btn-contact {
     display: inline-block;
     margin-top: 20px;
+    margin-right: 10px; 
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.8);
-    color: #322428;
+    color: #5F4549;
     text-decoration: none;
-    border: 2px solid transparent;
+    border: 2px solid transparent; 
     border-radius: 5px;
     font-size: 1rem;
     font-family: 'Prata', 'Times New Roman', serif;
