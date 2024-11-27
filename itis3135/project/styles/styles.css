@@ -282,8 +282,7 @@ h2 {
 .card ul{
     list-style-type: none;
     color: #181611;
-    line-height: 1.5;
-    font-size: 1rem;
+    line-height: 1.8;
 }
 
 
@@ -527,21 +526,5 @@ body {
     .carousel-prev, .carousel-next {
         font-size: 1.5rem; /* Adjust button size */
         padding: 8px;
-    }
-}
-
-/* Desktop adjustments */
-@media screen and (min-width: 1025px) {
-
-    .carousel {
-        max-width: 90%;
-    }
-
-    .card {
-        width: 30%; /* Allow multiple cards to fit */
-    }
-
-    nav a {
-        margin: 0 20px; /* Widen space between links */
     }
 }
