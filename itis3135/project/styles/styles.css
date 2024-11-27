@@ -264,7 +264,7 @@ h2 {
     text-align: center;
     font-size: 1.7rem;      /* Larger title size */
     color: #231F1A;         /* Dark color for the title */
-    margin: 10px 0;         /* Margin above and below the title */
+    margin: 0;         /* Margin above and below the title */
     font-family: 'Cinzel', serif; /* Give it a bit more elegance */
 }
 
