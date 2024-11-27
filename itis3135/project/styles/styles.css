@@ -238,8 +238,8 @@ h2 {
 
 .card {
     flex: 0 0 auto;         /* Prevent shrinking of the card */
-    width: 500px;           /* Increase the width for a more rectangular shape */
-    height: 800px;          /* Increase the height to make it longer */
+    width: 450px;           /* Increase the width for a more rectangular shape */
+    height: 600px;          /* Increase the height to make it longer */
     margin: 0 20px;         /* Increase the margin between cards */
     padding: 30px;          /* More padding for spacing around content */
     border: 1px solid #ccc; /* Light border for definition */
@@ -264,7 +264,7 @@ h2 {
     text-align: center;
     font-size: 1.7rem;      /* Larger title size */
     color: #231F1A;         /* Dark color for the title */
-    margin: 0;         /* Margin above and below the title */
+    margin: 10px 0;         /* Margin above and below the title */
     font-family: 'Cinzel', serif; /* Give it a bit more elegance */
 }
 
@@ -283,7 +283,6 @@ h2 {
     list-style-type: none;
     color: #181611;
     line-height: 1.8;
-    font-size: .8rem;
 }
 
 
@@ -469,4 +468,64 @@ li span {
     padding-bottom: 55px;
 }
 
+
+
+/* General mobile-first design adjustments */
+body {
+    font-size: 16px; /* Base font size for scaling */
+}
+
+/* Adjustments for smaller devices */
+@media screen and (max-width: 768px) {
+    
+    nav a {
+        font-size: 1.1em; /* Adjust navigation text size */
+        margin: 0 10px; /* Reduce spacing */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        padding: 10px;
+    }
+
+    .about-image, .about-text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        width: 90%; /* Cards take full width with some margin */
+        margin: 10px auto;
+    }
+
+    #slideshow {
+        height: 250px; /* Reduce slideshow height */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button size */
+        padding: 8px 15px;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        max-width: 90%; /* Slightly reduced width */
+    }
+
+    .card {
+        width: 40%; /* Two cards fit in a row */
+    }
+
+    .carousel-prev, .carousel-next {
+        font-size: 1.5rem; /* Adjust button size */
+        padding: 8px;
+    }
+}
 
