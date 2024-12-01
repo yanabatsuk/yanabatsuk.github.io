@@ -228,6 +228,7 @@ figcaption{
 .review-pic{
     width: 75%;
     align-items: center;
+    align-content: center;
 }
 
 main p{
