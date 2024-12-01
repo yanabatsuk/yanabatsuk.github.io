@@ -225,6 +225,11 @@ figcaption{
     font-style: italic;
 }
 
+.review-pic{
+    width: 100%;
+    align-items: center;
+}
+
 main p{
     font-size: 30px;
     margin-top: 0;
