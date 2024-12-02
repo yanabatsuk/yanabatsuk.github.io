@@ -492,6 +492,7 @@ li span {
     text-align: center;
     width: 300px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .popup-content-h3 {
