@@ -104,24 +104,26 @@ document.addEventListener("DOMContentLoaded", () => {
     /**  adding interactive element PART 4*/
 
     // Popup Elements
-    const popup = document.getElementById('special-offer-popup');
-    const closePopup = document.getElementById('close-popup');
-    const contactLink = document.getElementById('contact-link');
-
-    // Show the popup when the page loads after 2 seconds
-    setTimeout(() => {
-        popup.style.display = 'block';
-    }, 2000);
-
-    // Close the popup when the "Close" button is clicked
-    closePopup.addEventListener('click', function () {
-        popup.style.display = 'none';
-    });
-
-    // Redirect to the contact page when "Contact Us Now" is clicked
-    contactLink.addEventListener('click', function () {
-        window.location.href = 'contact.html';
-    });
+    const popup = document.getElementById("special-offer-popup");
+    const closeBtn = document.getElementById("close-popup");
+    
+    // Function to open the popup
+    function openPopup() {
+        popup.style.display = "flex"; // Show the popup
+    }
+    
+    // Function to close the popup
+    function closePopup() {
+        popup.style.display = "none"; // Hide the popup
+    }
+    
+    // Event listener for the Close button
+    closeBtn.addEventListener("click", closePopup);
+    
+    // Show the popup automatically when the page loads (you can trigger this based on any event)
+    window.onload = function() {
+        openPopup(); // This will show the popup when the page loads
+    };
 });
 
 

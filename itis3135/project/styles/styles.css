@@ -472,14 +472,16 @@ li span {
 
 /* Popup Overlay */
 .popup-overlay {
-    display: none; /* Hidden by default */
+    display: none; /* Hide the popup */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 /* Popup Content */
@@ -488,11 +490,8 @@ li span {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    position: relative;
-    width: 80%;
-    max-width: 400px;
-    margin: 100px auto; /* Center the popup */
-    box-sizing: border-box;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .popup-content-h3 {
@@ -506,12 +505,17 @@ li span {
 }
 
 .popup-content button {
-    margin: 5px;
+    margin: 10px;
     padding: 10px 20px;
     border: none;
+    background: #322428;
+    color: #fff;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
+}
+
+.popup-content button:hover {
+    background: #5F4549;
 }
 
 .popup-content #contact-link {
