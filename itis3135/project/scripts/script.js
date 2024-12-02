@@ -104,24 +104,23 @@ document.addEventListener("DOMContentLoaded", () => {
     /**  adding interactive element PART 4*/
 
     // Popup Elements
-    const popup = document.getElementById("special-offer-popup");
-    const closePopupButton = document.getElementById("close-popup");
-    const contactLinkButton = document.getElementById("contact-link");
+    const popup = document.getElementById('special-offer-popup');
+    const closePopup = document.getElementById('close-popup');
+    const contactLink = document.getElementById('contact-link');
 
-    // Show the popup on first visit
-    if (!localStorage.getItem("popupShown")) {
-        popup.style.display = "flex";
-        localStorage.setItem("popupShown", "true");
-    }
+    // Show the popup when the page loads after 2 seconds
+    setTimeout(() => {
+        popup.style.display = 'block';
+    }, 2000);
 
-    // Close popup functionality
-    closePopupButton.addEventListener("click", () => {
-        popup.style.display = "none";
+    // Close the popup when the "Close" button is clicked
+    closePopup.addEventListener('click', function () {
+        popup.style.display = 'none';
     });
 
-    // Redirect to contact page
-    contactLinkButton.addEventListener("click", () => {
-        window.location.href = "contact.html";
+    // Redirect to the contact page when "Contact Us Now" is clicked
+    contactLink.addEventListener('click', function () {
+        window.location.href = 'contact.html';
     });
 });
 
