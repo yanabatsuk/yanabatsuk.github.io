@@ -493,7 +493,7 @@ li span {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.popup-content, h3 {
+.popup-content-h3 {
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
