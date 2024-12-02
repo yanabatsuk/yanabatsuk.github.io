@@ -99,4 +99,32 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial carousel position
     updateCarousel();
 
+
+
+    /**  adding interactive element PART 4*/
+
+    // Popup Elements
+    const popup = document.getElementById("special-offer-popup");
+    const closePopupButton = document.getElementById("close-popup");
+    const contactLinkButton = document.getElementById("contact-link");
+
+    // Show the popup on first visit
+    if (!localStorage.getItem("popupShown")) {
+        popup.style.display = "flex";
+        localStorage.setItem("popupShown", "true");
+    }
+
+    // Close popup functionality
+    closePopupButton.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+
+    // Redirect to contact page
+    contactLinkButton.addEventListener("click", () => {
+        window.location.href = "contact.html";
+    });
 });
+
+
+
+
