@@ -306,13 +306,13 @@ label[for="funny"],
 /* SLIDESHOW PAGE*/
 #slideshow-container {
     text-align: center;
-    margin: 20px auto;
+    margin: auto;
 }
 
 #slideshow {
     position: relative;
     max-width: 600px;
-    margin-left: 10px;
+    margin: auto;
     overflow: hidden; /* Ensure only one image is visible */
 }
 
