@@ -321,6 +321,7 @@ label[for="funny"],
     border-radius: 8px;
     display: block; 
     margin: auto; 
+    height: auto;
 }
 
 #slideshow figcaption {
