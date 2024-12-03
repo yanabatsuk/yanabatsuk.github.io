@@ -307,16 +307,18 @@ label[for="funny"],
 #slideshow-container {
     text-align: center;
     margin: 20px auto;
-    max-width: 600px;
 }
 
 #slideshow {
     position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden; /* Ensure only one image is visible */
 }
 
 #slideshow img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 #slideshow figcaption {
@@ -324,44 +326,33 @@ label[for="funny"],
     font-style: italic;
 }
 
-#controls {
-    margin: 10px 0;
-}
-
 #controls button {
-    margin: 0 10px;
+    margin: 5px;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background: #333;
-    color: #fff;
     cursor: pointer;
-}
-
-#controls button:hover {
-    background: #555;
 }
 
 #thumbnail-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
     margin-top: 20px;
 }
 
 .thumbnail {
     width: 80px;
     height: 50px;
+    margin: 5px;
     border: 2px solid #ccc;
-    border-radius: 5px;
     cursor: pointer;
     box-sizing: border-box; 
 }
 
 .thumbnail:hover {
-    border-color: #333;
+    border-color: #555;
 }
 
 /* END OF SLIDESHOW PAGE*/

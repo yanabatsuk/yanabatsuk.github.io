@@ -5,7 +5,6 @@ $(document).ready(function () {
         { src: "images/necklace.jpeg", caption: "N for Necklace" },
         { src: "images/avocado.jpeg", caption: "A for Avocado" },
         { src: "images/balloon.jpeg", caption: "B for Balloon" },
-        { src: "images/airplane.jpeg", caption: "A for Airplane" },
         { src: "images/trees.jpeg", caption: "T for Trees" },
         { src: "images/sunflowers.jpeg", caption: "S for Sunflowers" },
         { src: "images/umbrella.jpeg", caption: "U for Umbrella" },
@@ -14,38 +13,30 @@ $(document).ready(function () {
 
     let currentIndex = 0;
 
-    // Update the main slideshow image and caption
+    // Update slideshow content
     function updateSlideshow() {
-        const { src, caption } = images[currentIndex];
-        $("#slideshow img").attr("src", src).attr("alt", caption);
-        $("#slideshow figcaption").text(caption);
+        const currentImage = images[currentIndex];
+        $("#slideshow img").attr("src", currentImage.src).attr("alt", currentImage.caption);
+        $("#slideshow figcaption").text(currentImage.caption);
     }
 
-    // Initialize slideshow with the first image
+    // Initialize slideshow
     updateSlideshow();
 
-    // Next button functionality
+    // Event listeners for navigation buttons
     $("#next").click(function () {
         currentIndex = (currentIndex + 1) % images.length;
         updateSlideshow();
     });
 
-    // Previous button functionality
     $("#prev").click(function () {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         updateSlideshow();
     });
 
-    // Add thumbnails dynamically
+    // Generate and bind thumbnail images
     images.forEach((image, index) => {
-        const thumbnail = $(`
-            <img 
-                class="thumbnail" 
-                src="${image.src}" 
-                alt="${image.caption}" 
-                data-index="${index}" 
-            >
-        `);
+        const thumbnail = $(`<img class="thumbnail" src="${image.src}" alt="${image.caption}" data-index="${index}">`);
         $("#thumbnail-list").append(thumbnail);
     });
 
@@ -55,3 +46,4 @@ $(document).ready(function () {
         updateSlideshow();
     });
 });
+
