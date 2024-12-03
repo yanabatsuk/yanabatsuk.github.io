@@ -23,61 +23,60 @@
                 <form id="intro-form">
 
                     <!-- Name -->
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
-                    
+                    <label for="form-name">Name*:</label>
+                    <input type="text" id="form-name" name="form-name" placeholder="Enter your name" value="Yana Batsuk" required>
+
                     <!-- Mascot -->
-                    <label for="mascot">Mascot:</label>
-                    <input type="text" id="mascot" required>
-                    
+                    <label for="form-mascot">Mascot*:</label>
+                    <input type="text" id="form-mascot" name="form-mascot" placeholder="Enter your mascot" value="Yappy Bandicoot" required>
+
                     <!-- Image Upload -->
-                    <label for="image">Upload an image (PNG/JPG):</label>
-                    <input type="file" id="image" accept="image/png, image/jpeg" required>
-                    
+                    <label for="form-image">Upload an Image (PNG/JPG)*:</label>
+                    <input type="file" id="form-image" name="form-image" accept=".png, .jpg" required>
+
                     <!-- Image Caption -->
-                    <label for="caption">Image Caption:</label>
-                    <input type="text" id="caption" required>
-                    
+                    <label for="form-caption">Image Caption*:</label>
+                    <input type="text" id="form-caption" name="form-caption" placeholder="Enter a caption" value="My favorite mascot!" required>
+
                     <!-- Personal Background -->
-                    <label for="personal-bg">Personal Background:</label>
-                    <textarea id="personal-bg" name="personal-bg" required>Example personal background...</textarea>
+                    <label for="form-personal-background">Personal Background*:</label>
+                    <textarea id="form-personal-background" name="form-personal-background" required>I enjoy learning and coding.</textarea>
 
                     <!-- Professional Background -->
-                    <label for="professional-background">Professional Background:</label>
-                    <textarea id="professional-background" name="professional-background" placeholder="Enter your professional background" required></textarea>
+                    <label for="form-professional-background">Professional Background*:</label>
+                    <textarea id="form-professional-background" name="form-professional-background" required>IT Intern at Batsuk Consulting LLC</textarea>
 
                     <!-- Academic Background -->
-                    <label for="academic-background">Academic Background:</label>
-                    <textarea id="academic-background" name="academic-background" placeholder="Enter your academic background" required></textarea>
+                    <label for="form-academic-background">Academic Background*:</label>
+                    <textarea id="form-academic-background" name="form-academic-background" required>BS in Computer Science, UNC Charlotte</textarea>
 
                     <!-- Web Development Background -->
-                    <label for="web-development">Web Development:</label>
-                    <textarea id="web-development" name="web-development" placeholder="Enter your web development background" required></textarea>
+                    <label for="form-webdev-background">Web Development Background*:</label>
+                    <textarea id="form-webdev-background" name="form-webdev-background" required>Developing projects in HTML, CSS, and JavaScript.</textarea>
 
                     <!-- Primary Computer Platform -->
-                    <label for="platform">Primary Computer Platform:</label>
-                    <input type="text" id="platform" name="platform" placeholder="Enter your primary computer platform" required>
+                    <label for="form-platform">Primary Computer Platform*:</label>
+                    <input type="text" id="form-platform" name="form-platform" value="Mac" required>
 
                     <!-- Courses -->
-                    <label for="courses">Courses currently taking:</label>
+                    <label for="form-courses">Courses Currently Taking*:</label>
                     <div id="course-container">
                         <button type="button" id="add-course">Add Course</button>
                     </div>
 
                     <!-- Funny Thing -->
-                    <label for="funny-thing">Funny Thing:</label>
-                    <textarea id="funny-thing" name="funny-thing" placeholder="Share something funny"></textarea>
+                    <label for="form-funny-thing">Funny Thing?</label>
+                    <textarea id="form-funny-thing" name="form-funny-thing"></textarea>
 
                     <!-- Anything Else -->
-                    <label for="anything-else">Anything Else?</label>
-                    <textarea id="anything-else" name="anything-else" placeholder="Add anytthing else to share"></textarea>
+                    <label for="form-anything-else">Anything Else?</label>
+                    <textarea id="form-anything-else" name="form-anything-else"></textarea>
 
                     <!-- Agreement -->
                     <label>
-                        <input type="checkbox" id="agreement" required>
+                        <input type="checkbox" id="form-agreement" required>
                         I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
                     </label>
-
 
                     <!-- Control Buttons -->
                     <input type="submit" value="Submit">

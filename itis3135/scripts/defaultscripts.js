@@ -152,63 +152,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
     /* BYO Intro Page */
-    const form = document.getElementById("intro-form");
-    const resultDiv = document.getElementById("result");
-    const courseContainer = document.getElementById("course-container");
+    const form = document.getElementById('byo-intro-form');
+    const courseContainer = document.getElementById('course-container');
+    const addCourseButton = document.getElementById('add-course');
 
-    // Add course field dynamically
-    document.getElementById("add-course").addEventListener("click", () => {
-        const courseField = document.createElement("div");
-        courseField.className = "course-field";
-        courseField.innerHTML = `
-            <input type="text" name="course" placeholder="Enter course name">
-            <button type="button" class="delete-course">Delete</button>
-        `;
-        courseContainer.appendChild(courseField);
+    // Add new course input
+    addCourseButton.addEventListener('click', () => {
+        const inputDiv = document.createElement('div');
+        const newCourseInput = document.createElement('input');
+        const deleteButton = document.createElement('button');
 
-        // Add delete functionality
-        courseField.querySelector(".delete-course").addEventListener("click", () => {
-            courseField.remove();
+        newCourseInput.type = 'text';
+        newCourseInput.placeholder = 'Enter course name';
+        deleteButton.textContent = 'Delete';
+
+        // Delete the input
+        deleteButton.addEventListener('click', () => {
+            courseContainer.removeChild(inputDiv);
         });
+
+        inputDiv.appendChild(newCourseInput);
+        inputDiv.appendChild(deleteButton);
+        courseContainer.appendChild(inputDiv);
     });
 
-    // Form submission
-    form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Prevent form submission
-        
-        // Validate required fields
-        const requiredFields = ["name", "mascot", "image", "caption", "agreement"];
-        for (const id of requiredFields) {
-            const field = document.getElementById(id);
-            if (!field || (field.type === "checkbox" && !field.checked) || field.value.trim() === "") {
-                alert(`${id} is required.`);
-                return;
-            }
-        }
+    // Handle form submission
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
 
-        const imageFile = document.getElementById("image").files[0];
-        if (!["image/png", "image/jpeg"].includes(imageFile.type)) {
-            alert("Image must be PNG or JPG.");
+        // Validate file type
+        const fileInput = document.getElementById('form-image');
+        const file = fileInput.files[0];
+        if (file && !['image/png', 'image/jpeg'].includes(file.type)) {
+            alert('Please upload a valid PNG or JPG image.');
             return;
         }
 
-        // Replace form with result
-        form.style.display = "none";
-        resultDiv.style.display = "block";
-        resultDiv.innerHTML = `
-            <h2>Your Introduction Page</h2>
-            <p><strong>Name:</strong> ${document.getElementById("name").value}</p>
-            <p><strong>Mascot:</strong> ${document.getElementById("mascot").value}</p>
-            <img src="${URL.createObjectURL(imageFile)}" alt="Uploaded Image">
-            <figcaption>${document.getElementById("caption").value}</figcaption>
-            <!-- Include additional fields... -->
-        `;
-    });
+        // Collect data
+        const formData = new FormData(form);
+        const resultEnd = document.getElementById('result-end');
+        resultEnd.innerHTML = `<h2>Submission Summary</h2><ul>${
+            Array.from(formData.entries())
+                .map(([key, value]) => `<li><strong>${key}:</strong> ${value}</li>`)
+                .join('')
+        }</ul>`;
 
-    // Reset button functionality
-    form.addEventListener("reset", () => {
-        resultDiv.style.display = "none";
-        form.style.display = "block";
+        // Clear form
+        form.reset();
     });
 
 });
