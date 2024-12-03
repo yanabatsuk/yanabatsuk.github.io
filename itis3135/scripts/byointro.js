@@ -67,7 +67,7 @@ function submitForm(event) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Mascot:</strong> ${mascot}</p>
         ${imageURL ? `<p><strong>Image:</strong><br><img src="${imageURL}" alt="Uploaded Image"></p>` : ""}
-        <p><em>${imageCaption}</em></p>
+        <p><em>Image Caption: ${imageCaption}</em></p>
         <p><strong>Personal Background:</strong> ${personalBackground}</p>
         <p><strong>Professional Background:</strong> ${professionalBackground}</p>
         <p><strong>Academic Background:</strong> ${academicBackground}</p>
