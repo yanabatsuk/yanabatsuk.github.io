@@ -22,25 +22,25 @@
                 <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
                 <form id="intro-form">
 
-                    <!-- Name Field -->
+                    <!-- Name -->
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                    <!-- Mascot Field -->
+                    <input type="text" id="name" required>
+                    
+                    <!-- Mascot -->
                     <label for="mascot">Mascot:</label>
-                    <input type="text" id="mascot" name="mascot" placeholder="Enter your mascot" required>
-
+                    <input type="text" id="mascot" required>
+                    
                     <!-- Image Upload -->
-                    <label for="image">Image:</label>
-                    <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" required>
-
+                    <label for="image">Upload an image (PNG/JPG):</label>
+                    <input type="file" id="image" accept="image/png, image/jpeg" required>
+                    
                     <!-- Image Caption -->
                     <label for="caption">Image Caption:</label>
-                    <input type="text" id="caption" name="caption" placeholder="Enter image caption" required>
-
+                    <input type="text" id="caption" required>
+                    
                     <!-- Personal Background -->
-                    <label for="personal-background">Personal Background:</label>
-                    <textarea id="personal-background" name="personal-background" placeholder="Enter your personal background" required></textarea>
+                    <label for="personal-bg">Personal Background:</label>
+                    <textarea id="personal-bg" name="personal-bg" required>Example personal background...</textarea>
 
                     <!-- Professional Background -->
                     <label for="professional-background">Professional Background:</label>
@@ -59,11 +59,10 @@
                     <input type="text" id="platform" name="platform" placeholder="Enter your primary computer platform" required>
 
                     <!-- Courses -->
-                    <label for="courses">Courses Currently Taking:</label>
-                    <section id="course-inputs">
-                        <input type="text" id="course" name="course" placeholder="Enter a course name" required>
-                    </section>
-                    <button type="button" id="add-course">Add Course</button>
+                    <label for="courses">Courses currently taking:</label>
+                    <div id="course-container">
+                        <button type="button" id="add-course">Add Course</button>
+                    </div>
 
                     <!-- Funny Thing -->
                     <label for="funny-thing">Funny Thing:</label>
@@ -73,22 +72,23 @@
                     <label for="anything-else">Anything Else?</label>
                     <textarea id="anything-else" name="anything-else" placeholder="Add anytthing else to share"></textarea>
 
-                    <!-- Agreement Checkbox -->
+                    <!-- Agreement -->
                     <label>
-                        <input type="checkbox" id="agree" required>
-                        I understand that what is on this page is not password protected and I will not put anything here that I do not want publicly available.
+                        <input type="checkbox" id="agreement" required>
+                        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
                     </label>
+
 
                     <!-- Control Buttons -->
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
 
                 </form>
-                <section id="result-end"></section>
+                <div id="result-end"></div>
             </section>
         </main>
 
-        <footer>
+        <footer id="footer">
             <div data-include="components/footer.html"></div>
         </footer>
         <script>

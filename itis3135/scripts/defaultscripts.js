@@ -153,58 +153,61 @@ document.addEventListener("DOMContentLoaded", () => {
     
     /* BYO Intro Page */
     const form = document.getElementById("intro-form");
-    const courseInputs = document.getElementById("course-inputs");
-    const addCourseButton = document.getElementById("add-course");
+    const resultDiv = document.getElementById("result");
+    const courseContainer = document.getElementById("course-container");
 
-    // Add Course Text Box
-    addCourseButton.addEventListener("click", () => {
-        const newInput = document.createElement("input");
-        newInput.type = "text";
-        newInput.name = "course";
-        newInput.placeholder = "Enter a course name";
-        const deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete";
-        deleteButton.type = "button";
-        deleteButton.addEventListener("click", () => {
-            courseInputs.removeChild(newInput);
-            courseInputs.removeChild(deleteButton);
-        });
-        courseInputs.appendChild(newInput);
-        courseInputs.appendChild(deleteButton);
-    });
-
-    // Form Submit Event
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const formData = new FormData(form);
-        const result = document.getElementById("result-end");
-        result.innerHTML = `
-            <h3>Your Introduction Page</h3>
-            <ul>
-                <li><strong>Name:</strong> ${formData.get("name")}</li>
-                <li><strong>Mascot:</strong> ${formData.get("mascot")}</li>
-                <li><strong>Image Caption:</strong> ${formData.get("caption")}</li>
-                <li><strong>Personal Background:</strong> ${formData.get("personal-background")}</li>
-                <li><strong>Professional Background:</strong> ${formData.get("professional-background")}</li>
-                <li><strong>Academic Background:</strong> ${formData.get("academic-background")}</li>
-                <li><strong>Background in Web Development:</strong> ${formData.get("web-development")}</li>
-                <li><strong>Primary Computer Platform:</strong> ${formData.get("platform")}</li>
-                <li><strong>Courses Currently Taking:</strong> ${[...formData.getAll("course")].join(", ")}</li>
-                <li><strong>Funny Thing:</strong> ${formData.get("funny-thing")}</li>
-                <li><strong>Anything Else:</strong> ${formData.get("anything-else")}</li>
-            </ul>
-            <img src="${URL.createObjectURL(formData.get("image"))}" alt="Uploaded Image" style="max-width:100%;">
+    // Add course field dynamically
+    document.getElementById("add-course").addEventListener("click", () => {
+        const courseField = document.createElement("div");
+        courseField.className = "course-field";
+        courseField.innerHTML = `
+            <input type="text" name="course" placeholder="Enter course name">
+            <button type="button" class="delete-course">Delete</button>
         `;
-        result.style.display = "block";
-        form.style.display = "none";
+        courseContainer.appendChild(courseField);
+
+        // Add delete functionality
+        courseField.querySelector(".delete-course").addEventListener("click", () => {
+            courseField.remove();
+        });
     });
 
-    // Reset Button
+    // Form submission
+    form.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent form submission
+        
+        // Validate required fields
+        const requiredFields = ["name", "mascot", "image", "caption", "agreement"];
+        for (const id of requiredFields) {
+            const field = document.getElementById(id);
+            if (!field || (field.type === "checkbox" && !field.checked) || field.value.trim() === "") {
+                alert(`${id} is required.`);
+                return;
+            }
+        }
+
+        const imageFile = document.getElementById("image").files[0];
+        if (!["image/png", "image/jpeg"].includes(imageFile.type)) {
+            alert("Image must be PNG or JPG.");
+            return;
+        }
+
+        // Replace form with result
+        form.style.display = "none";
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = `
+            <h2>Your Introduction Page</h2>
+            <p><strong>Name:</strong> ${document.getElementById("name").value}</p>
+            <p><strong>Mascot:</strong> ${document.getElementById("mascot").value}</p>
+            <img src="${URL.createObjectURL(imageFile)}" alt="Uploaded Image">
+            <figcaption>${document.getElementById("caption").value}</figcaption>
+            <!-- Include additional fields... -->
+        `;
+    });
+
+    // Reset button functionality
     form.addEventListener("reset", () => {
-        const result = document.getElementById("result-end");
-        result.style.display = "none";
-        result.innerHTML = "";
+        resultDiv.style.display = "none";
         form.style.display = "block";
     });
 
