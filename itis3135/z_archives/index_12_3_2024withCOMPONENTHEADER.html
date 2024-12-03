@@ -13,10 +13,7 @@
     </head>
     <body>  
         <header>
-            <nav id="menu-main"></nav>
-            <nav id="menu-submenu"></nav>
-            <h1 class="responsive-heading1">Yana Batsuk's Yappy Bandicoot || ITIS3135</h1>
-            <p id="slogan">Transform your space into tropical escapes!</p>
+            <div data-include="components/header.html"></div>
         </header>
 
         <main>
@@ -28,18 +25,16 @@
             </section>
         </main>
 
-        <footer id="footer-container">
-            <nav id="menu-footer"></nav>
+        <footer>
+            <div data-include="components/footer.html"></div>
         </footer>
-        <!--
         <script>
             document.getElementById("validation-button-html").setAttribute("href", 
             "https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation-button-css").setAttribute("href", 
             "https://jisgaw.w3.org/css-validator/validator?uri=" + location.href);
         </script>
-        -->
-        <script src="scripts/menu.js"></script>
+        <script src="scripts/htmlinclude.js"></script>
     </body>
 
 </html>
