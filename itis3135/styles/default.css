@@ -295,7 +295,7 @@ footer p{
 
 
 label[for="funny"], 
-#funny {
+#funny{
     display: block;
     margin-top: 10px;
 }
@@ -304,26 +304,36 @@ label[for="funny"],
 
 
 /* SLIDESHOW PAGE*/
-#slideshow-container {
+#slideshow-container{
     text-align: center;
     margin: auto;
 }
 
-#slideshow {
+#slideshow{
     position: relative;
     max-width: 600px;
     margin: auto;
-    overflow: hidden; /* Ensure only one image is visible */
+    overflow: hidden; 
 }
 
 #slideshow img {
     width: 100%;
     border-radius: 8px;
+    display: block; 
+    margin: auto; 
 }
 
 #slideshow figcaption {
     margin-top: 10px;
     font-style: italic;
+    text-align: center; 
+}
+
+#controls {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    margin-top: 15px;
+    gap: 10px; /* Adds space between buttons */
 }
 
 #controls button {
@@ -332,6 +342,12 @@ label[for="funny"],
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background-color: #ddd; /* Optional styling */
+    transition: background-color 0.3s;
+}
+
+#controls button:hover {
+    background-color: #ccc; /* Optional hover effect */
 }
 
 #thumbnail-list {
@@ -347,19 +363,19 @@ label[for="funny"],
     margin: 5px;
     border: 2px solid #ccc;
     cursor: pointer;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-.thumbnail:hover{
+.thumbnail:hover {
     border-color: #555;
 }
 
-.slideshowpage, #controls{
-    align-items: center;
+.slideshowpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all child elements vertically */
     text-align: center;
-    align-content: center;
 }
-
 /* END OF SLIDESHOW PAGE*/
 
 
