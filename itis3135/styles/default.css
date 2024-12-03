@@ -323,7 +323,7 @@ label[for="funny"],
     margin: auto; 
 }
 
-#slideshow figcaption{
+#slideshow img + figcaption{
     margin-top: 10px;
     font-style: italic;
     text-align: center; 
