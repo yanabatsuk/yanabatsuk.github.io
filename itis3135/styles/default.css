@@ -312,7 +312,7 @@ label[for="funny"],
 #slideshow {
     position: relative;
     max-width: 600px;
-    margin: auto;
+    margin-left: 10px;
     overflow: hidden; /* Ensure only one image is visible */
 }
 
