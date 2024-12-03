@@ -304,54 +304,63 @@ label[for="funny"],
 
 
 /* SLIDESHOW PAGE*/
-#slideshow-container{
+#slideshow-container {
     text-align: center;
     margin: 20px auto;
-}
-
-#slideshow{
-    position: relative;
     max-width: 600px;
-    margin: auto;
 }
 
-#slideshow img{
+#slideshow {
+    position: relative;
+}
+
+#slideshow img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-#slideshow figcaption{
+#slideshow figcaption {
     margin-top: 10px;
     font-style: italic;
 }
 
-#controls button{
-    margin: 5px;
+#controls {
+    margin: 10px 0;
+}
+
+#controls button {
+    margin: 0 10px;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
+    background: #333;
+    color: #fff;
     cursor: pointer;
 }
 
-#thumbnail-list{
+#controls button:hover {
+    background: #555;
+}
+
+#thumbnail-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
     margin-top: 20px;
 }
 
-.thumbnail{
+.thumbnail {
     width: 80px;
     height: 50px;
-    margin: 5px;
     border: 2px solid #ccc;
+    border-radius: 5px;
     cursor: pointer;
-    box-sizing: border-box; 
 }
 
-.thumbnail:hover{
-    border-color: #555;
+.thumbnail:hover {
+    border-color: #333;
 }
 
 /* END OF SLIDESHOW PAGE*/

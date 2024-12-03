@@ -12,34 +12,40 @@ $(document).ready(function () {
         { src: "images/kiwi.jpeg", caption: "K for Kiwi" }
     ];
 
-
     let currentIndex = 0;
 
-    // Update the slideshow image and caption
+    // Update the main slideshow image and caption
     function updateSlideshow() {
-        const currentImage = images[currentIndex];
-        $("#slideshow img").attr("src", currentImage.src).attr("alt", currentImage.caption);
-        $("#slideshow figcaption").text(currentImage.caption);
+        const { src, caption } = images[currentIndex];
+        $("#slideshow img").attr("src", src).attr("alt", caption);
+        $("#slideshow figcaption").text(caption);
     }
 
-    // Initialize slideshow
+    // Initialize slideshow with the first image
     updateSlideshow();
 
-    // Next button
+    // Next button functionality
     $("#next").click(function () {
         currentIndex = (currentIndex + 1) % images.length;
         updateSlideshow();
     });
 
-    // Previous button
+    // Previous button functionality
     $("#prev").click(function () {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         updateSlideshow();
     });
 
-    // Generate thumbnail images
+    // Add thumbnails dynamically
     images.forEach((image, index) => {
-        const thumbnail = $(`<img class="thumbnail" src="${image.src}" alt="${image.caption}" data-index="${index}">`);
+        const thumbnail = $(`
+            <img 
+                class="thumbnail" 
+                src="${image.src}" 
+                alt="${image.caption}" 
+                data-index="${index}" 
+            >
+        `);
         $("#thumbnail-list").append(thumbnail);
     });
 
