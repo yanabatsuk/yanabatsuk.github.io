@@ -32,8 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const footer = document.getElementById("footer-container");
     if (footer) {
         footer.innerHTML += `
-            <p>Page Designed by <a href="https://batsukdesigns.com" target="_blank">Batsuk Designs</a> &copy; 2024</p>
+            <p>Page Designed by <a href="batsukdesigns.com/" target="_blank">Batsuk Designs</a> &copy; 2024</p>
             <p>Certified in <a href="https://www.freecodecamp.org/certification/ybatsuk/responsive-web-design" target="_blank">Responsive Web Design</a>, Certified in <a href="https://www.freecodecamp.org/certification/ybatsuk/javascript-algorithms-and-data-structures-v8" target="_blank">JavaScript Algorithms and Data Structures</a></p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
         `;
     }
 });
