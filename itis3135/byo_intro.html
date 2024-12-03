@@ -22,10 +22,10 @@
                 <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
                 <form id="intro-form">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Grishma Howale" required><br>
+                    <input type="text" id="name" name="name" placeholder="Yana Batsuk" required><br>
                 
                     <label for="mascot">Mascot:</label>
-                    <input type="text" id="mascot" name="mascot" placeholder="Gentle Hawk" required><br>
+                    <input type="text" id="mascot" name="mascot" placeholder="Yappy Bandicoot" required><br>
                 
                     <label for="image">Upload Image (PNG/JPG):</label>
                     <input type="file" id="intro-image" name="image" accept="image/png, image/jpeg" required><br>
@@ -34,19 +34,19 @@
                     <input type="text" id="image-caption" name="image-caption" placeholder="Describe your image" required><br>
                 
                     <label for="personal-background">Personal Background:</label>
-                    <textarea id="personal-background" name="personal-background" placeholder="Your personal background..." required></textarea><br>
+                    <textarea id="personal-background" name="personal-background" placeholder="Add your personal background..." required></textarea><br>
                 
                     <label for="professional-background">Professional Background:</label>
-                    <textarea id="professional-background" name="professional-background" placeholder="Your professional background..." required></textarea><br>
+                    <textarea id="professional-background" name="professional-background" placeholder="Add your professional background..." required></textarea><br>
                 
                     <label for="academic-background">Academic Background:</label>
-                    <textarea id="academic-background" name="academic-background" placeholder="Computer Science major..." required></textarea><br>
+                    <textarea id="academic-background" name="academic-background" placeholder="Add your academic background..." required></textarea><br>
                 
                     <label for="web-development">Background in Web Development:</label>
-                    <textarea id="web-development" name="web-development" placeholder="Web Developer..." required></textarea><br>
+                    <textarea id="web-development" name="web-development" placeholder="Add your background in web development..." required></textarea><br>
                 
                     <label for="platform">Primary Computer Platform:</label>
-                    <input type="text" id="platform" name="platform" placeholder="Enter your primary platform (e.g., Windows)" required><br>
+                    <input type="text" id="platform" name="platform" placeholder="Enter your primary platform (e.g., Mac)" required><br>
                 
                     <div id="courses-list"></div>
                     <button type="button" id="add-course-btn">Add Course</button>
@@ -54,10 +54,10 @@
             
                     
                     <label for="funny">Funny Thing:</label>
-                    <input type="text" id="funny" name="funny" placeholder="Something funny..."><br>
+                    <input type="text" id="funny" name="funny" placeholder="Add something funny..."><br>
                 
                     <label for="other">Anything else?</label>
-                    <input type="text" id="other" name="other" placeholder="Anything else you want to share?"><br>
+                    <input type="text" id="other" name="other" placeholder="Add anything else you want to share..."><br>
                 
                     <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
                     <input type="checkbox" id="agree" name="agree" required><br>
@@ -68,13 +68,12 @@
                 
             
                 <div id="result" class="hidden">
-                    <!-- This will show after form submission -->
+ 
                     <h3>Your BYO Intro Page:</h3>
-                    <!-- In the result section where the image will be displayed -->
                     
                     <div id="intro-content">
-                        <!-- Dynamically populated content goes here -->
                     </div>
+
                     <div id="load-image"></div>
                     
                 </div>
@@ -91,6 +90,7 @@
         </script>
         <script src="scripts/htmlinclude.js"></script>
         <script src="scripts/defaultscripts.js"></script>
+
         <script src="scripts/byointro.js"></script>
     </body>
 
