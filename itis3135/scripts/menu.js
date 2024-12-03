@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
             })
-            .catch((error )=> console.error(`Error loading ${jsonFile}:`, error));
+            .catch((error) => console.error(`Error loading ${jsonFile}:`, error));
     }
 
     // Load the menus
