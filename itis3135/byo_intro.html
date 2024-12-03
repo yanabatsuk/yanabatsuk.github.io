@@ -19,9 +19,72 @@
         <main>
             <section id="content">
                 <h2 class="responsive-heading">BYO Intro</h2>
-                <section>
-                    <p>.</p>
-                </section>
+                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+                <form id="intro-form">
+
+                    <!-- Name Field -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <!-- Mascot Field -->
+                    <label for="mascot">Mascot:</label>
+                    <input type="text" id="mascot" name="mascot" placeholder="Enter your mascot" required>
+
+                    <!-- Image Upload -->
+                    <label for="image">Image:</label>
+                    <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" required>
+
+                    <!-- Image Caption -->
+                    <label for="caption">Image Caption:</label>
+                    <input type="text" id="caption" name="caption" placeholder="Enter image caption" required>
+
+                    <!-- Personal Background -->
+                    <label for="personal-background">Personal Background:</label>
+                    <textarea id="personal-background" name="personal-background" placeholder="Enter your personal background" required></textarea>
+
+                    <!-- Professional Background -->
+                    <label for="professional-background">Professional Background:</label>
+                    <textarea id="professional-background" name="professional-background" placeholder="Enter your professional background" required></textarea>
+
+                    <!-- Academic Background -->
+                    <label for="academic-background">Academic Background:</label>
+                    <textarea id="academic-background" name="academic-background" placeholder="Enter your academic background" required></textarea>
+
+                    <!-- Web Development Background -->
+                    <label for="web-development">Web Development:</label>
+                    <textarea id="web-development" name="web-development" placeholder="Enter your web development background" required></textarea>
+
+                    <!-- Primary Computer Platform -->
+                    <label for="platform">Primary Computer Platform:</label>
+                    <input type="text" id="platform" name="platform" placeholder="Enter your primary computer platform" required>
+
+                    <!-- Courses -->
+                    <label for="courses">Courses Currently Taking:</label>
+                    <section id="course-inputs">
+                        <input type="text" name="course" placeholder="Enter a course name" required>
+                    </section>
+                    <button type="button" id="add-course">Add Course</button>
+
+                    <!-- Funny Thing -->
+                    <label for="funny-thing">Funny Thing:</label>
+                    <textarea id="funny-thing" name="funny-thing" placeholder="Share something funny"></textarea>
+
+                    <!-- Anything Else -->
+                    <label for="anything-else">Anything Else?</label>
+                    <textarea id="anything-else" name="anything-else" placeholder="Add anytthing else to share"></textarea>
+
+                    <!-- Agreement Checkbox -->
+                    <label>
+                        <input type="checkbox" id="agree" required>
+                        I understand that what is on this page is not password protected and I will not put anything here that I do not want publicly available.
+                    </label>
+
+                    <!-- Control Buttons -->
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+
+                </form>
+                <section id="result-end"></section>
             </section>
         </main>
 

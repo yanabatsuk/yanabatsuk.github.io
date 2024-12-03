@@ -278,6 +278,24 @@ footer p{
     display: inline;
 }
 
+/* BYO Intro Page */
+
+#result-end{
+    display: none;
+}
+
+#result {
+    padding: 20px;
+    background-color: #F3F7F3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #9EB4BD;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+
+
 /* Media Queries */
 
 /* Desktop */
