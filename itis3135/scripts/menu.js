@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Load the menus
     loadMenu("nav_main.json", "menu-main");
-    loadMenu("nav_footer.json", "menu-footer");
+    loadMenu("data/nav_footer.json", "menu-footer");
     loadMenu("nav_submenu.json", "menu-submenu");
 
     // Add footer text dynamically
