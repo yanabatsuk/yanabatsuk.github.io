@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     let currentIndex = 0;
 
-    // Update slideshow content
+    // Updateslideshow content
     function updateSlideshow() {
         const currentImage = images[currentIndex];
         $("#slideshow img").attr("src", currentImage.src).attr("alt", currentImage.caption);
