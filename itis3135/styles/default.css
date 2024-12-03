@@ -311,7 +311,7 @@ label[for="funny"],
 
 #slideshow{
     position: relative;
-    max-width: 600px;
+    max-width: 1500px;
     margin: auto;
     overflow: hidden; 
 }
