@@ -151,62 +151,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     
-/* BYO Intro Page */
-const form = document.getElementById("intro-form");
-const courseInputs = document.getElementById("course-inputs");
-const addCourseButton = document.getElementById("add-course");
+    /* BYO Intro Page */
+    const form = document.getElementById("intro-form");
+    const courseInputs = document.getElementById("course-inputs");
+    const addCourseButton = document.getElementById("add-course");
 
-// Add Course Text Box
-addCourseButton.addEventListener("click", () => {
-    const newInput = document.createElement("input");
-    newInput.type = "text";
-    newInput.name = "course";
-    newInput.placeholder = "Enter a course name";
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-    deleteButton.type = "button";
-    deleteButton.addEventListener("click", () => {
-        courseInputs.removeChild(newInput);
-        courseInputs.removeChild(deleteButton);
+    // Add Course Text Box
+    addCourseButton.addEventListener("click", () => {
+        const newInput = document.createElement("input");
+        newInput.type = "text";
+        newInput.name = "course";
+        newInput.placeholder = "Enter a course name";
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.type = "button";
+        deleteButton.addEventListener("click", () => {
+            courseInputs.removeChild(newInput);
+            courseInputs.removeChild(deleteButton);
+        });
+        courseInputs.appendChild(newInput);
+        courseInputs.appendChild(deleteButton);
     });
-    courseInputs.appendChild(newInput);
-    courseInputs.appendChild(deleteButton);
-});
 
-// Form Submit Event
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+    // Form Submit Event
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-    const formData = new FormData(form);
-    const result = document.getElementById("result-end");
-    result.innerHTML = `
-        <h3>Your Introduction Page</h3>
-        <ul>
-            <li><strong>Name:</strong> ${formData.get("name")}</li>
-            <li><strong>Mascot:</strong> ${formData.get("mascot")}</li>
-            <li><strong>Image Caption:</strong> ${formData.get("caption")}</li>
-            <li><strong>Personal Background:</strong> ${formData.get("personal-background")}</li>
-            <li><strong>Professional Background:</strong> ${formData.get("professional-background")}</li>
-            <li><strong>Academic Background:</strong> ${formData.get("academic-background")}</li>
-            <li><strong>Background in Web Development:</strong> ${formData.get("web-development")}</li>
-            <li><strong>Primary Computer Platform:</strong> ${formData.get("platform")}</li>
-            <li><strong>Courses Currently Taking:</strong> ${[...formData.getAll("course")].join(", ")}</li>
-            <li><strong>Funny Thing:</strong> ${formData.get("funny-thing")}</li>
-            <li><strong>Anything Else:</strong> ${formData.get("anything-else")}</li>
-        </ul>
-        <img src="${URL.createObjectURL(formData.get("image"))}" alt="Uploaded Image" style="max-width:100%;">
-    `;
-    result.style.display = "block";
-    form.style.display = "none";
-});
+        const formData = new FormData(form);
+        const result = document.getElementById("result-end");
+        result.innerHTML = `
+            <h3>Your Introduction Page</h3>
+            <ul>
+                <li><strong>Name:</strong> ${formData.get("name")}</li>
+                <li><strong>Mascot:</strong> ${formData.get("mascot")}</li>
+                <li><strong>Image Caption:</strong> ${formData.get("caption")}</li>
+                <li><strong>Personal Background:</strong> ${formData.get("personal-background")}</li>
+                <li><strong>Professional Background:</strong> ${formData.get("professional-background")}</li>
+                <li><strong>Academic Background:</strong> ${formData.get("academic-background")}</li>
+                <li><strong>Background in Web Development:</strong> ${formData.get("web-development")}</li>
+                <li><strong>Primary Computer Platform:</strong> ${formData.get("platform")}</li>
+                <li><strong>Courses Currently Taking:</strong> ${[...formData.getAll("course")].join(", ")}</li>
+                <li><strong>Funny Thing:</strong> ${formData.get("funny-thing")}</li>
+                <li><strong>Anything Else:</strong> ${formData.get("anything-else")}</li>
+            </ul>
+            <img src="${URL.createObjectURL(formData.get("image"))}" alt="Uploaded Image" style="max-width:100%;">
+        `;
+        result.style.display = "block";
+        form.style.display = "none";
+    });
 
-// Reset Button
-form.addEventListener("reset", () => {
-    const result = document.getElementById("result-end");
-    result.style.display = "none";
-    result.innerHTML = "";
-    form.style.display = "block";
-});
+    // Reset Button
+    form.addEventListener("reset", () => {
+        const result = document.getElementById("result-end");
+        result.style.display = "none";
+        result.innerHTML = "";
+        form.style.display = "block";
+    });
 
 });
 
