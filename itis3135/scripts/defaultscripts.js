@@ -156,25 +156,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const courseContainer = document.getElementById('course-container');
     const addCourseButton = document.getElementById('add-course');
 
-    // Add new course input
-    addCourseButton.addEventListener('click', () => {
-        const inputDiv = document.createElement('div');
-        const newCourseInput = document.createElement('input');
-        const deleteButton = document.createElement('button');
+   // Function to handle adding a new course text box
+    // Add functionality for the "Add Course" button
+    document.getElementById("add-course").addEventListener("click", function () {
+        const courseContainer = document.getElementById("course-container");
 
-        newCourseInput.type = 'text';
-        newCourseInput.placeholder = 'Enter course name';
-        deleteButton.textContent = 'Delete';
+        // Create a new div for the course input and delete button
+        const courseDiv = document.createElement("div");
+        courseDiv.className = "course-entry";
 
-        // Delete the input
-        deleteButton.addEventListener('click', () => {
-            courseContainer.removeChild(inputDiv);
+        // Create a new input field for the course
+        const courseInput = document.createElement("input");
+        courseInput.type = "text";
+        courseInput.placeholder = "Enter course name";
+        courseInput.className = "course-input";
+
+        // Create a delete button for the course entry
+        const deleteButton = document.createElement("button");
+        deleteButton.type = "button";
+        deleteButton.textContent = "Delete";
+        deleteButton.className = "delete-course";
+        deleteButton.addEventListener("click", function () {
+            courseDiv.remove();
         });
 
-        inputDiv.appendChild(newCourseInput);
-        inputDiv.appendChild(deleteButton);
-        courseContainer.appendChild(inputDiv);
+        // Append input and button to the courseDiv
+        courseDiv.appendChild(courseInput);
+        courseDiv.appendChild(deleteButton);
+
+        // Append the courseDiv to the container
+        courseContainer.appendChild(courseDiv);
     });
+
 
     // Handle form submission
     form.addEventListener('submit', (event) => {

@@ -294,6 +294,37 @@ footer p{
     text-align: left;
 }
 
+/* Styling for dynamically added course entries */
+.course-entry {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.course-input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 4px;
+    border: 1.2px solid #9EB4BD;
+    border-radius: 6px;
+    background-color: #F3F6F7;
+}
+
+.delete-course {
+    background-color: #ff4c4c;
+    color: #F3F6F7;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-course:hover {
+    background-color: #ff1a1a;
+}
+
 
 
 /* Media Queries */
