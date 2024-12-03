@@ -317,11 +317,10 @@ label[for="funny"],
 }
 
 #slideshow img {
-    width: 100%;
+    width: 150%;
     border-radius: 8px;
     display: block; 
     margin: auto; 
-    height: auto;
 }
 
 #slideshow figcaption {
