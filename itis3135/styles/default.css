@@ -35,6 +35,10 @@ header nav{
     font-weight: bold;
 }
 
+#menu-main, #menu-submenu{
+    margin-top: 5px;
+}
+
 #slogan{
     font-style: italic;
     font-size: 37px;
