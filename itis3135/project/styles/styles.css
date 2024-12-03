@@ -448,18 +448,23 @@ li span {
 
 
 .wedding-btn {
-    background: #6b544d;
+    background: #7C5A53; 
 }
 
 .engagement-btn {
-    background: #74544B;
+    background: #6E4F47;
 }
 
-.portrait-btn {
-    background: #5F4549;
+.senior-portrait-btn {
+    background: #5C443F;
 }
 
-.wedding-btn:hover, .engagement-btn:hover, .portrait-btn:hover {
+.creative-portrait-btn {
+    background: #4D3A36; 
+}
+
+
+.wedding-btn:hover, .engagement-btn:hover, .senior-portrait-btn:hover, .creative-portrait-btn:hover {
     background: #322428;
     color: #FDDCC3;
 }
