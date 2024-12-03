@@ -355,7 +355,7 @@ label[for="funny"],
     border-color: #555;
 }
 
-#slideshowpage{
+#slideshowpage, #controls{
     align-items: center;
     text-align: center;
     align-content: center;
