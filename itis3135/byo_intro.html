@@ -21,70 +21,63 @@
                 <h2 class="responsive-heading">BYO Intro</h2>
                 <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
                 <form id="intro-form">
-
-                    <!-- Name -->
-                    <label for="form-name">Name*:</label>
-                    <input type="text" id="form-name" name="form-name" placeholder="Enter your name" value="Yana Batsuk" required>
-
-                    <!-- Mascot -->
-                    <label for="form-mascot">Mascot*:</label>
-                    <input type="text" id="form-mascot" name="form-mascot" placeholder="Enter your mascot" value="Yappy Bandicoot" required>
-
-                    <!-- Image Upload -->
-                    <label for="form-image">Upload an Image (PNG/JPG)*:</label>
-                    <input type="file" id="form-image" name="form-image" accept=".png, .jpg" required>
-
-                    <!-- Image Caption -->
-                    <label for="form-caption">Image Caption*:</label>
-                    <input type="text" id="form-caption" name="form-caption" placeholder="Enter a caption" value="My favorite mascot!" required>
-
-                    <!-- Personal Background -->
-                    <label for="form-personal-background">Personal Background*:</label>
-                    <textarea id="form-personal-background" name="form-personal-background" required>I enjoy learning and coding.</textarea>
-
-                    <!-- Professional Background -->
-                    <label for="form-professional-background">Professional Background*:</label>
-                    <textarea id="form-professional-background" name="form-professional-background" required>IT Intern at Batsuk Consulting LLC</textarea>
-
-                    <!-- Academic Background -->
-                    <label for="form-academic-background">Academic Background*:</label>
-                    <textarea id="form-academic-background" name="form-academic-background" required>BS in Computer Science, UNC Charlotte</textarea>
-
-                    <!-- Web Development Background -->
-                    <label for="form-webdev-background">Web Development Background*:</label>
-                    <textarea id="form-webdev-background" name="form-webdev-background" required>Developing projects in HTML, CSS, and JavaScript.</textarea>
-
-                    <!-- Primary Computer Platform -->
-                    <label for="form-platform">Primary Computer Platform*:</label>
-                    <input type="text" id="form-platform" name="form-platform" value="Mac" required>
-
-                    <!-- Courses -->
-                    <label for="form-courses">Courses Currently Taking*:</label>
-                    <div id="course-container">
-                        <button type="button" id="add-course">Add Course</button>
-                    </div>                    
-
-                    <!-- Funny Thing -->
-                    <label for="form-funny-thing">Funny Thing?</label>
-                    <textarea id="form-funny-thing" name="form-funny-thing"></textarea>
-
-                    <!-- Anything Else -->
-                    <label for="form-anything-else">Anything Else?</label>
-                    <textarea id="form-anything-else" name="form-anything-else"></textarea>
-
-                    <!-- Agreement -->
-                    <label>
-                        <input type="checkbox" id="form-agreement" required>
-                        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
-                    </label>
-
-                    <!-- Control Buttons -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Grishma Howale" required><br>
+                
+                    <label for="mascot">Mascot:</label>
+                    <input type="text" id="mascot" name="mascot" placeholder="Gentle Hawk" required><br>
+                
+                    <label for="image">Upload Image (PNG/JPG):</label>
+                    <input type="file" id="intro-image" name="image" accept="image/png, image/jpeg" required><br>
+            
+                    <label for="image-caption">Image Caption:</label>
+                    <input type="text" id="image-caption" name="image-caption" placeholder="Describe your image" required><br>
+                
+                    <label for="personal-background">Personal Background:</label>
+                    <textarea id="personal-background" name="personal-background" placeholder="Your personal background..." required></textarea><br>
+                
+                    <label for="professional-background">Professional Background:</label>
+                    <textarea id="professional-background" name="professional-background" placeholder="Your professional background..." required></textarea><br>
+                
+                    <label for="academic-background">Academic Background:</label>
+                    <textarea id="academic-background" name="academic-background" placeholder="Computer Science major..." required></textarea><br>
+                
+                    <label for="web-development">Background in Web Development:</label>
+                    <textarea id="web-development" name="web-development" placeholder="Web Developer..." required></textarea><br>
+                
+                    <label for="platform">Primary Computer Platform:</label>
+                    <input type="text" id="platform" name="platform" placeholder="Enter your primary platform (e.g., Windows)" required><br>
+                
+                    <div id="courses-list"></div>
+                    <button type="button" id="add-course-btn">Add Course</button>
+            
+            
+                    
+                    <label for="funny">Funny Thing:</label>
+                    <input type="text" id="funny" name="funny" placeholder="Something funny..."><br>
+                
+                    <label for="other">Anything else?</label>
+                    <input type="text" id="other" name="other" placeholder="Anything else you want to share?"><br>
+                
+                    <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+                    <input type="checkbox" id="agree" name="agree" required><br>
+                
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
-
                 </form>
-                <div id="result-end"></div>
-            </section>
+                
+            
+                <div id="result" class="hidden">
+                    <!-- This will show after form submission -->
+                    <h3>Your BYO Intro Page:</h3>
+                    <!-- In the result section where the image will be displayed -->
+                    
+                    <div id="intro-content">
+                        <!-- Dynamically populated content goes here -->
+                    </div>
+                    <div id="load-image"></div>
+                    
+                </div>
         </main>
 
         <footer id="footer">
@@ -98,6 +91,7 @@
         </script>
         <script src="scripts/htmlinclude.js"></script>
         <script src="scripts/defaultscripts.js"></script>
+        <script src="scripts/byointro.js"></script>
     </body>
 
 </html>
