@@ -7,18 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 const container = document.getElementById(containerId);
                 if (!container) return;
 
-                data.forEach((item) => {
+                data.forEach((item, index) => {
                     const link = document.createElement("a");
                     link.textContent = item.name;
                     link.href = item.url;
                     link.target = item.url.startsWith("http") ? "_blank" : "_self"; // Open external links in new tab
                     container.appendChild(link);
-
-                    // Add separators (if needed)
-                    if (container.lastElementChild !== link) {
+                
+                    // Add separators (if not the last item)
+                    if (index < data.length - 1) {
                         container.appendChild(document.createTextNode(" || "));
                     }
                 });
+                
             })
             .catch((error) => console.error(`Error loading ${jsonFile}:`, error));
     }
