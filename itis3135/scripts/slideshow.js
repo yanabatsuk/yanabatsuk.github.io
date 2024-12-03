@@ -1,48 +1,50 @@
 $(document).ready(function () {
     const images = [
-        { src: "images/yoyo.jpg", caption: "Y for Yoyo" },
+        { src: "images/yogurt.jpg", caption: "Y for Yogurt" },
         { src: "images/apple.jpg", caption: "A for Apple" },
         { src: "images/necklace.jpg", caption: "N for Necklace" },
+        { src: "images/avocado.jpg", caption: "A for Avocado" },
+        { src: "images/balloon.jpg", caption: "B for Balloon" },
         { src: "images/airplane.jpg", caption: "A for Airplane" },
-        { src: "images/bicycle.jpg", caption: "B for Bicycle" },
-        { src: "images/aquarium.jpg", caption: "A for Aquarium" },
-        { src: "images/teacup.jpg", caption: "T for Teacup" },
-        { src: "images/seashell.jpg", caption: "S for Seashell" },
+        { src: "images/trees.jpg", caption: "T for Trees" },
+        { src: "images/sunflowers.jpg", caption: "S for Sunflowers" },
         { src: "images/umbrella.jpg", caption: "U for Umbrella" },
-        { src: "images/kite.jpg", caption: "K for Kite" }
+        { src: "images/kiwi.jpg", caption: "K for Kiwi" }
     ];
+
 
     let currentIndex = 0;
 
+    // Update the slideshow image and caption
     function updateSlideshow() {
-        $("#slideshow img").attr("src", images[currentIndex].src);
-        $("#slideshow figcaption").text(images[currentIndex].caption);
+        const currentImage = images[currentIndex];
+        $("#slideshow img").attr("src", currentImage.src).attr("alt", currentImage.caption);
+        $("#slideshow figcaption").text(currentImage.caption);
     }
 
-    // Initialize the slideshow
+    // Initialize slideshow
     updateSlideshow();
 
-    // Next button functionality
+    // Next button
     $("#next").click(function () {
         currentIndex = (currentIndex + 1) % images.length;
         updateSlideshow();
     });
 
-    // Previous button functionality
+    // Previous button
     $("#prev").click(function () {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         updateSlideshow();
     });
 
-    // Generate thumbnails
+    // Generate thumbnail images
     images.forEach((image, index) => {
-        $("#thumbnail-list").append(
-            `<img src="${image.src}" alt="${image.caption}" data-index="${index}" class="thumbnail">`
-        );
+        const thumbnail = $(`<img class="thumbnail" src="${image.src}" alt="${image.caption}" data-index="${index}">`);
+        $("#thumbnail-list").append(thumbnail);
     });
 
     // Thumbnail click event
-    $(".thumbnail").click(function () {
+    $("#thumbnail-list").on("click", ".thumbnail", function () {
         currentIndex = $(this).data("index");
         updateSlideshow();
     });
