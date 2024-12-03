@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to load a menu from JSON and append to a container
     function loadMenu(jsonFile, containerId) {
         fetch(jsonFile)
-            .then(response => response.json())
-            .then(data => {
+            .then((response) => response.json())
+            .then((data) => {
                 const container = document.getElementById(containerId);
                 if (!container) return;
 
-                data.forEach(item => {
+                data.forEach((item) => {
                     const link = document.createElement("a");
                     link.textContent = item.name;
                     link.href = item.url;
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
             })
-            .catch(error => console.error(`Error loading ${jsonFile}:`, error));
+            .catch((error )=> console.error(`Error loading ${jsonFile}:`, error));
     }
 
     // Load the menus
