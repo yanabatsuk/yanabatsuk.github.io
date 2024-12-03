@@ -285,14 +285,16 @@ footer p{
 }
 
 #courses-list + button {
-    display: block; /* Ensures the Add Course button takes the full line */
-    margin-bottom: 10px; /* Adds spacing below the button */
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 label[for="funny"], 
 #funny {
-    display: block; /* Forces each label and input to be on its own line */
-    margin-top: 10px; /* Adds spacing above the Funny Thing section */
+    display: block;
+    margin-top: 10px;
 }
 
 
