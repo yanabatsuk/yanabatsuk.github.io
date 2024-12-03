@@ -1,15 +1,15 @@
 $(document).ready(function () {
     const images = [
-        { src: "images/yogurt.jpg", caption: "Y for Yogurt" },
-        { src: "images/apple.jpg", caption: "A for Apple" },
-        { src: "images/necklace.jpg", caption: "N for Necklace" },
-        { src: "images/avocado.jpg", caption: "A for Avocado" },
-        { src: "images/balloon.jpg", caption: "B for Balloon" },
-        { src: "images/airplane.jpg", caption: "A for Airplane" },
-        { src: "images/trees.jpg", caption: "T for Trees" },
-        { src: "images/sunflowers.jpg", caption: "S for Sunflowers" },
-        { src: "images/umbrella.jpg", caption: "U for Umbrella" },
-        { src: "images/kiwi.jpg", caption: "K for Kiwi" }
+        { src: "images/yogurt.jpeg", caption: "Y for Yogurt" },
+        { src: "images/apple.jpeg", caption: "A for Apple" },
+        { src: "images/necklace.jpeg", caption: "N for Necklace" },
+        { src: "images/avocado.jpeg", caption: "A for Avocado" },
+        { src: "images/balloon.jpeg", caption: "B for Balloon" },
+        { src: "images/airplane.jpeg", caption: "A for Airplane" },
+        { src: "images/trees.jpeg", caption: "T for Trees" },
+        { src: "images/sunflowers.jpeg", caption: "S for Sunflowers" },
+        { src: "images/umbrella.jpeg", caption: "U for Umbrella" },
+        { src: "images/kiwi.jpeg", caption: "K for Kiwi" }
     ];
 
 
