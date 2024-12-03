@@ -148,66 +148,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("plant-care-tip-button").addEventListener("click", plantCareTip);
     document.getElementById("plant-fact-button").addEventListener("click", plantFact);
 
-    document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("introForm");
-    const courseInputs = document.getElementById("courseInputs");
-    const addCourseButton = document.getElementById("addCourse");
-
-    // Add Course Text Box
-    addCourseButton.addEventListener("click", () => {
-        const newInput = document.createElement("input");
-        newInput.type = "text";
-        newInput.name = "course";
-        newInput.placeholder = "Enter a course name";
-        const deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete";
-        deleteButton.type = "button";
-        deleteButton.addEventListener("click", () => {
-            courseInputs.removeChild(newInput);
-            courseInputs.removeChild(deleteButton);
-        });
-        courseInputs.appendChild(newInput);
-        courseInputs.appendChild(deleteButton);
-    });
-
-    // Form Submit Event
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const formData = new FormData(form);
-        const result = document.getElementById("result");
-        result.innerHTML = `
-            <h3>Your Introduction Page</h3>
-            <ul>
-                <li><strong>Name:</strong> ${formData.get("name")}</li>
-                <li><strong>Mascot:</strong> ${formData.get("mascot")}</li>
-                <li><strong>Image Caption:</strong> ${formData.get("caption")}</li>
-                <li><strong>Personal Background:</strong> ${formData.get("personalBackground")}</li>
-                <li><strong>Professional Background:</strong> ${formData.get("professionalBackground")}</li>
-                <li><strong>Academic Background:</strong> ${formData.get("academicBackground")}</li>
-                <li><strong>Background in Web Development:</strong> ${formData.get("webDevelopment")}</li>
-                <li><strong>Primary Computer Platform:</strong> ${formData.get("platform")}</li>
-                <li><strong>Courses Currently Taking:</strong> ${[...formData.getAll("course")].join(", ")}</li>
-                <li><strong>Funny Thing:</strong> ${formData.get("funnyThing")}</li>
-                <li><strong>Anything Else:</strong> ${formData.get("anythingElse")}</li>
-            </ul>
-            <img src="${URL.createObjectURL(formData.get("image"))}" alt="Uploaded Image" style="max-width:100%;">
-        `;
-        result.style.display = "block";
-        form.style.display = "none";
-    });
-
-    // Reset Button
-    form.addEventListener("reset", () => {
-        const result = document.getElementById("result");
-        result.style.display = "none";
-        result.innerHTML = "";
-        form.style.display = "block";
-    });
-});
 
 
-
+    
 /* BYO Intro Page */
 const form = document.getElementById("intro-form");
 const courseInputs = document.getElementById("course-inputs");
@@ -265,5 +208,6 @@ form.addEventListener("reset", () => {
     form.style.display = "block";
 });
 
-
 });
+
+
