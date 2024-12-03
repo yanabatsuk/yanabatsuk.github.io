@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Load the menus
-    loadMenu("nav_main.json", "menu-main");
+    loadMenu("data/nav_main.json", "menu-main");
     loadMenu("data/nav_footer.json", "menu-footer");
-    loadMenu("nav_submenu.json", "menu-submenu");
+    loadMenu("data/nav_submenu.json", "menu-submenu");
 
     // Add footer text dynamically
     const footer = document.getElementById("footer-container");
