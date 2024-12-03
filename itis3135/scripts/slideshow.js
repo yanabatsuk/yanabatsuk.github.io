@@ -9,7 +9,7 @@ $(document).ready(function () {
         { src: "images/teacup.jpg", caption: "T for Teacup" },
         { src: "images/seashell.jpg", caption: "S for Seashell" },
         { src: "images/umbrella.jpg", caption: "U for Umbrella" },
-        { src: "images/kite.jpg", caption: "K for Kite" },
+        { src: "images/kite.jpg", caption: "K for Kite" }
     ];
 
     let currentIndex = 0;
