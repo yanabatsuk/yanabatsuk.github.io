@@ -351,8 +351,14 @@ label[for="funny"],
     box-sizing: border-box; 
 }
 
-.thumbnail:hover {
+.thumbnail:hover{
     border-color: #555;
+}
+
+#slideshowpage{
+    align-items: center;
+    text-align: center;
+    align-content: center;
 }
 
 /* END OF SLIDESHOW PAGE*/

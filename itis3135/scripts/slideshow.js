@@ -5,6 +5,7 @@ $(document).ready(function () {
         { src: "images/necklace.jpeg", caption: "N for Necklace" },
         { src: "images/avocado.jpeg", caption: "A for Avocado" },
         { src: "images/balloon.jpeg", caption: "B for Balloon" },
+        { src: "images/avocado.jpeg", caption: "A for Avocado" },
         { src: "images/trees.jpeg", caption: "T for Trees" },
         { src: "images/sunflowers.jpeg", caption: "S for Sunflowers" },
         { src: "images/umbrella.jpeg", caption: "U for Umbrella" },
