@@ -284,11 +284,11 @@ footer p{
 
 /* BYO Intro Page */
 
-.hidden {
+.hidden{
     display: none;
 }
 
-#courses-list + button {
+#courses-list + button{
     display: block;
     margin: 10px 5px 10px 5px;
 }
@@ -316,26 +316,27 @@ label[for="funny"],
     overflow: hidden; 
 }
 
-#slideshow img {
+#slideshow img{
     width: 250%;
     border-radius: 8px;
     display: block; 
     margin: auto; 
 }
 
-#slideshow figcaption {
+#slideshow figcaption{
     margin-top: 10px;
     font-style: italic;
+    text-align: center; 
 }
 
-#controls {
+#controls{
     display: flex;
-    justify-content: center; /* Centers buttons horizontally */
+    justify-content: center; 
     margin-top: 15px;
-    gap: 10px; /* Adds space between buttons */
+    gap: 10px;
 }
 
-#controls button {
+#controls button{
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -345,14 +346,14 @@ label[for="funny"],
 }
 
 
-#thumbnail-list {
+#thumbnail-list{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.thumbnail {
+.thumbnail{
     width: 80px;
     height: 50px;
     margin: 5px;
@@ -361,14 +362,14 @@ label[for="funny"],
     box-sizing: border-box;
 }
 
-.thumbnail:hover {
+.thumbnail:hover{
     border-color: #555;
 }
 
-.slideshowpage {
+.slideshowpage{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers all child elements vertically */
+    align-items: center;
     text-align: center;
 }
 /* END OF SLIDESHOW PAGE*/
