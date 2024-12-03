@@ -18,7 +18,7 @@ function setup() {
 function mouseDragged(){
     // Set the color based on the mouse position, and draw a line
     // from the previous position to the curret position
-    let lineHue = (mouseX - mouseY) % 35;
-    stroke(lineHue, 100, 100);
+    let lineHue = (mouseX - mouseY) % 360;
+    stroke(lineHue, 150, 75);
     line(pmouseX, pmouseY, mouseX, mouseY);
 }
