@@ -286,10 +286,11 @@ footer p{
 
 #courses-list + button {
     display: block;
-    padding-top: 2px;
-    padding-bottom: 2px;
     margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
+
 
 label[for="funny"], 
 #funny {
