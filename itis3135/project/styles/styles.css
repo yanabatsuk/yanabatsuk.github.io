@@ -404,6 +404,7 @@ li span {
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
 }
 
 #slideshow .slide {
@@ -413,7 +414,6 @@ li span {
     object-fit: cover;
     opacity: 0;
     transition: opacity 2s ease-in-out;
-
 }
 
 #slideshow .slide:first-child {
