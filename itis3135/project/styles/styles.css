@@ -515,3 +515,7 @@ li span {
     cursor: pointer;
     color: #fff;
 }
+
+#menu-header, #footer-container {
+    display: block; 
+}
