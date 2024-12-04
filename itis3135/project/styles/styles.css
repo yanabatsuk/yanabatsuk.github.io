@@ -201,7 +201,10 @@ footer a:hover {
 }
 
 .main {
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
     background: #E7E0DA;
     min-height: calc(100vh - 140px);
 }
