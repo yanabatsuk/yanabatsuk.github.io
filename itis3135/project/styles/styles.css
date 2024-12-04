@@ -133,6 +133,9 @@ p a:hover {
     padding: 20px 0;        
 }
 
+about-fix-bottom p {
+    font-size: 1.5rem;
+}
 
 .about-fix-bottom .btn-container {
     display: flex;
