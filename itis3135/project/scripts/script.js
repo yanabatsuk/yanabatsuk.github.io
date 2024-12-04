@@ -2,6 +2,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // test to check it works
     console.log("Website Loaded");
 
+    // Show the popup after the page loads
+    window.onload = function() {
+    setTimeout(function() {
+        document.getElementById("popupAd").style.display = "flex"; // Show the popup after a delay
+    }, 3000); // 3-second delay
+    };
+
+    // Close the popup when the close button is clicked
+    document.getElementById("closeBtn").onclick = function() {
+    document.getElementById("popupAd").style.display = "none";
+    };
+
     // Client info. to dynamically load
     const clientName = "Ethan Orange";
     const clientCompany = "Ethanphotojuice";
@@ -102,7 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /**  adding interactive element PART 4*/
-
 
 });
 
