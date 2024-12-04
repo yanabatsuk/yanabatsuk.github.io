@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 nav {
@@ -117,7 +117,7 @@ p a:hover {
     margin-bottom: 15px;
     line-height: 1.8;
     text-align: left;
-    font-size: 1em;
+    font-size: 1.15rem;
 }
 
 .about-links {
@@ -391,7 +391,7 @@ textarea {
 .home-p {
     padding-bottom: 10px;
     line-height: 2.25;
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 li span {
