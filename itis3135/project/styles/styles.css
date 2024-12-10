@@ -500,6 +500,7 @@ li span {
     border-radius: 10px;
     max-width: 500px;
     text-align: center;
+    position: relative; 
 }
 
 .popup img {
@@ -513,7 +514,9 @@ li span {
     right: 10px;
     font-size: 30px;
     cursor: pointer;
-    color: #fff;
+    color: #000; /* Black text for contrast */
+    background-color: transparent; /* No background */
+    border: none; /* Remove default button border */
 }
 
 #menu-header, #footer-container {
