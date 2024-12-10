@@ -510,7 +510,7 @@ li span {
 
 .close-btn {
     position: absolute;
-    top: 5px;
+    top: 0px;
     right: 5px;
     font-size: 30px;
     cursor: pointer;
