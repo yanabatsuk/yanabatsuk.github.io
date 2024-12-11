@@ -27,10 +27,10 @@ header {
     font-style: italic; 
 } */
 .tagline {
-    font-family: 'Prata', serif; /* Elegant serif font */
-    font-size: 1.4rem; /* Slightly larger font for emphasis */
-    color: #322428; /* Rich, warm color matching the header */
-    text-align: center; /* Centered alignment */
+    font-family: 'Prata', serif; 
+    font-size: 1.4rem; 
+    color: #F8F4F2; 
+    text-align: center; 
     margin-top: -5px; /* Subtle spacing adjustment */
     margin-bottom: 15px; /* Adds some space below the tagline */
     font-style: italic; /* Soft, refined style */
