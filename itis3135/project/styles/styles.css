@@ -244,13 +244,13 @@ h2 {
 
 .card {
     flex: 0 0 auto;         /* Prevent shrinking of the card */
-    width: 450px;           /* Increase the width for a more rectangular shape */
-    height: 600px;          /* Increase the height to make it longer */
-    margin: 0 20px;         /* Increase the margin between cards */
-    padding: 30px;          /* More padding for spacing around content */
-    border: 1px solid #ccc; /* Light border for definition */
-    border-radius: 10px;    /* Slightly rounded corners for a soft effect */
-    background: rgba(255, 255, 255, 0.8); /* Subtle background color */
+    width: 450px;         
+    height: 600px;     
+    margin: 0 20px;   
+    padding: 30px;     
+    border: 1px solid #ccc; 
+    border-radius: 10px;    
+    background: rgba(255, 255, 255, 0.8); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: relative;
     box-sizing: border-box;
@@ -260,28 +260,28 @@ h2 {
 .card img {
     width: 80%;             /* Make the image a bit smaller than the card width */
     height: auto;
-    max-height: 300px;      /* Limit the image height for better spacing */
+    max-height: 300px;     
     object-fit: cover;      /* Ensure the image covers the area without distortion */
-    border-radius: 8px;     /* Optional: round the corners of the image */
-    margin-bottom: 15px;    /* Space between the image and text */
+    border-radius: 8px;     
+    margin-bottom: 15px;    
 }
 
 .card-h3 {
     text-align: center;
-    font-size: 1.7rem;      /* Larger title size */
-    color: #231F1A;         /* Dark color for the title */
-    margin: 10px 0;         /* Margin above and below the title */
-    font-family: 'Cinzel', serif; /* Give it a bit more elegance */
+    font-size: 1.7rem;   
+    color: #231F1A;      
+    margin: 10px 0;         
+    font-family: 'Cinzel', serif; 
 }
 
 .card p {
     font-weight: 300;
     text-indent: 3px;
     word-spacing: 3.1px;
-    font-size: 1.1rem;        /* Adjust text size for better readability */
-    color: #181611;            /* Light dark color for the description */
-    margin: 5px 0;         /* Space between the description and other elements */
-    text-align: left;       /* Align text to the left */
+    font-size: 1.1rem;       
+    color: #181611;        
+    margin: 5px 0;      
+    text-align: left;    
     margin-bottom: 2px;
 }
 
@@ -521,4 +521,104 @@ li span {
 
 #menu-header, #footer-container {
     display: block; 
+}
+
+
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    html {
+        font-size: 90%; /* Slightly reduce base font size */
+    }
+
+    body {
+        line-height: 1.4; /* Adjust line spacing for smaller screens */
+    }
+
+    header {
+        padding: 8px 0;
+    }
+
+    .h1 {
+        font-size: 2.5rem; /* Reduce heading size for smaller screens */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+
+    nav {
+        padding: 5px 0;
+    }
+
+    nav a {
+        font-size: 1rem; /* Smaller navigation links */
+        margin: 0 8px;
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        padding: 15px;
+    }
+
+    .about-image {
+        width: 100%; /* Make the image take full width */
+        margin-right: 0; /* Remove side spacing */
+        padding: 10px;
+    }
+
+    .about-text {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .about-links {
+        font-size: 1.2rem;
+    }
+
+    .btn-contact {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 8px 15px; /* Smaller padding */
+    }
+
+    .carousel {
+        max-width: 100%; /* Ensure the carousel fits the screen */
+        padding: 0 10px;
+    }
+
+    .card {
+        width: 90%; /* Make cards smaller on mobile */
+        margin: 10px auto; /* Center cards */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Smaller footer text */
+    }
+}
+
+/* Styles for Extra Small Devices */
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 2rem; /* Further reduce heading size */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Smaller navigation font */
+    }
+
+    .about-text {
+        font-size: 0.95rem; /* Adjust text size for readability */
+    }
+
+    .btn-contact {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .card img {
+        max-height: 200px; /* Reduce image height further */
+    }
+
+    footer {
+        padding: 5px 0; /* Compact footer padding */
+    }
 }
