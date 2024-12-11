@@ -17,8 +17,7 @@ header {
     text-align: center;
 }
 
-/* adding styling to the tagline */
-.tagline {
+/* adding styling to the tagline .tagline {
     font-family: 'Prata', serif; 
     font-size: 1.2rem; 
     color: #555; 
@@ -26,6 +25,17 @@ header {
     margin-top: -10px; 
     margin-bottom: 10px;
     font-style: italic; 
+} */
+.tagline {
+    font-family: 'Prata', serif; /* Elegant serif font */
+    font-size: 1.4rem; /* Slightly larger font for emphasis */
+    color: #322428; /* Rich, warm color matching the header */
+    text-align: center; /* Centered alignment */
+    margin-top: -5px; /* Subtle spacing adjustment */
+    margin-bottom: 15px; /* Adds some space below the tagline */
+    font-style: italic; /* Soft, refined style */
+    letter-spacing: 0.5px; /* Slight spacing between letters for readability */
+    line-height: 1.8; /* Enhances vertical spacing for a balanced look */
 }
 
 h1 {
