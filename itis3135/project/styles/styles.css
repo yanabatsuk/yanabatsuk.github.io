@@ -565,6 +565,7 @@ li span {
         width: 100%; /* Make the image take full width */
         margin-right: 0; /* Remove side spacing */
         padding: 10px;
+        box-sizing: border-box;
     }
 
     .about-text {
