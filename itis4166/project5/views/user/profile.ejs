@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/easeandedgelogo.png" type="images/png">
+    <title>Easel &amp; Edge - Profile</title>
+    <link rel="stylesheet" href="/styles/default.css">
+</head>    
+<body class="other-pages-background">
+<%- include('../partials/header.ejs') %>
+
+<main class="profile-page-main">
+    <h1>My Listings</h1>
+    <%if(items.length > 0) {%>
+        <div class="profile-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%items.forEach(item=>{%>
+                        <tr>
+                            <td><a href = "/items/<%= item.id%>"> <%= item.title%></a></td>
+                            <td><%= item.active ? 'active' : 'sold'%></td>
+                            <td>
+                                
+                                <form>
+                                    <button type = "submit" formmethod = "GET" formaction = "/items/<%= item.id%>/edit" class="edit-delete-buttons">
+                                        <img src="/images/001-edit.png" alt="edit">
+                                    </button>
+                                    <button type = "submit" formmethod = "POST" formaction = "/items/<%= item.id%>?_method=DELETE" class="edit-delete-buttons">
+                                        <img src="/images/icons8-delete-32.png" alt="delete">
+                                    </button>
+                                    <button type = "submit" formethod = "GET" formaction = "/items/<%= item.id %>/offers" <% if (item.totalOffers === 0) { %>disabled style="background-color: lightgray; color: darkgray; cursor: not-allowed;"<% } %> >View Offers</button>
+                                </form>
+
+                            </td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+    <%} else {%> 
+        <p>You have not listed any items.</p> 
+    <%}%>
+
+    <h2>My Offers</h2>
+    <% if (offersMade && offersMade.length > 0) { %>
+        <div class="profile-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% offersMade.forEach(offer => { %>
+                        <tr>
+                            <td><a href="/items/<%= offer.item._id %>"> <%= offer.item.title %></a></td>
+                            <td><%= offer.status %></td>
+                            <td>$<%= offer.amount %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+    <% } else { %>
+        <p>You have not made any offers.</p>
+    <% } %>
+</main>
+
+<%- include('../partials/footer.ejs')%>

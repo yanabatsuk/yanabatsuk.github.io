@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- added favivon for fun! -->
+    <link rel="icon" href="images/easeandedgelogo.png" type="images/png">
+    <title>Easel &amp; Edge - Browse</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>    
+
+<body class="other-pages-background">
+
+<%- include('partials/header.ejs') %>
+    <main>
+
+        <!-- TODO: ADD CONTENT TO BROWSING PAGE -->
+        <div class="browse-items-container">
+            <% if (items.length > 0) { %>
+                <% items.forEach(item => { %>
+                    <a href="/items/<%= item._id %>">
+                        <div class="items">
+                            <div class="items-pic">
+                                <% if (item.image) { %>
+                                    <img src="<%= item.image%>" alt="item image of <%= item.title %>">
+                                <% } %>
+                            </div>
+                            <div class="items-info">
+                                <h1><%= item.title %></h1>
+                                <p><%= item.condition %></p>
+                                <p>$<%= item.price %> | <%= item.totalOffers %> offer(s)</p>
+                            </div>
+                        </div>
+                    </a>
+                <% }) %>
+            <% } else { %>
+                <p class="items-error-message">There is no item that matches your search criteria.</p>
+            <% } %>
+        </div>
+    </main>
+    <%- include('partials/footer.ejs') %>

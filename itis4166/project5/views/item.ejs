@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- added favivon for fun! -->
+    <link rel="icon" href="images/easeandedgelogo.png" type="images/png">
+    <title>Easel &amp; Edge - Item</title>
+    <link rel="stylesheet" href="/styles/default.css">
+</head>    
+
+<!-- add this class="other-pages-background" to body element if needed-->
+<body class="other-pages-background">
+    <%- include('partials/header.ejs') %>
+    <main>
+        <div class="item-detail-container">
+            <div class="item-image">
+                <img src="<%= item.image %>" alt="item image of <%= item.title %>">
+            </div>
+            <div class="item-info">
+                <h1><%= item.title %></h1>
+                <p>Condition: <span><%= item.condition %></span></p>
+                <p>Price: <span>$<%= item.price %>
+                    <% if (item.active && item.totalOffers > 0) { %>
+                        | <%= item.totalOffers %> offer(s)
+                    <% } else if (item.totalOffers > 0) { %>
+                        | <%= item.totalOffers %> offers
+                    <% } %>
+                    </span></p>
+                <p>Seller: <span><%= item.seller.firstName + ' ' + item.seller.lastName %></span></p>
+                <p><%= item.details %></p>
+
+                <% if (!item.active) { %>
+                    <div class="offer-section">
+                        <p>Unfortunately, this item is no longer available.</p>
+                    </div>
+                <% } else { %>
+                    <div class="offer-section">
+                        <form action="/items/<%= item._id %>/offers" method="POST" class="offer-form">
+                            <div class="offer-form-group">
+                                <label for="amount"></label>
+                                <input type="number" id="amount" name="amount" step="0.01" min="0.01" required>
+                            </div>
+                            <div class="offer-button-container">
+                                <button type="submit">Make an offer</button>
+                            </div>
+                        </form>
+                        <% if (!user || (user && !item.seller._id.equals(user))) { %>
+                            <% if (item.totalOffers > 0) { %>
+                                <p>Current Highest offer: $<%= item.highestOffer %></p>
+                            <% } %>
+                        <% } %>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </main>
+    <%- include('partials/footer.ejs')%>
